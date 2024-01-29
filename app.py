@@ -41,10 +41,10 @@ def home():
     search_content = render_template('search.html')
     return render_template('index.html', content=search_content + imageboards_prerendered, nav=1)
 
-@app.route('/myboardhere')
-def myboardhere():
-    myboardhere_content = render_template('myboardhere.html')
-    return render_template('index.html', content=myboardhere_content, nav=2)
+@app.route('/myboard')
+def myboard():
+    myboard_content = render_template('myboard.html')
+    return render_template('index.html', content=myboard_content, nav=2)
 
 @app.route('/about')
 def about():
@@ -56,12 +56,12 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-if __name__ == '__main__':
+""" if __name__ == '__main__':
     update_imageboards()
     update_imageboards_prerendered()
     schedule_thread = threading.Thread(target=schedule_run)
     schedule_thread.start()
-    app.run()
+    app.run() """
 
 def create_app():
     update_imageboards()
