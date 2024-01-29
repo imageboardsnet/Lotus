@@ -62,3 +62,10 @@ if __name__ == '__main__':
     schedule_thread = threading.Thread(target=schedule_run)
     schedule_thread.start()
     app.run()
+
+def create_app():
+    update_imageboards()
+    update_imageboards_prerendered()
+    schedule_thread = threading.Thread(target=schedule_run)
+    schedule_thread.start()
+    return app
