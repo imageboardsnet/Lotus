@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The ImageBoard Database</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <meta name="a.validate.01" content="391cac77cf2863c7a74bc2a35679aa014e9b" />
+</head>
+
+<body>
+    <div id='nav' class="ui inverted menu">
+        <a class="item {{ 'active' if nav == '1' else '' }}" href='/'>
+            <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px;">
+            ImageBoards.net
+        </a>
+        <a class="item {{ 'active' if nav == '2' else '' }}" href='/myboardhere'>
+            Add My Board
+        </a>
+        <div class="right menu">
+            <a class="item {{ 'active' if nav == '3' else '' }}" href='/about/'>About</a>
+        </div>
+    </div>
+
+
+    {{ content |safe }}
+
+    <div class="ui inverted footer segment center">
+        <div class="ui container">
+
+            <div class='centered'>
+                <h4 class="ui inverted header">ImageBoards.net | 2024 | Lotus 1.0</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<ul class="list">
+    {% for imb in imageboards %}
+    <li>
+        <p class='name'>{{ imb.name }}</p>
+        <p class='language'>{{ imb.language|join(', ') }}</p>
+        <p class='software'>{{ imb.software|join(', ') }}</p>
+        <div class="ui divided items">
+            <div class="ui message">
+                <div class="item">
+                    <div class="content">
+                        <a class="header">{{ imb.name }}</a>
+                        <div class="meta">
+                            <a class="url" href="{{ imb.url }}">{{ imb.url }}</a>
+                            {% for mi in imb.mirrors %}
+                            <br><a class="url" href="{{ mi }}">{{ mi }}</a>
+                            {% endfor %}
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            {% for sw in imb.software %}
+                            <div class="ui label"><i class="cog icon"></i>{{ sw }}</div>
+                            {% endfor %}
+                            {% for lg in imb.language %}
+                            <div class="ui label"><i class="globe icon"></i>{{ lg }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

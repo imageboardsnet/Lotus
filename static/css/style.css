@@ -1,0 +1,38 @@
+body{
+    margin: auto;
+    width: 60%;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    background-attachment: fixed;
+    height: auto;
+}
+.centered{
+    text-align: center;
+}
+.name,.language,.software{
+    display: none;
+}
+#boards{
+	margin-top: 8px;
+}
+iframe{
+	display:block!important;
+	margin:auto!important;
+	
+}
+
+li{
+    list-style: none;
+}
+ul{
+    padding: unset;
+}
+#nav{
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        width: 98%;
+    }
+
+}
