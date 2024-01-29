@@ -46,7 +46,7 @@ def myboardhere():
     myboardhere_content = render_template('myboardhere.html')
     return render_template('index.html', content=myboardhere_content, nav=2)
 
-@app.route('/about/')
+@app.route('/about')
 def about():
     about_content = render_template('about.html')
     return render_template('index.html', content=about_content, nav=3)
