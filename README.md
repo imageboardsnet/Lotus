@@ -1,2 +1,2 @@
 # Lotus
-imageboards.net Front UI
+imageboards.net website built with Flask.
