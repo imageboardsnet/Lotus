@@ -1,7 +1,8 @@
 body{
     margin: auto;
     width: 60%;
-    background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%);
+    /*background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%); */
+    background: #a4aed1;
     background-attachment: fixed;
     height: auto;
 }
@@ -34,6 +35,9 @@ img {
     width: -webkit-fill-available;
 }
 
+.ui.items {
+    margin: 0.5em 0!important;
+}
 
 @media screen and (max-width: 1000px) {
     body{
