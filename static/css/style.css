@@ -1,7 +1,7 @@
 body{
     margin: auto;
     width: 60%;
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%);
     background-attachment: fixed;
     height: auto;
 }
@@ -29,6 +29,11 @@ ul{
 #nav{
     margin-top: 5px;
 }
+
+img {
+    width: -webkit-fill-available;
+}
+
 
 @media screen and (max-width: 1000px) {
     body{

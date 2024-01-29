@@ -23,7 +23,17 @@
                             <div class="ui label"><i class="cog icon"></i>{{ sw }}</div>
                             {% endfor %}
                             {% for lg in imb.language %}
-                            <div class="ui label"><i class="globe icon"></i>{{ lg }}</div>
+                            {% if lg == 'en' %}
+                                <div class="ui label"><i class="uk flag">en</i></div>
+                            {% elif lg == 'ja' %}
+                                <div class="ui label"><i class="jp flag">ja</i></div>
+                            {% elif lg == 'zh' %}
+                                <div class="ui label"><i class="cn flag">zh</i></div>
+                            {% elif lg == 'ko' %}
+                                <div class="ui label"><i class="kr flag">ko</i></div>
+                            {% else %}
+                                <div class="ui label"><i class="{{ lg }} flag">{{ lg }}</i></div>
+                            {% endif %}
                             {% endfor %}
                         </div>
                     </div>

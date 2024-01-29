@@ -1,13 +1,16 @@
 from flask import Flask, render_template, request, send_from_directory
 import os
+import requests
+import json
+import schedule
+import time
+import threading
 
 app = Flask(__name__)
 
 boards_json_url = "https://imageboardsnet.github.io/imageboards.json/imageboards.json"
 
 def get_imageboards():
-    import requests
-    import json
     response = requests.get(boards_json_url)
     imageboards = json.loads(response.text)
     return imageboards
@@ -17,9 +20,21 @@ def render_template_outside_of_view():
         rendered_template = render_template('boards.html', imageboards=imageboards)
         return rendered_template
 
-imageboards = get_imageboards()
+def update_imageboards():
+    global imageboards
+    imageboards = get_imageboards()
 
-imageboards_prerendered = render_template_outside_of_view()
+def update_imageboards_prerendered():
+    global imageboards_prerendered
+    imageboards_prerendered = render_template_outside_of_view()
+
+schedule.every(30).minutes.do(update_imageboards)
+schedule.every(30).minutes.do(update_imageboards_prerendered)
+
+def schedule_run():
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 @app.route('/')
 def home():
@@ -42,4 +57,8 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == '__main__':
+    update_imageboards()
+    update_imageboards_prerendered()
+    schedule_thread = threading.Thread(target=schedule_run)
+    schedule_thread.start()
     app.run()
