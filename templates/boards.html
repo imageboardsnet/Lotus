@@ -1,45 +1,47 @@
 <ul class="list">
     {% for imb in imageboards %}
     <li>
-        <p class='name'>{{ imb.name }}</p>
-        <p class='language'>{{ imb.language|join(', ') }}</p>
-        <p class='software'>{{ imb.software|join(', ') }}</p>
-        <div class="ui divided items">
-            <div class="ui message">
-                <div class="item">
-                    <div class="content">
-                        <a class="header">{{ imb.name }}</a>
-                        <div class="meta">
-                            <a class="url" href="{{ imb.url }}">{{ imb.url }}</a>
-                            {% for mi in imb.mirrors %}
-                            <br><a class="url" href="{{ mi }}">{{ mi }}</a>
-                            {% endfor %}
-                        </div>
-                        <div class="description">
-                            <p></p>
-                        </div>
-                        <div class="extra">
-                            {% for sw in imb.software %}
-                            <div class="ui label"><i class="cog icon"></i>{{ sw }}</div>
-                            {% endfor %}
-                            {% for lg in imb.language %}
-                            {% if lg == 'en' %}
-                                <div class="ui label"><i class="uk flag">en</i></div>
-                            {% elif lg == 'ja' %}
-                                <div class="ui label"><i class="jp flag">ja</i></div>
-                            {% elif lg == 'zh' %}
-                                <div class="ui label"><i class="cn flag">zh</i></div>
-                            {% elif lg == 'ko' %}
-                                <div class="ui label"><i class="kr flag">ko</i></div>
-                            {% elif lg == 'uk' %}
-                                <div class="ui label"><i class="ua flag">uk</i></div>
-                            {% else %}
-                                <div class="ui label"><i class="{{ lg }} flag">{{ lg }}</i></div>
-                            {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
+        <div class="ui message" style="background-image: url({{ imb.url }}/favicon.ico);">
+            
+            <div class="content">
+                <div class="header"> {{ imb.name }}</div>
+                <div class="ui basic labels">
+                    <br>
+                    <a class="ui label" href="{{ imb.url }}">{{ imb.url }}</a>
+                    {% for mi in imb.mirrors %}
+                    
+                    <br><a class="ui label" href="{{ mi }}">{{ mi }}</a>
+                    {% endfor %}
                 </div>
+                <br>
+                    
+                    <div class="ui labels">
+                        <div class="ui  black inverted basic label"> <i class="cog icon"></i>Software</div>
+                        {% for sw in imb.software %}
+                        <div class="ui  black inverted basic tag label">{{ sw }}</div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="ui labels">
+                        <div class="ui black inverted basic label"><i class="globe icon"></i>Language</div>
+                        {% for lg in imb.language %}
+                        {% if lg == 'en' %}
+                            <div class="ui  black inverted basic tag label"><i class="uk flag"> en</i></div>
+                        {% elif lg == 'ja' %}
+                            <div class="ui black inverted basic tag label"><i class="jp flag"> ja</i></div>
+                        {% elif lg == 'zh' %}
+                            <div class="ui black inverted basic tag label"><i class="cn flag"> zh</i></div>
+                        {% elif lg == 'ko' %}
+                            <div class="ui black inverted basic tag label"><i class="kr flag"> ko</i></div>
+                        {% elif lg == 'uk' %}
+                            <div class="ui black inverted basic tag label"><i class="ua flag"> uk</i></div>
+                        {% elif lg == 'be' %}
+                            <div class="ui black inverted basic tag label"><i class="by flag"> be</i></div>
+                        {% else %}
+                            <div class="ui black inverted basic tag label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
             </div>
         </div>
     </li>

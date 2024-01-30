@@ -5,6 +5,8 @@ body{
     background: #a4aed1;
     background-attachment: fixed;
     height: auto;
+    text-wrap: balance;
+    word-break: break-all;
 }
 .centered{
     text-align: center;
@@ -23,6 +25,8 @@ iframe{
 
 li{
     list-style: none;
+    margin-top: 10px;
+    
 }
 ul{
     padding: unset;
@@ -35,8 +39,17 @@ img {
     width: -webkit-fill-available;
 }
 
-.ui.items {
-    margin: 0.5em 0!important;
+.content{
+    padding: 15px;
+    background: #ffffffe8;
+}
+
+.ui.message {
+    padding: 0;
+}
+
+.ui.message .header:not(.ui) {
+    font-size: 1.3em!important;
 }
 
 @media screen and (max-width: 1000px) {
