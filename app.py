@@ -39,17 +39,17 @@ def schedule_run():
 @app.route('/')
 def home():
     search_content = render_template('search.html')
-    return render_template('index.html', content=search_content + imageboards_prerendered, nav=1)
+    return render_template('index.html', content=search_content + imageboards_prerendered, nav="1")
 
 @app.route('/myboard')
 def myboard():
     myboard_content = render_template('myboard.html')
-    return render_template('index.html', content=myboard_content, nav=2)
+    return render_template('index.html', content=myboard_content, nav="2")
 
 @app.route('/about')
 def about():
     about_content = render_template('about.html')
-    return render_template('index.html', content=about_content, nav=3)
+    return render_template('index.html', content=about_content, nav="3")
 
 @app.route('/favicon.ico')
 def favicon():

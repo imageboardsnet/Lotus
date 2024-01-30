@@ -1,17 +1,30 @@
 <ul class="list">
     {% for imb in imageboards %}
     <li>
-        <div class="ui message" style="background-image: url({{ imb.url }}/favicon.ico);">
-            
+        <p class='name'>{{ imb.name }}</p>
+        <p class='language'>{{ imb.language|join(', ') }}</p>
+        <p class='software'>{{ imb.software|join(', ') }}</p>
+        <div class="ui message" style="background-image: {{ imb.url }}/favicon.ico;">
             <div class="content">
                 <div class="header"> {{ imb.name }}</div>
                 <div class="ui basic labels">
                     <br>
                     <a class="ui label" href="{{ imb.url }}">{{ imb.url }}</a>
+                    {% if imb.mirrors is defined %}
+                    <details  class="ui accordion">  
+                        <summary  class="title">
+                            <i class="dropdown icon"></i>
+                            Mirror(s)
+                          </summary > 
+                          <div class="content mirrors">
+                            <p>
                     {% for mi in imb.mirrors %}
-                    
-                    <br><a class="ui label" href="{{ mi }}">{{ mi }}</a>
+                    <a class="ui label" href="{{ mi }}">{{ mi }}</a>
                     {% endfor %}
+                            </p>
+                        </div>
+                    </details >
+                    {% endif %}
                 </div>
                 <br>
                     
