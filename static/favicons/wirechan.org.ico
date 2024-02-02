@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>wirechan – home</title>
+      <meta charset="utf-8">
+      <link rel="shortcut icon" href="favicon.gif" type="image/gif">
+      <link href="f-style.css" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="/wirechan/js/jquery.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+      <script type="text/javascript" src="/wirechan/js/style-select.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <header>
+        <div class="bar top">
+          <div class="boardlist"><span class="sub" data-description="0">[ <a href="/a" title="Anime">a</a> / <a href="/b" title="Random">b</a> / <a href="/art" title="Multimedia">art</a> / <a href="/cy" title="Cyberpunk">cy</a>
+             / <a href="/lain" title="Lain">lain</a> / <a href="/alt" title="Anomalous">alt</a> / <a href="/o/index.html" title="Occultism">o</a> ]
+          </span>  <span class="sub" data-description="1">[ <a href="/wired">wired</a> / <a href="/meta">meta</a> ]</span>
+           <span class="sub" data-description="2">[ <a href="/">home</a> / <a href="/information.html">information</a> / <a href="/friends.html">affiliates</a> / <a href="/updates.html">updates</a> ] [ <a href="https://mebi.wirechan.org/">mebious</a> ]</span></div>
+          <script type='text/javascript'>if (typeof do_boardlist != 'undefined') do_boardlist();</script>
+        </div>
+         <h1 id="title">wirechan</h1>
+      </header>
+      <hr />
+      <main id="home">
+        <!--
+         <img class="logo" height="64" src="/favicon.png" width="64">
+       -->
+         <table class="box">
+            <tr class="top">
+               <td>wirechan</td>
+            </tr>
+            <tr>
+               <td>
+                  <p>Welcome to wirechan. We have a range of cyberpunk, alternative, and esoteric themed boards for your perusal.</p>
+                  <br />
+		  <h2><a id="hidden" href="static/mors.jpg">"Death is the last line of things."</a></h2>
+		  <p>
+Et in pulverem mortis deduxisti me: <span class="stylus">And you lay me in the dust of death. </span>
+Putredini dixi, pater meus est: mater mea, et soror mea vermibus: <span class="stylus">I have said to corruption, Thou art my father: to the worm, 
+Thou art my mother, and my sister.</span> Ossa patent, geminis que oculis extorribus orbes, fractaque convulsi septa molaris hiant. 
+Oderis hanc huius quantumvis Icona Formae Ar chetijpus Formae tu tamen huius eris: <span class="stylus">The bones are visible, the orbits are emptied, the open holes of the teeth are broken. 
+You will hate this, regardless of the image. You shall be, after all, the original [version] of this image.</span></p>
+               </td>
+            </tr>
+         </table>
+         <table class="box">
+            <tr class="top">
+	             <td>URL</td>
+               <td>Title</td>
+               <td>Last Updated</td>
+            </tr>
+                        <tr>
+	             <td><a href="a">/a/</a></td>
+               <td><a href="a">Anime</a></td>
+               <td><a href="a">3 days ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="alt">/alt/</a></td>
+               <td><a href="alt">Anomalous</a></td>
+               <td><a href="alt">21 weeks ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="art">/art/</a></td>
+               <td><a href="art">Multimedia</a></td>
+               <td><a href="art">1 day ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="b">/b/</a></td>
+               <td><a href="b">Random</a></td>
+               <td><a href="b">1 hour ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="cy">/cy/</a></td>
+               <td><a href="cy">Cyberpunk</a></td>
+               <td><a href="cy">5 hours ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="lain">/lain/</a></td>
+               <td><a href="lain">lain.iwakura</a></td>
+               <td><a href="lain">1 week ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="meta">/meta/</a></td>
+               <td><a href="meta">LRI08</a></td>
+               <td><a href="meta">4 weeks ago</a></td>
+            </tr>
+                        <tr>
+	             <td><a href="o">/o/</a></td>
+               <td><a href="o">Oddity</a></td>
+               <td><a href="o">20 weeks ago</a></td>
+            </tr>
+                     </table>
+      </main>
+      <footer class="disclaimer">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p class="thing" style="margin-top:20px;text-align:center;">- <a href="http://tinyboard.org/">Tinyboard</a> + <a href='https://int.vichan.net/devel/'>vichan</a> -<br><a href="http://tinyboard.org/">Tinyboard</a> Copyright &copy; 2010-2014 Tinyboard Development Group<br><a href="https://engine.vichan.net/">vichan</a> Copyright &copy; 2012-2016 vichan-devel</p>
+            <p class="thing" style="text-align:center;">All trademarks, copyrights, comments, and images on this page are owned by and are the responsibility of their respective parties.</p>
+            <p class="thing" style="text-align:center;">We are an independantly owned chan, not related or co-owned in conjuction with any other chans.</p>
+            <p class="thing" style="text-align:center;">All posts on Wirechan are the responsibility of the individual poster and not the administration of Wirechan.</p>
+            <!--<p class="thing" style="text-align:center;">We have not been served any secret court orders and are not under any gag orders.</p>-->
+            <p id="copy"><!--<a href="https://wirechan.org/" title="wirechan">re:wire</a>-->re:wire group &copy; 2017-2023</p>
+         </footer>
+   </body>
+</html>

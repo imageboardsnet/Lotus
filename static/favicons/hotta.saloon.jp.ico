@@ -1,0 +1,8 @@
+<html><head><META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
+<LINK rel=stylesheet type=text/css href='../style.css'>
+<title>First Menu</title></head>
+<frameset rows="98%,*" border=1 frameborder=0>
+<frame src="ass71.cgi?mode=menu" scrolling="yes">
+<frame src="http://onavi.sakura.ne.jp/" name="ass7"  scrolling="yes">
+</frameset>
+</html>

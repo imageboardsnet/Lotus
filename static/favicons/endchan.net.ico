@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head>
+  <meta charset="UTF-8">
+  <link href="/.static/global.css" type="text/css" rel="stylesheet">
+  <script src="/.static/switcher.js"></script>
+<title>File not found</title></head>
+<body>
+  <header>
+    <img src="/.static/logo.png" alt="logo">
+    <h2>404 - Not Found</h2>
+    <p>Endchan couldn't find the page you were attempting to reach.</p>
+    <p>If you just created a new thread, refresh after a few seconds.</p>
+  </header>
+
+
+</body></html>

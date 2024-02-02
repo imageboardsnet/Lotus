@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/.static/css/global.css" type="text/css" rel="stylesheet">
+
+<script src="/.static/js/theme.js"></script>
+<title>Tiedostoa ei löytynyt</title></head>
+<body class="theme_nyymichan">
+
+  <nav id="dynamicHeader"><span id="navLinkSpan"> <span>[</span> <a href="/" class="coloredIcon" title="Etusivu" id="navLinkHome">Etusivu</a> <span>/</span> <a href="/boards.js" class="coloredIcon" title="Laudat" id="navBoardList">Laudat</a> <span>/</span> <a href="/ukko" class="coloredIcon" title="Ukko" id="linkOverboard">Ukko</a> <span>] [</span> <a class="coloredIcon" title="Multiboard (requires JavaScript)" id="multiboardButton"></a> <span>/</span> <a href="/.static/pages/posting.html" class="coloredIcon" title="Posting" id="navPosting"></a> <span>/</span> <a class="coloredIcon" title="Settings (requires JavaScript)" id="settingsButton"></a> <span>/</span> <a class="coloredIcon" title="Thread Watcher (requires JavaScript)" id="watcherButton"></a> <span>]</span>
+</span>
+<span id="navTopBoardsSpan"> </span>
+<span id="navBoardsSpan"> </span>
+<span id="navOptionsSpan"> </span>
+</nav>
+
+  <header>
+    <img src="/.static/logo.png" class="logoImg" alt="logo">
+    <h2>404</h2>
+  </header>
+
+  <div class="titleWrapper">
+    <p>Error: eiole? Gaiggi riggi?</p>
+    <p>Pitäisikö tässä olla jotain? Lähetä ulinat <a href="/2022">&gt;&gt;&gt;/2022/</a></p>
+  </div>
+
+
+
+<script src="/.static/js/api.js"></script>
+<script src="/.static/js/favouriteBoards.js"></script>
+
+
+</body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+   'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+<meta name="theme-color" content="#333" />
+<title>Добро пожаловать &ndash; Zero BBS</title>
+<meta name="description" content="Система свободных форумов, где каждый может анонимно высказать своё мнение.">
+<meta property="og:title" content="Добро пожаловать &ndash; Zero BBS">
+<meta property="og:site_name" content="Zero BBS">
+<meta property="og:description" content="- last sign of truth -">
+<meta property="og:image" content="https://bbs.iriscot.org/favicon.png">
+<script>
+        themes = [{"title":"zero","file":"default","version":"1.0"},{"title":"photon","file":"photon","version":"1.0"},{"title":"futaba","file":"futaba","version":"1.1.2"}];
+        no_captcha = 0;
+    </script>
+<link rel="stylesheet" href="/assets/zero@2.0.5.css" />
+<link rel="stylesheet" href="/assets/magnific-popup.min.css" />
+<link rel="stylesheet" href="/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="/assets/jquery@3.2.1.js"></script>
+<script src="/assets/js.cookie.js"></script>
+<script src="/assets/lockr.js"></script>
+<script src="/assets/zbbs@2.0.2.1.js"></script>
+<script src="/assets/noty/packaged/jquery.noty.packaged.min.js"></script>
+<script src="/assets/readmore.min.js"></script>
+<script src="/assets/jquery.filedrop.js"></script>
+<script type="text/javascript" src="/assets/jquery.magnific-popup.min.js"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+<div class="head">
+<div class="h-title"><a href="/">Zero BBS</a></div>
+<div class="h-subtitle">- last sign of truth -</div>
+</div>
+<div class="content"><div class="card">[08.12.2023] Постинг снова работает!!</div>
+<link rel="stylesheet" href="/assets/titlepage.css?v=1.1" />
+<div class="bighead_wrapper_bg">
+<div class="head_flex">
+<div class="card zeroDescription">
+<p><strong>Zero BBS</strong> (читается как <i>Церо ББС</i>) — это система свободных форумов, где каждый может анонимно высказать своё мнение.
+Да, регистрация не требуется, но это не освобождает от необходимости соблюдения <a href="/help/tos">правил</a>.
+Каждый форум имеет свою ограниченную тематику, но если ваше сообщение не подходит ни в один из существующих разделов &ndash; постите его в <a href="/b/">нутакое</a>.
+Также не забудьте посмотреть <a href="/help/formatting">гайд по разметке</a>.</p>
+</div>
+</div>
+<div class="quick_board_links">
+<div><a href="/a/">/a/</a></div>
+<div><a href="/b/">/b/</a></div>
+<div><a href="/vg/">/vg/</a></div>
+</div>
+</div>
+<div class="boards_all card tgutter">
+<div class="column">
+<div class="board-category">Тематика</div>
+<p><a href="/c/">Комиксы</a></p>
+<p><a href="/fl/">Ин.языки</a></p>
+<p><a href="/mlp/">Пони</a></p>
+<p><a href="/mov/">Фильмы</a></p>
+<p><a href="/mu/">Музыка</a></p>
+<p><a href="/lit/">Литература</a></p>
+<p><a href="/psy/">Психология</a></p>
+<p><a href="/sci/">Наука</a></p>
+<p><a href="/sf/">Научная фантастика</a></p>
+<p><a href="/sn/">Паранормальное</a></p>
+<p><a href="/zog/">Теории заговора</a></p>
+<p><a href="/kpop/">Корейская поп-музыка</a></p>
+<div class="board-category">Японская культура</div>
+<p><a href="/a/">Аниме</a></p>
+<p><a href="/fd/">Фэндом</a></p>
+<p><a href="/ja/">Японская культура</a></p>
+<p><a href="/ma/">Манга</a></p>
+<p><a href="/vn/">Визуальные новеллы</a></p>
+</div>
+<div class="column">
+<div class="board-category">Техника и софт</div>
+<p><a href="/gd/">Gamedev</a></p>
+<p><a href="/hw/">Комп. железо</a></p>
+<p><a href="/mobi/">Моб. устройства</a></p>
+<p><a href="/pr/">Программирование</a></p>
+<p><a href="/ra/">Электроника</a></p>
+<p><a href="/s/">Программы</a></p>
+<p><a href="/t/">Техника</a></p>
+<p><a href="/crypt/">Криптач</a></p>
+<div class="board-category">Творчество</div>
+<p><a href="/de/">Дизайн</a></p>
+<p><a href="/diy/">Хобби</a></p>
+<p><a href="/mus/">Музыканты</a></p>
+<p><a href="/pa/">Живопись</a></p>
+<p><a href="/p/">Фотография</a></p>
+<p><a href="/draw/">Рисовач</a></p>
+</div>
+<div class="column">
+<div class="board-category">Игры</div>
+<p><a href="/bg/">Настольные игры</a></p>
+<p><a href="/cg/">Консоли</a></p>
+<p><a href="/vg/">Видеоигры</a></p>
+<p><a href="/wr/">Текстовые RPG</a></p>
+<p><a href="/rpg/">2D RPG</a></p>
+<div class="board-category">Разное</div>
+<p><a href="/b/">нутакое</a></p>
+<p><a href="/int/">International</a></p>
+<p><a href="/zero/">Zero</a></p>
+<p><a href="/all/">Все треды на всех досках</a></p>
+</div>
+</div>
+<style>
+.bighead_wrapper_bg{
+    background-image: url(/static/index_random/15096933017860.jpg);
+}
+</style>
+</div>
+<div class="card footer tgutter">
+<p>
+<a href="/help/tos">правила</a> &middot;
+<a href="/help/formatting">разметка</a> &middot;
+<a href="/help/donate">donate</a> &middot;
+<a href="/manage.php">login</a>
+</p>
+<p>
+<a href="#" class="apply-theme" data-id="0" data-file="default" data-version="1.0">zero</a> &middot; <a href="#" class="apply-theme" data-id="1" data-file="photon" data-version="1.0">photon</a> &middot; <a href="#" class="apply-theme" data-id="2" data-file="futaba" data-version="1.1.2">futaba</a> </p>
+<p>Zero BBS 2.0 &copy; Iriscot</p>
+</div>
+<noscript>
+<img src="https://shynet.iriscot.org/ingress/2eb7edba-8540-4c7c-b536-df5278f50129/pixel.gif">
+</noscript>
+<script defer src="https://shynet.iriscot.org/ingress/2eb7edba-8540-4c7c-b536-df5278f50129/script.js"></script>
+</body>
+</html>

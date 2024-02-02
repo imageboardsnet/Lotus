@@ -1,0 +1,27 @@
+<html lang="ja">
+<head>
+<base href="//www.meiwasuisan.com/frame">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="description" content="明和水産はネット内外の最新ニュースや話題をメディア最速でピックアップして語り合う、新ネタ総合掲示板コミュニティーです。">
+<meta name="keywords" content="掲示板,BBS,画像掲示板,ネタ,フラッシュ,flash,おもしろ,爆笑,YouTube,ようつべ">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>明和水産 掲示板コミュニティー</title>
+<link rel="apple-touch-icon" href="/appleicon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="canonical" href="https://www.meiwasuisan.com/frame/" />
+</head>
+<frameset cols="137,*" border="0">
+  <frame src="./menu.php" name="menuFrame">
+  <frame src="///favicon.ico/" name="mainFrame" >
+</frameset>
+
+
+<script type="text/javascript"><!--
+document.write("<script type=\"text/javascript\" src=\"/accessrank/access.php?ref=" + document.referrer + "\"></script>");
+// --></script>
+
+
+</html>

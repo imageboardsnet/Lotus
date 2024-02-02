@@ -1,0 +1,144 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <meta name="description" content="Domingochan. Tablón de discución anónima que solo abre los domingos.">
+    <title>Domingochan</title>
+<link rel="stylesheet" href="/index.css" />
+    <script type="text/javascript">
+	var hours = 6  
+	var minutes = 18  
+	var seconds = 7  
+
+  function countdown(){
+  	seconds--;
+  	if (seconds < 0){
+  		minutes--;
+  		seconds = 59
+  	}
+  	if (minutes < 0){
+  		hours--;
+  		minutes = 59
+  	}
+  	if (hours < 0){
+  		hours = 23
+  	}
+  	
+  	function pad(n) {
+  		if ( n < 10 && n >= 0 ) {
+  			return "0" + n;
+  		} else {
+  			return n;
+  		}
+  	}
+  	
+  	document.getElementById("contador").innerHTML = +pad(hours)+":"+pad(minutes)+":"+pad(seconds);
+  	setTimeout ( "countdown()", 1000 );
+    
+  }
+</script>
+
+</head>
+
+<body onload="countdown();">
+
+    <center>
+        <div id="cabecera"><img id="logo" src="/logo.gif" /></div>
+        <div id="bienvenida">Domingochan es un sitio para conversar anonimamente. Solo abre los domingos. </div>
+
+        <div id="main">
+<center>
+<h4>Puedes crear un nuevo hilo pero no podrá ser visto ni recibir respuestas hasta que sea domingo:</h4>
+ <a href="/new_topic" class="clicker" tabindex="1">[ Nuevo Hilo ]</a>
+</center>
+<h5>¡Guarda Domingochan en tus marcadores, colocalo en tu pantalla de inicio y pasa el enlace a tus amigos!</h5>
+<hr>
+<h5>
+Mientras esperas al siguiente domingo, puedes visitar estás otras comunidades anónimas:
+</h5>
+<div style="list-style-type:none;">
+<div class="chantit"><strong>Textboards</strong></div>
+<div class="chanes"><a href="https://vampiros.ml"><img style="width:150px;" src="/vampiros.png" /></a>
+<br><span style="font-size:12px;">* Centro de reunión para los vampiros de habla hispana.</span>
+</div>
+<div class="chanes"><a href="https://ichoria.xyz"><img style="width:150px;" src="/ichoria.png" /></a>
+<br><span style="font-size:12px;">* Simple BBS en español de nueva creación.</span>
+</div>
+<div class="chantit"><strong>Imageboards</strong></div>
+<div class="chanes"><a href="https://chan.mx/"><img style="background: #112908;padding: 8px; width:150px;" src="https://chan.mx/logo.png" /></a>
+<br><span style="font-size:12px;">* Si eres mexicano, este es tu chan. Comunidad en crecimiento y tablones variados.</span>
+</div>
+<div class="chanes"><a href="https://lolnada.org/"><img style="width:150px;" src="/lolnada.png" /></a>
+<br><span style="font-size:12px;">* Shitpost, baits y conversación siempre controvertida. Ideal para apagar el cerebro. No apto para la mayoría. </span>
+</div>
+<div class="chanes"><a href="https://cuatrochan.org/"><img style="width:150px;" src="https://cuatrochan.org/file/cuatrochan-logo.png" /></a>
+<br><span style="font-size:12px;">* Clásico chan en español, se pueden crear boards. </span>
+</div>
+<div class="chanes"><a href="http://monstrochan.org/"><img style="width:150px;" src="/monstrochan.png" /></a><br>
+<span style="font-size:12px;">* Comunidad tranquila donde se puede hablar de lo que sea. Tiende a morirse, pero se rumora que siempre regresa.</span>
+</div>
+<br>
+<h5>
+Puedes ver muchas más opciones en el directorio de <a href="https://chan.city/">&#x1F340;&#x1F307; CHAN.CITY</a>
+</h5>
+
+            <div id="links" style="zoom:0.6;"><span style="color:black; ">Actualizaciones vía: </span><a href="https://twitter.com/domingochan_org">Twitter</a></div>
+        </div>
+            <div id="v">v0.9</div>
+        <div id="footer">2021-2024</div>
+    </center>
+    <script>
+        document.getElementById('habilitarNotificaciones').addEventListener('click', function() {
+            // Verificar si el navegador admite notificaciones
+            if ('Notification' in window) {
+                // Solicitar permiso para mostrar notificaciones
+                Notification.requestPermission().then(function(permission) {
+                    if (permission === 'granted') {
+                        // Crear una notificación semanal
+                        var ahora = new Date();
+                        var domingo = new Date(ahora);
+                        domingo.setHours(0, 0, 0, 0);
+                        domingo.setDate(ahora.getDate() + (7 - ahora.getDay()));
+
+                        var opciones = {
+                            body: '¡Recuerda visitar nuestro sitio web!',
+                            icon: 'ruta/a/tu/imagen.png' // URL de la imagen de la notificación
+                        };
+
+                        var recordatorioSemanal = new Notification('Recordatorio Semanal', opciones);
+
+                        recordatorioSemanal.onclick = function() {
+                            window.open('https://tu-sitio-web.com', '_blank');
+                        };
+                    }
+                });
+            } else {
+                alert('Tu navegador no admite notificaciones.');
+            }
+        });
+    </script>
+
+<center>
+<img src="haruhi.gif" alt="Imagen flotante" class="imgf">
+</center>
+<style>
+img.imgf {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+img.imgf {
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    width: 120px;
+    position: absolute;
+    bottom: -5px;
+    /* transform: translateX(-50%); */
+    left: -23px;
+}
+</style>
+
+</body>

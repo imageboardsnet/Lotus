@@ -4,7 +4,7 @@
         <p class='name'>{{ imb.name }}</p>
         <p class='language'>{{ imb.language|join(', ') }}</p>
         <p class='software'>{{ imb.software|join(', ') }}</p>
-        <div class="ui message" style="background-image: {{ imb.url }}/favicon.ico;">
+        <div class="ui message" style="background-image: url('/static/favicons/{{ imb.cleanurl }}.ico');">
             <div class="content">
                 <div class="header"> {{ imb.name }}</div>
                 <div class="ui basic labels">

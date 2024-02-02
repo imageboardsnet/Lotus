@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Уточан</title>
+        <style>
+            /*body {
+                background-color: #eef2ff;
+                color: #af0a0f;
+            }*/
+            body {
+                background-color: #ffffff;
+                color: dd6600;
+            }
+            #header {
+                margin: auto;
+                margin-top: 200px;
+                width 400px;
+                text-align: center;
+                font-size:xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>404</h1>
+            <h3>Отсутствует!</h3>
+        </div>
+    </body>
+</html>

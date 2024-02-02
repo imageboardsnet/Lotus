@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=x-sjis">
+<META name="ROBOTS" content="NOINDEX,NOFOLLOW">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<TITLE>お絵描き掲示板</TITLE>
+
+
+
+<STYLE type="text/css">
+<!--
+.button { background: #0099CC;  color: #FFFFFF; font-size: 10pt;border:1;border-color:#FFFFDD;border-style: dotted}
+-->
+</STYLE>
+
+
+
+</HEAD>
+<BODY bgcolor="#D0E8FF" text="#0066CC" link="#333399" vlink="#003366" alink="#FF1111"><A NAME="top"></A>
+
+
+
+<!--shinobibarrier1-->
+<script type="text/javascript" src="http://bar1.shinobi.jp/hash.js"></script>
+<script type="text/javascript" src="http://bar1.shinobi.jp/s/30/00284.js"></script>
+<noscript><a href="http://www.ninja.co.jp/barrier/" target="_blank">アクセス拒否</a></noscript>
+<noscript><meta http-equiv="refresh" content="0;URL=http://bar1.shinobi.jp/hoge/NoScript?0028430" />
+<div style="background-color: #000000;text-align: center;vertical-align: middle;width:100%;height: 100%;margin: -10px;padding: 0px;z-index: 10;position: absolute;">
+<div style="color: #ffffff;margin: 0px;padding: 0px;position: absolute;top:50%;left:47%;"><a href="http://www.ninja.co.jp/">NINJA TOOLS</a></div></div></noscript>
+<!--shinobibarrier2-->
+
+<!-- A-1 shinobi1-->
+<script src="http://j1.ninja-systems.com/ufo/001904002"></script>
+<noscript><a href="http://www.shinobi.jp/" target="_blank">
+<img src="http://x1.ninja-systems.com/bin/ll?001904002" border=0 alt="SEO" width=1 height=1></a></noscript>
+<!--shinobi2-->
+
+
+<NOSCRIPT>
+<H3>JavaScriptが有効でないため正常に動作致しません</H3></NOSCRIPT>
+	[<a title="トップページに戻る" href="http://www2s.biglobe.ne.jp/~nod/nod2/home.html">トップ</a>]
+	[<a title="最新情報に更新" href="./bbsnote.cgi">更新</a>]
+	[<a title="返信順に表示" href="./bbsnote.cgi?fc=page&sort=1&page=1">返信順</A>]
+	[<a title="サムネイル軽量表示" href="./bbsnote.cgi?fc=page&mode=light&sort=0&page=1">サムネイル</A>]
+<!--SKIN_WRITE:begin-->	[<a title="画像アップロード" href="./bbsnote.cgi?fc=post">画像UP</a>]<!--SKIN_WRITE:end-->
+	[<A title="削除モードへ" HREF="./bbsnote.cgi?fc=delete&sort=0&page=1">消す</A>]
+	[<A title="管理モード" HREF="./bbsnote.cgi?fc=admin">管理</a>]
+	[<a title="BBS設定" href="./bbsnote.cgi?fc=help">設定</a>]
+	<A HREF="#pages" title="ページ最下部へ">▼</A><BR>
+	<Font Face="Impact,Osaka" size="2"><FORM name="applet" METHOD=POST ACTION="./bbsnote.cgi"><INPUT CLASS=button TYPE=submit value="PAINT">&nbsp; MODE &nbsp;<select class=button name="fc"><option value="paint_sii">しぃお絵描き<option value="paint_pai">BBSPainter</select>&nbsp;&nbsp;&nbsp;PALETTE&nbsp;<select class=button name="palette"><option value="" selected> デフォルト</option><option value="hadairo">肌色系<option value="red">赤系<option value="yellow">黄・橙系<option value="green">緑系<option value="blue">青系<option value="purple">紫系<option value="brown">セピア<option value="character">人物<option value="pastel">パステル<option value="sougen">草原の大地<option value="moe">萌えサクラ<option value="grayscale">モノクロ</select>&nbsp;&nbsp;&nbsp;CanvasSize&nbsp;<select class=button name=width><option value='200'>200<option value='250'>250<option value='300' selected>300<option value='350'>350<option value='400'>400<option value='450'>450<option value='500'>500<option value='550'>550<option value='600'>600<option value='650'>650<option value='700'>700<option value='750'>750<option value='800'>800</select>&nbsp;x&nbsp;<select class=button name="height"><option value='200'>200<option value='250'>250<option value='300' selected>300<option value='350'>350<option value='400'>400<option value='450'>450<option value='500'>500<option value='550'>550<option value='600'>600<option value='650'>650<option value='700'>700<option value='750'>750<option value='800'>800</select><SPAN title="「しぃお絵かき」のみの機能です"><INPUT TYPE="checkBOX" value="true" name="anime" checked>描画アニメーション記録</SPAN></font></FORM>
+	
+<table border=1 cellspacing=1 cellpadding="3" width=100% bgcolor=#FFFFFF>
+<tr>
+<td>
+<address><font size=4><a href="http://www2s.biglobe.ne.jp/~nod/nod2/bbsl.html" target="_blank">【各掲示板 利用についてのお願い 2/20～】</a></font></address>
+</td>
+</tr>
+</table>
+<HR>
+<!--- A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/bbsl.html" target="_blank"><B>【各掲示板 利用についてのお願い】</B></A>
+<HR --->
+<A HREF="http://mediasp.kir.jp/jig/ranjig2.php" target="_blank"><B>【ジグソーパズル】</B></A>
+<A HREF="http://mediasp.kir.jp/anthology/anthologys.cgi"><B>【投稿掲示板】</B></A>
+<A HREF="http://mediasp.kir.jp/img20220326/imgboard.cgi" target="_blank"><B>【Upload掲示板】ユーザー名 spank パスワード ing</B></A>
+<HR>
+<A HREF="http://mediasp.kir.jp/yybbs/yybbs.cgi" target="_blank"><B>【臨時掲示板 / BOARD】</B></A>
+ ← <FONT size="2">「作者」や「投稿された作品や書き込み」に関連しない話題は、こちらでお願いします。
+<br>　　　　　　　　　　　　　　　　　　　　　　　　　不特定多数へのリクエストの依頼もこちらで。</FONT>
+<BR>
+<FONT size="2">　　</FONT>
+
+<HR>
+
+<table><tr>
+<form method="get" action="./bbsnote.cgi">
+<td align=center>
+<input type=hidden name="fc" value="search_menu">
+<input class=button type=submit value="ログ検索">
+</td></form>
+<form method="get" action="./bbsnote.cgi">
+<td>
+<input type=hidden name="fc" value="threadlist">
+<input class=button type=submit value="スレッド一覧">
+</td></form>
+
+</tr></table>
+
+	
+	<!--SKIN:TOP_FORM-->
+	<CENTER>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4858 ＰＣＡ　北斗の拳　挿絵 </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： 時雨三世 <wbr>[<A HREF="http://shigure-story.info" target="_blank">HOME</A>] / <B>TIME</B> : 2020/05/27 (Wed) 16:36  <BR><B>BROWSER</B> : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4858">★Continue</A></font><BR><IMG SRC="./data/IMG_006517.jpg" ALIGN="LEFT" BORDER=0 width=338 height=469 ALT="IMG_006517.jpg ( 129 KB )" TITLE="IMG_006517.jpg ( 129 KB )"> <Font color="#000066" size="3"> お久しぶりです。<BR>時雨三世です。<P>すっかり忘れてた三年くらい前のプリキュアちゃんの小説の挿絵を今さらアップさせていただきました（笑）<BR>ホンマなまけててスミマセン。<BR>また時間が出来たら投稿したいです。失礼いたしました。<P><BR>夏木りん<P>ＰＣＡ２１・チーム５ＧＯＧＯ！のメンバーでキュアルージュに変身する。<BR>基本的にまじめでしっかり者で、家庭的なこともなんでもそつなくこなし、成績も悪くないとみんながこぞって頼るりんちゃん。<BR>しばしばのぞみちゃんのお母さんですか？的な立ち位置で、ずぼらな先輩の（主になぎさ先輩）のツッコミに回ることも多々ある。<BR>先生たちからも信頼されており、叱られることなんか珍しい彼女だが、一度思い込んでプッツンくると、頑固で意地っ張りな面もあるので、素直になれなくて先生達からお尻ぺんぺんもらうこともたまぁ～にある。 </Font>
+			<HR><Font face="Verdana,Osaka" color="#0099CC" size="2">
+			<NOBR><B>NAME</B> : REDCHEEKS <wbr>[<A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/patio/patio.html" target="_blank">HOME</A>] <wbr> &nbsp; Safari 537.36 / WinNT<BR>
+			<B>TIME</B> : 2020/05/27 (Wed) 23:22  </Font><BR></NOBR>
+			<Font color="#000066" size="3"> うぁ～このお尻の盛り上がり、日本人には珍しい。<BR>組んだ足の上に乗せられたのではたまりませんな、グイッと持ち上げられ、強制お尻突き出しの姿勢。<BR>そして真っ赤になるまで思う存分叩かれてます、ヤワラカなお尻。<BR>袖を噛んで泣いているところがほんまカワイイ(^^) 
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4858">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4856 Spank butt due to losing book from library. </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/23 (Sun) 16:32  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4856">★Continue</A></font><BR><IMG SRC="./data/IMG_006515.jpg" ALIGN="LEFT" BORDER=0 width=520 height=377 ALT="IMG_006515.jpg ( 141 KB )" TITLE="IMG_006515.jpg ( 141 KB )"> <Font color="#000066" size="3"> The female teacher deserve to take the punishment<wbr>. </Font>
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4856">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4855 Whip her butt </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/22 (Sat) 13:28  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4855">★Continue</A></font><BR><IMG SRC="./data/IMG_006514.jpg" ALIGN="LEFT" BORDER=0 width=588 height=409 ALT="IMG_006514.jpg ( 140 KB )" TITLE="IMG_006514.jpg ( 140 KB )"> <Font color="#000066" size="3"> Any other suggestion<wbr>? I just use scanner to scan my raw picture and use photoshop to edit my picture. </Font>
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4855">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4854 A good spanking </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/21 (Fri) 09:37  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.117 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4854">★Continue</A></font><BR><IMG SRC="./data/IMG_006513.jpg" ALIGN="LEFT" BORDER=0 width=450 height=403 ALT="IMG_006513.jpg ( 149 KB )" TITLE="IMG_006513.jpg ( 149 KB )"> <Font color="#000066" size="3"> Maybe it is boring to share the similar topic. </Font>
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4854">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4853 Heavy spank butt to red skirt female teacher </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/17 (Mon) 13:26  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4853">★Continue</A></font><BR><IMG SRC="./data/IMG_006512.jpg" ALIGN="LEFT" BORDER=0 width=512 height=372 ALT="IMG_006512.jpg ( 147 KB )" TITLE="IMG_006512.jpg ( 147 KB )"> <Font color="#000066" size="3"> She deserve it. Spank a bad female teacher butt. </Font>
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4853">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4852 Spank 2 females teacher butt </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/17 (Mon) 12:12  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4852">★Continue</A></font><BR><IMG SRC="./data/IMG_006511.jpg" ALIGN="LEFT" BORDER=0 width=500 height=363 ALT="IMG_006511.jpg ( 139 KB )" TITLE="IMG_006511.jpg ( 139 KB )"> <Font color="#000066" size="3"> Spank Two female teachers because they disobey the school rule </Font>
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4852">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4850 Spank the glass female teacher's butt </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/13 (Thu) 19:41  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.99 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4850">★Continue</A></font><BR><IMG SRC="./data/IMG_006509.jpg" ALIGN="LEFT" BORDER=0 width=512 height=411 ALT="IMG_006509.jpg ( 143 KB )" TITLE="IMG_006509.jpg ( 143 KB )"> <Font color="#000066" size="3"> The glass female teacher is spanked by her student because she violate the exam rule. </Font>
+			<HR><Font face="Verdana,Osaka" color="#0099CC" size="2">
+			<NOBR><B>NAME</B> : REDCHEEKS <wbr>[<A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/patio/patio.html" target="_blank">HOME</A>] <wbr> &nbsp; Safari 537.36 / WinNT<BR>
+			<B>TIME</B> : 2020/02/13 (Thu) 23:48  </Font><BR></NOBR>
+			<Font color="#000066" size="3"> ケツの割れ目ひん剥くの最高！<BR>Stripping crack ass is very good! 
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4850">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4849 A pink teacher hardly spanked by student </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/13 (Thu) 02:23  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36  </Font><BR>
+	<Font size=1></font><BR><IMG SRC="./data/IMG_006508.png" ALIGN="LEFT" BORDER=0 width=400 height=350 ALT="IMG_006508.png ( 95 KB )" TITLE="IMG_006508.png ( 95 KB )"> <Font color="#000066" size="3"> A pink teacher is spanked by her student because she lost her naked picture </Font>
+			<HR><Font face="Verdana,Osaka" color="#0099CC" size="2">
+			<NOBR><B>NAME</B> : REDCHEEKS <wbr>[<A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/patio/patio.html" target="_blank">HOME</A>] <wbr> &nbsp; Safari 537.36 / WinNT<BR>
+			<B>TIME</B> : 2020/02/13 (Thu) 07:12  </Font><BR></NOBR>
+			<Font color="#000066" size="3"> 左右の尻っぺたを一度に叩くのはイイネ。<BR>It's fine that each rump get spanked at one time. 
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4849">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4848 Serious attack to Miss Lam buttocks </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/12 (Wed) 23:45  <BR><B>BROWSER</B> : Mozilla/5.0 (Linux; Android 9; SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Mobile Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4848">★Continue</A></font><BR><IMG SRC="./data/IMG_006507.jpg" ALIGN="LEFT" BORDER=0 width=480 height=348 ALT="IMG_006507.jpg ( 140 KB )" TITLE="IMG_006507.jpg ( 140 KB )"> <Font color="#000066" size="3"> A Female was punished because she lost the class Test papers. </Font>
+			<HR><Font face="Verdana,Osaka" color="#0099CC" size="2">
+			<NOBR><B>NAME</B> : REDCHEEKS <wbr>[<A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/patio/patio.html" target="_blank">HOME</A>] <wbr> &nbsp; Safari 537.36 / WinNT<BR>
+			<B>TIME</B> : 2020/02/13 (Thu) 00:23  </Font><BR></NOBR>
+			<Font color="#000066" size="3"> 子供用の短い鞭はイイネ、私はそれをマレーシアの市場で見たことある。<BR>A short cane for children is very good, I saw it a shopping center in Malaysia. 
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4848">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	<TABLE width=100%><TR><TD>
+	<HR>■ <Font color="#333399" size="3"><b> No.4847 Another female teacher spanked by student </b></Font> <Font face="Verdana,Osaka" color="#337399" size="2"><B>NAME</B> ： hongkongspanker  / <B>TIME</B> : 2020/02/10 (Mon) 14:30  <BR><B>BROWSER</B> : Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36  </Font><BR>
+	<Font size=1><A HREF="./bbsnote.cgi?fc=continue&No=4847">★Continue</A></font><BR><IMG SRC="./data/IMG_006506.jpg" ALIGN="LEFT" BORDER=0 width=280 height=413 ALT="IMG_006506.jpg ( 138 KB )" TITLE="IMG_006506.jpg ( 138 KB )"> <Font color="#000066" size="3"> good handspanki<wbr>ng to teacher again </Font>
+			<HR><Font face="Verdana,Osaka" color="#0099CC" size="2">
+			<NOBR><B>NAME</B> : REDCHEEKS <wbr>[<A HREF="http://www2s.biglobe.ne.jp/~nod/nod2/patio/patio.html" target="_blank">HOME</A>] <wbr> &nbsp; Safari 537.36 / WinNT<BR>
+			<B>TIME</B> : 2020/02/10 (Mon) 23:28  </Font><BR></NOBR>
+			<Font color="#000066" size="3"> 大股開きが良いですね！<BR>Open leg is very good! 
+	</TD></TR>
+	<TR><TD>
+		<DIV ALIGN="RIGHT"><form method="post" action="./bbsnote.cgi">
+			<Font size="2"><INPUT TYPE="HIDDEN" name="fc" value="repost"><INPUT TYPE="HIDDEN" name="l" value="4847">
+			 <INPUT class=button TYPE="submit" value="レス"></FONT><A HREF="#top"><FONT size="1">&nbsp;▲</FONT></A></DIV>
+	</TD></FORM></TR></TABLE>
+	</CENTER>
+	
+
+	<A name="pages"><HR></A><DIV ALIGN="RIGHT"><SMALL>
+	
+	|<A HREF="./bbsnote.cgi?fc=page&sort=0&page=2"> <B>BACK</B> &gt;&gt;</A><A NAME="pages"> PAGE </A>[<B><Font Style="TEXT-DECORATION:UNDERLINE">1</Font></B>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=2">2</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=3">3</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=4">4</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=5">5</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=6">6</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=7">7</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=8">8</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=9">9</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=10">10</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=11">11</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=12">12</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=13">13</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=14">14</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=15">15</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=16">16</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=17">17</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=18">18</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=19">19</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=20">20</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=21">21</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=22">22</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=23">23</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=24">24</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=25">25</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=26">26</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=27">27</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=28">28</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=29">29</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=30">30</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=31">31</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=32">32</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=33">33</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=34">34</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=35">35</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=36">36</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=37">37</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=38">38</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=39">39</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=40">40</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=41">41</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=42">42</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=43">43</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=44">44</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=45">45</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=46">46</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=47">47</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=48">48</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=49">49</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=50">50</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=51">51</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=52">52</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=53">53</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=54">54</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=55">55</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=56">56</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=57">57</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=58">58</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=59">59</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=60">60</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=61">61</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=62">62</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=63">63</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=64">64</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=65">65</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=66">66</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=67">67</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=68">68</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=69">69</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=70">70</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=71">71</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=72">72</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=73">73</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=74">74</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=75">75</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=76">76</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=77">77</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=78">78</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=79">79</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=80">80</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=81">81</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=82">82</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=83">83</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=84">84</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=85">85</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=86">86</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=87">87</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=88">88</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=89">89</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=90">90</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=91">91</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=92">92</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=93">93</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=94">94</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=95">95</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=96">96</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=97">97</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=98">98</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=99">99</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=100">100</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=101">101</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=102">102</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=103">103</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=104">104</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=105">105</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=106">106</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=107">107</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=108">108</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=109">109</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=110">110</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=111">111</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=112">112</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=113">113</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=114">114</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=115">115</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=116">116</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=117">117</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=118">118</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=119">119</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=120">120</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=121">121</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=122">122</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=123">123</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=124">124</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=125">125</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=126">126</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=127">127</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=128">128</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=129">129</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=130">130</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=131">131</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=132">132</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=133">133</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=134">134</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=135">135</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=136">136</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=137">137</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=138">138</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=139">139</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=140">140</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=141">141</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=142">142</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=143">143</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=144">144</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=145">145</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=146">146</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=147">147</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=148">148</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=149">149</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=150">150</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=151">151</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=152">152</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=153">153</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=154">154</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=155">155</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=156">156</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=157">157</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=158">158</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=159">159</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=160">160</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=161">161</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=162">162</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=163">163</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=164">164</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=165">165</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=166">166</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=167">167</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=168">168</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=169">169</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=170">170</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=171">171</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=172">172</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=173">173</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=174">174</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=175">175</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=176">176</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=177">177</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=178">178</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=179">179</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=180">180</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=181">181</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=182">182</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=183">183</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=184">184</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=185">185</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=186">186</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=187">187</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=188">188</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=189">189</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=190">190</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=191">191</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=192">192</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=193">193</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=194">194</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=195">195</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=196">196</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=197">197</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=198">198</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=199">199</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=200">200</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=201">201</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=202">202</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=203">203</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=204">204</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=205">205</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=206">206</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=207">207</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=208">208</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=209">209</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=210">210</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=211">211</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=212">212</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=213">213</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=214">214</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=215">215</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=216">216</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=217">217</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=218">218</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=219">219</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=220">220</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=221">221</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=222">222</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=223">223</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=224">224</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=225">225</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=226">226</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=227">227</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=228">228</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=229">229</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=230">230</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=231">231</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=232">232</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=233">233</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=234">234</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=235">235</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=236">236</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=237">237</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=238">238</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=239">239</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=240">240</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=241">241</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=242">242</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=243">243</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=244">244</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=245">245</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=246">246</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=247">247</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=248">248</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=249">249</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=250">250</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=251">251</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=252">252</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=253">253</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=254">254</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=255">255</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=256">256</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=257">257</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=258">258</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=259">259</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=260">260</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=261">261</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=262">262</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=263">263</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=264">264</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=265">265</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=266">266</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=267">267</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=268">268</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=269">269</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=270">270</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=271">271</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=272">272</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=273">273</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=274">274</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=275">275</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=276">276</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=277">277</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=278">278</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=279">279</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=280">280</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=281">281</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=282">282</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=283">283</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=284">284</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=285">285</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=286">286</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=287">287</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=288">288</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=289">289</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=290">290</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=291">291</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=292">292</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=293">293</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=294">294</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=295">295</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=296">296</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=297">297</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=298">298</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=299">299</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=300">300</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=301">301</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=302">302</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=303">303</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=304">304</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=305">305</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=306">306</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=307">307</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=308">308</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=309">309</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=310">310</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=311">311</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=312">312</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=313">313</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=314">314</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=315">315</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=316">316</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=317">317</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=318">318</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=319">319</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=320">320</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=321">321</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=322">322</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=323">323</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=324">324</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=325">325</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=326">326</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=327">327</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=328">328</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=329">329</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=330">330</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=331">331</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=332">332</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=333">333</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=334">334</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=335">335</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=336">336</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=337">337</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=338">338</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=339">339</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=340">340</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=341">341</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=342">342</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=343">343</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=344">344</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=345">345</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=346">346</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=347">347</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=348">348</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=349">349</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=350">350</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=351">351</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=352">352</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=353">353</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=354">354</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=355">355</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=356">356</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=357">357</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=358">358</A>][<A HREF="./bbsnote.cgi?fc=page&sort=0&page=359">359</A>]
+	<A TITLE="WonderCatStudio" HREF="http://wondercatstudio.com/" TARGET="_blank">BBS NOTE 7.31</A> <SPAN title="Basic Ver 4.0706"><b>Basic</b></SPAN>&nbsp;<BR>Module <SPAN TITLE="log search ver.1.00 (C)ＳＩＮ"><B>search</B></SPAN>&nbsp;
+<SPAN TITLE="特定単語利用禁止 ver.0.10 (C)ＳＩＮ"><B>CheckWords</B></SPAN>&nbsp;
+<BR>Client Program <A HREF="http://www.gt.sakura.ne.jp/~ocosama/" TARGET="_blank">(C)しぃちゃん(shi-cyan)</A> <BR>Client Program <A HREF="http://www.geocities.co.jp/SiliconValley-SanJose/8609/" TARGET="_blank">(C) にな(nina) </A>
+	</SMALL></DIV>
+	
+<P>
+<HR>
+<table width="100%">
+<td align="LEFT">
+<!--B-2 shinobictrl1-->
+<!--B-2 shinobictrl2--->
+</TD>
+</TABLE>
+
+</BODY></HTML>

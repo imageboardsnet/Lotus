@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://d1syf484ayktpa.cloudfront.net/static/forum/style.500e85c009e1.css">
+<script src="https://d1syf484ayktpa.cloudfront.net/static/forum/jquery-3.5.1.23c7c5d2d131.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://d1syf484ayktpa.cloudfront.net/static/forum/theme.9892df53a8e3.js"></script>
+
+    <title>Page not found - Iro</title>
+</head>
+<body>
+    <input id="darkMode" class="script" style="float: right" type="submit" value="Light mode">
+
+
+<h1>
+    <a class="postReference" href="/">Iro</a>
+    
+</h1>
+
+<hr>
+    <h2>Error 404 (Page not found)</h2>
+</body>
+</html>

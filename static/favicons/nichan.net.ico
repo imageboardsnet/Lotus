@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        
+
+	<meta property="og:site_name" content="Нічан" />
+	<meta property="og:description" content="Такої сторінки не існує!" />
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="article" />
+	
+	<meta name="description" content="Такої сторінки не існує!" />
+	
+	<meta name="twitter:card" value="summary" />
+	<meta name="twitter:site" value="@netnichan" />
+	<meta name="twitter:title" content="" />
+	
+	<meta name="twitter:image" content="https://nichan.net/images/greetings-notext.png" />
+	<meta name="og:image" content="https://nichan.net/images/greetings-notext.png" />
+	
+        <title>Нічан - Український Іміджборд</title>
+        <link rel="shortcut icon" href="https://nichan.net/images/favicon.ico" />
+        <link rel="stylesheet" media="screen" href="/stylesheets/style.css"/>
+        <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" media="screen" href="/stylesheets/style.css">
+        <link rel="shortcut icon" href="https://nichan.net/images/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" id="stylesheet" href="/stylesheets/nigrachan.css">
+        <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/flags/flags.css">
+        <script type="text/javascript">var configRoot="/";var inMod = false;var modRoot="/"+(inMod ? "mod.php?/" : "");</script>
+        <script src="https://nichan.net/js/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#includedContent").load("/counter.php");
+                });
+        </script>
+        <script type="text/javascript" src="/main.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/doll-new.js"></script>
+        <style>
+            #vcontainer {
+                display: table;
+                height: 100%;
+                width: 100%;
+                }
+            #hcontainer {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                }
+            #content {
+                display: inline-block;
+                background: #333333;
+                color: #CCCCCC;
+                border: #555555 1px solid;
+                text-align: left;
+                padding-top: 5px;
+                padding-right: 5px;
+                padding-bottom: 5px;
+                padding-left: 5px;
+                }
+            A {text-decoration: none;}
+        </style>
+        <b>
+        <div class="pages topleft">
+            [
+                <a href="https://nichan.net" title="Нічан.нет"><i class="fa">&#xf015;</i></a>
+            ]
+    <div class="mobileHide">
+    [
+        <a href="/a/" title="Аніме та Манґа">a</a> / 
+        <a href="/b/" title="Балачки">b</a> / 
+        <a href="/s/" title="Sexy">s</a> / 
+        <a href="/pol/" title="Політика">pol</a> / 
+        <a href="/ukr/" title="Українізація та Переклади">ukr</a> / 
+        <a href="/v/" title="Відеоігри">v</a> / 
+        <a href="/n/" title="Розмови про Нічан">n</a> / 
+        <a href="/int/" title="International">int</a>
+    </div>
+	<select class="mobileShow" onChange="window.location.href=this.value">
+			<option value="">дошки</option>
+			<option value="/b/">/b/</option>
+			<option value="/int/">/int/</option>
+			<option value="/pol/">/pol/</option>
+			<option value="/a/">/a/</option>
+			<option value="/ukr/">/ukr/</option>
+			<option value="/v/">/v/</option>
+			<option value="/s/">/s/</option>
+			<option value="/n/">/n/</option>
+	</select>
+    ]
+    [
+        <a href="/demotivator/" title="Створити демотиватор">dm</a> /
+                <a href="http://pixel.nichan.net" title="Nichan Pixel" target="blank">px</a> /
+        <a href="/rules.php" title="Питання й Відповіді">FAQ</a>
+    ]
+        </div>
+        <div class="pages topright">
+        [
+        <a href="https://t.me/ukrainian_nichan" target="blank"><i class="fa">&#xf1d8;</i></a> /
+        <a href="https://twitter.com/NetNichan" target="blank"><i class="fa">&#xf099;</i></a> /
+        <a href="http://ukrmemoria.com" title="Файна Меморія" target="blank">ФМ</a>
+        ]
+<!--            [
+                <a href="https://discord.gg/wbaQBZv" title="Discord-сервер" target="blank">Discord</a>
+            ]   -->
+        </div>
+    </b>
+    <br />
+    </head>
+    <body>
+        <center>
+            <br /><br />
+            <img src="https://nichan.net/images/greetings-notext.png">
+        </center>
+        <header>
+            <div class="subtitle"></div>
+        </header>
+        <div class="greetings">
+            <h1>Такої сторінки не існує, сталкере!</h1>
+        </div>
+    </body>
+</html>

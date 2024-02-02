@@ -1,3 +1,25 @@
 <div id="boards">
     <div class="ui fluid input icon"> <input class="search" type="text"
-            placeholder="Search by using a tag (eg: tinyboard) " /> <i class="search icon"></i></div>
+            placeholder="Search by using a tag (eg: tinyboard) " /> <i class="inverted circular search link icon""></i>
+            
+    </div>
+    <div class="search-button">
+    <div class="ui labeled input">
+        <div class="ui basic inverted label">Software</div>
+        <select class="ui selection dropdown fuzzy-search" id="software">
+            <option value="">All</option>
+            {% for software in softwares %}
+            <option value="{{ software }}">{{ software }}</option>
+            {% endfor %}
+        </select>
+      </div>
+        <div class="ui labeled input">
+            <div class="ui basic inverted label">Language</div>
+            <select class="ui selection dropdown" id="language">
+                <option value="">All</option>
+                {% for language in languages %}
+                <option value="{{ language }}">{{ language }}</option>
+                {% endfor %}
+            </select>
+    </div>
+    </div>

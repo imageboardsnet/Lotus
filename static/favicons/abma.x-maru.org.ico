@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>abma images</title>
+<script type="text/javascript">
+var ROOT="/images";
+var TZ=0;
+</script>
+<script type="text/javascript" src="/images/js/ochiba.js"></script>
+<script type="text/javascript" src="/images/js/drag.js"></script>
+<script type="text/javascript" src="/images/js/switcher.js"></script>
+<script type="text/javascript" src="/images/js/slideshow.js"></script>
+<link rel="stylesheet" type="text/css" href="/images/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/images/css/abma.images.css" title="abma" />
+<link rel="alternate stylesheet" type="text/css" href="/images/css/ochiba.css" title="ochiba" />
+<link rel="stylesheet" type="text/css" href="/images/css/slideshow.css" />
+<link rel="alternate stylesheet" type="text/css" href="/images/css/classic.css" title="classic" />
+<link rel="alternate stylesheet" type="text/css" href="/images/css/futallaby.css" title="futallaby" />
+<!-- [if lt IE 7]><link rel="stylesheet" type="text/css" href="/images/css/iesux.css" /><[endif] -->
+
+</head>
+
+<body id="top">
+
+<div id="box">
+<div id="box2">
+
+<h1>Welcome</h1>
+
+<p>Browse around. <strong>Post</strong>.</p>
+
+<p>Tripcodes are kind of like passwords- they are used to identify you. You should pick one and stick to it - that way, everyone will know it's really you, and not an imposter, and you'll also be able to delete and modify posts.</p>
+
+<p style="padding-bottom:700px">It doesn't really have any docs written up yet, so clicky-clicky around. And don't use IE, because it sucks and doesn't work right. And that's not just here, that's just a general thing.</p>
+
+
+</div><!-- box2 -->
+<div id="footer"><a href="http://ochiba.x-maru.org/">&laquo; Powered By Ochiba &raquo;</a></div>
+</div><!-- box -->
+
+<div id="menu">
+<a style="margin-bottom:0.5em" href="/images/" title="About (H)" accesskey="H">Home</a>
+<a href="/images/anime" title="General Anime">Anime</a>
+<a href="/images/bento" title="Bento creativity">Bento</a>
+<a href="/images/chat" title="Discussions about the board and anything else">Chat</a>
+<a href="/images/cosplay" title="Cosplay">Cosplay</a>
+<a href="/images/desktop" title="Desktop screenshots">Desktops</a>
+<a href="/images/random" title="Stuff that doesn't fit into another category">Random</a>
+<a href="/images/wallpaper" title="Wallpapers">Wallpaper</a>
+
+<a style="margin-top:0.5em" href="#" onclick="all('collapse')" title="Collapse all replies">collapse</a>
+<a href="#" onclick="all('expand')" title="Expand all replies">expand</a>
+<a href="/images/search" onclick="return pop('/images/search','Search')" title="Search (S)" accesskey="S">Search</a>
+<a href="/images/stats" title="Site stats">Stats</a>
+<a href="/images/post" onclick="return pop('/images/post','Post')" title="Post a image (P)" accesskey="P">Post</a>
+<a href="/images/prefs" onclick="return pop('/images/prefs','Prefs')" title="Preferences (E)" accesskey="E">Prefs</a>
+<a href="#" onclick="javascript:slideshow()" title="Slideshow (V)" accesskey="V">Slideshow</a>
+
+<div style="padding:1em 0;margin:2em 7px 0 0; border-top:1px solid #999">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0124904836408998";
+google_ad_slot = "5588118646";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+</div>
+</body>
+</html>
+<!-- generated: 0.62 -->

@@ -2,7 +2,7 @@ body {
     margin: auto;
     width: 60%;
     /*background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%); */
-    background: #a4aed1;
+    background: #2f3447;
     background-attachment: fixed;
     height: auto;
     flex-direction: column;
@@ -79,6 +79,10 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.search-button {
+    margin-top: 8px;
 }
 
 

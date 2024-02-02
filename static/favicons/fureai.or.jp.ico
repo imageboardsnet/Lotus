@@ -1,0 +1,217 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
+<style type="text/css">
+<!--
+body,td,th { font-size:13px; font-family:"MS UI Gothic", "ＭＳ Ｐゴシック", Osaka }
+a:hover { color: #FF0000 }
+-->
+</style>
+<title>keijiban-3.Joyful Note</title>
+</head>
+<body bgcolor="#FEF5DA" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<font color="#BB0000" face="verdana,Times New Roman,Arial">835416</font><br>
+<div align="center">
+<img src="http://www.fureai.or.jp/~arima/crawl.gif" width="180" height="80" alt="keijiban-3.Joyful Note">
+<hr width="90%">
+[<a href="http://www.fureai.or.jp/~arima./index.html" target="_top">トップに戻る</a>]
+[<a href="./joyful.cgi?mode=album">アルバム</a>]
+[<a href="./joyful.cgi?mode=howto">留意事項</a>]
+[<a href="./joyful.cgi?mode=find">ワード検索</a>]
+[<a href="./joyful.cgi?mode=past">過去ログ</a>]
+[<a href="./admin.cgi">管理用</a>]
+<hr width="90%"></div>
+<blockquote>
+<form action="./regist.cgi" method="post" enctype="multipart/form-data">
+<input type="hidden" name="mode" value="regist">
+<table border="0" cellspacing="0">
+<tr>
+  <td nowrap><b>おなまえ</b></td>
+  <td><input type="text" name="name" size="28" value=""></td>
+</tr>
+<tr>
+  <td nowrap><b>Ｅメール</b></td>
+  <td><input type="text" name="email" size="28" value=""></td>
+</tr>
+<tr>
+  <td nowrap><b>タイトル</b></td>
+  <td nowrap>
+    <input type="text" name="sub" size="36" value="">
+<input type="submit" value="投稿する"><input type="reset" value="リセット">
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <b>コメント</b><br>
+    <textarea cols="56" rows="7" name="comment"></textarea>
+  </td>
+</tr>
+<tr>
+  <td nowrap><b>参照URL</b></td>
+  <td><input type="text" size="50" name="url" value="http://"></td>
+</tr>
+<tr><td><b>添付File</b></td>
+<td><input type="file" name="upfile" size="40">
+</td></tr>
+<tr><td nowrap><b>暗証キー</b></td><td><input type="password" name="pwd" size="8" maxlength="8" value="">
+(英数字で8文字以内)</td></tr>
+<tr><td nowrap><b>投稿キー</b></td><td><input type="text" name="regikey" size="6" style="ime-mode:inactive" value="">
+（投稿時 <img src="./registkey.cgi?fGUfPBzTbzk77kdzhqz%21K" align="absmiddle" alt="投稿キー"> を入力してください）</td></tr>
+<input type="hidden" name="str_crypt" value="fGUfPBzTbzk77kdzhqz%21K">
+<tr><td nowrap><b>文字色</b></td><td>
+<input type="radio" name="color" value="#800000" checked><font color="#800000">■</font>
+<input type="radio" name="color" value="#DF0000"><font color="#DF0000">■</font>
+<input type="radio" name="color" value="#008040"><font color="#008040">■</font>
+<input type="radio" name="color" value="#0000FF"><font color="#0000FF">■</font>
+<input type="radio" name="color" value="#C100C1"><font color="#C100C1">■</font>
+<input type="radio" name="color" value="#FF80C0"><font color="#FF80C0">■</font>
+<input type="radio" name="color" value="#FF8040"><font color="#FF8040">■</font>
+<input type="radio" name="color" value="#000080"><font color="#000080">■</font>
+<input type="radio" name="color" value="#808000"><font color="#808000">■</font>
+</td></tr></table></form>
+</blockquote>
+<div align="center">
+<form action="./joyful.cgi">
+<input type="hidden" name="page" value="0">
+<p><table width="90%" cellpadding="5" cellspacing="1" border="1">
+<tr><td bgcolor="#FFFFFF">
+<b style="color:#008000">庭の花、果実</b> 投稿者：<b>arima</b> 投稿日：2023/11/17(Fri) 22:16 <span style="color:#008000">No.2331</span> &nbsp;&nbsp;<input type="submit" name="res:2331" value="返信"><br>
+<div style="margin-left:22px; margin-top:6px"><span style="color:#800000">急に寒くなりました。<br>今、庭に咲いている花は、チェリーセイジ、ルリマツリモドキ、シチョウゲ、<br>あらたに、サザンカが咲き始めました。<br>果実では、柿、ミカン、ナンテン、センリョウ、マンリョウ、コムラサキ<br><br>ミカンは、昨年不作でしたが、肥料（堆肥や化成肥料）をたくさん施したら、今年は、一本に100個以上生りました。<br><br>柿は７個ほどと不作でした。皮をむいて軒先に吊るしました。<br>渋柿なので、毎年、干し柿をつくっています。</span></div>
+</td></tr></table></p>
+<p><table width="90%" cellpadding="5" cellspacing="1" border="1">
+<tr><td bgcolor="#FFFFFF">
+<b style="color:#008000">マスク</b> 投稿者：<b>arima</b> 投稿日：2023/03/03(Fri) 14:10 <span style="color:#008000">No.2304</span> &nbsp;&nbsp;<input type="submit" name="res:2304" value="返信"><br>
+<div style="margin-left:22px; margin-top:6px"><span style="color:#0000FF">コロナが終息に向かってきたような、或いは共存の状況になって来て、人通りのない路上では、マスクをはずして通行していましたが、<br>私も含め、皆さん、コロナで騒いでいたころよりも、マスクを付けている人たちが多くなりました。花粉症対策です。<br><br>　花粉症には、マスクの内側にガーゼを入れるとよいとの報道もありました。<br>　花粉の粒子はコロナの粒子より大きいと思うのですが・・・。<br><br>マスクのほか、とりあえず、目薬と飲み薬に頼っています。<br></span></div>
+</td></tr></table></p>
+<p><table width="90%" cellpadding="5" cellspacing="1" border="1">
+<tr><td bgcolor="#FFFFFF">
+<b style="color:#008000">ヒヨドリが・・・</b> 投稿者：<b>arima</b> 投稿日：2023/02/17(Fri) 13:04 <span style="color:#008000">No.2301</span> &nbsp;&nbsp;<input type="submit" name="res:2301" value="返信"><br>
+<div style="margin-left:22px; margin-top:6px"><span style="color:#0000FF">ヒヨドリがよく庭に現れるようになりました。<br><br>枝にとまって、すぐ目的の場所に移動します。<br>実のなっているマンリョウに止まり、実をついばんで飛び立ちます。<br><br>この時期になると、他に美味しい食べ物がなくなって、あまりおいしくはないマンリョウの実を食べざるを得なくなったのでしょう。<br><br><a href="http://flower2000.pupu.jp/manryo" target="_blank">http://flower2000.pupu.jp/manryo</a><br></span></div>
+</td></tr></table></p>
+<p><table width="90%" cellpadding="5" cellspacing="1" border="1">
+<tr><td bgcolor="#FFFFFF">
+<b style="color:#008000">ウグイス</b> 投稿者：<b>arima</b> 投稿日：2023/02/13(Mon) 10:07 <span style="color:#008000">No.2299</span> &nbsp;&nbsp;<input type="submit" name="res:2299" value="返信"><br>
+<div style="margin-left:22px; margin-top:6px"><span style="color:#0000FF">時々、ウグイスが庭の植木の枝にとまります。<br><br>窓ガラス越しに写真を撮ろうと構えると、飛んで行ってしまします。<br><br>気配を感じるのでしょうね。<br><br>私には備わっていない才能です。<br></span></div>
+</td></tr></table></p>
+<p><table width="90%" cellpadding="5" cellspacing="1" border="1">
+<tr><td bgcolor="#FFFFFF">
+<b style="color:#008000">初雪</b> 投稿者：<b>arima</b> 投稿日：2023/02/10(Fri) 14:55 <span style="color:#008000">No.2298</span> &nbsp;&nbsp;<input type="submit" name="res:2298" value="返信"><br>
+<div style="margin-left:22px; margin-top:6px"><span style="color:#0000FF">立春を過ぎたので、暖かくなるという概念を打ち砕かれ、大雪の<br>予報でした。<br><br>予報程ではなかったですが雪は積もりました。<br><br>でも、プールまでは徒歩で行こうと覚悟を決めています。</span></div>
+</td></tr></table></p>
+<p><table width="90%"><tr><td valign="top">
+<input type="submit" name="page:5" value="次の5件">
+<b>[1]</b>
+[<a href="./joyful.cgi?page:5=v">2</a>]
+[<a href="./joyful.cgi?page:10=v">3</a>]
+[<a href="./joyful.cgi?page:15=v">4</a>]
+[<a href="./joyful.cgi?page:20=v">5</a>]
+[<a href="./joyful.cgi?page:25=v">6</a>]
+[<a href="./joyful.cgi?page:30=v">7</a>]
+[<a href="./joyful.cgi?page:35=v">8</a>]
+[<a href="./joyful.cgi?page:40=v">9</a>]
+[<a href="./joyful.cgi?page:45=v">10</a>]
+[<a href="./joyful.cgi?page:50=v">11</a>]
+[<a href="./joyful.cgi?page:55=v">12</a>]
+[<a href="./joyful.cgi?page:60=v">13</a>]
+[<a href="./joyful.cgi?page:65=v">14</a>]
+[<a href="./joyful.cgi?page:70=v">15</a>]
+[<a href="./joyful.cgi?page:75=v">16</a>]
+[<a href="./joyful.cgi?page:80=v">17</a>]
+[<a href="./joyful.cgi?page:85=v">18</a>]
+[<a href="./joyful.cgi?page:90=v">19</a>]
+[<a href="./joyful.cgi?page:95=v">20</a>]
+[<a href="./joyful.cgi?page:100=v">21</a>]
+[<a href="./joyful.cgi?page:105=v">22</a>]
+[<a href="./joyful.cgi?page:110=v">23</a>]
+[<a href="./joyful.cgi?page:115=v">24</a>]
+[<a href="./joyful.cgi?page:120=v">25</a>]
+[<a href="./joyful.cgi?page:125=v">26</a>]
+[<a href="./joyful.cgi?page:130=v">27</a>]
+[<a href="./joyful.cgi?page:135=v">28</a>]
+[<a href="./joyful.cgi?page:140=v">29</a>]
+[<a href="./joyful.cgi?page:145=v">30</a>]
+[<a href="./joyful.cgi?page:150=v">31</a>]
+[<a href="./joyful.cgi?page:155=v">32</a>]
+[<a href="./joyful.cgi?page:160=v">33</a>]
+[<a href="./joyful.cgi?page:165=v">34</a>]
+[<a href="./joyful.cgi?page:170=v">35</a>]
+[<a href="./joyful.cgi?page:175=v">36</a>]
+[<a href="./joyful.cgi?page:180=v">37</a>]
+[<a href="./joyful.cgi?page:185=v">38</a>]
+[<a href="./joyful.cgi?page:190=v">39</a>]
+[<a href="./joyful.cgi?page:195=v">40</a>]
+[<a href="./joyful.cgi?page:200=v">41</a>]
+[<a href="./joyful.cgi?page:205=v">42</a>]
+[<a href="./joyful.cgi?page:210=v">43</a>]
+[<a href="./joyful.cgi?page:215=v">44</a>]
+[<a href="./joyful.cgi?page:220=v">45</a>]
+[<a href="./joyful.cgi?page:225=v">46</a>]
+[<a href="./joyful.cgi?page:230=v">47</a>]
+[<a href="./joyful.cgi?page:235=v">48</a>]
+[<a href="./joyful.cgi?page:240=v">49</a>]
+[<a href="./joyful.cgi?page:245=v">50</a>]
+[<a href="./joyful.cgi?page:250=v">51</a>]
+[<a href="./joyful.cgi?page:255=v">52</a>]
+[<a href="./joyful.cgi?page:260=v">53</a>]
+[<a href="./joyful.cgi?page:265=v">54</a>]
+[<a href="./joyful.cgi?page:270=v">55</a>]
+[<a href="./joyful.cgi?page:275=v">56</a>]
+[<a href="./joyful.cgi?page:280=v">57</a>]
+[<a href="./joyful.cgi?page:285=v">58</a>]
+[<a href="./joyful.cgi?page:290=v">59</a>]
+[<a href="./joyful.cgi?page:295=v">60</a>]
+[<a href="./joyful.cgi?page:300=v">61</a>]
+[<a href="./joyful.cgi?page:305=v">62</a>]
+[<a href="./joyful.cgi?page:310=v">63</a>]
+[<a href="./joyful.cgi?page:315=v">64</a>]
+[<a href="./joyful.cgi?page:320=v">65</a>]
+[<a href="./joyful.cgi?page:325=v">66</a>]
+[<a href="./joyful.cgi?page:330=v">67</a>]
+[<a href="./joyful.cgi?page:335=v">68</a>]
+[<a href="./joyful.cgi?page:340=v">69</a>]
+[<a href="./joyful.cgi?page:345=v">70</a>]
+[<a href="./joyful.cgi?page:350=v">71</a>]
+[<a href="./joyful.cgi?page:355=v">72</a>]
+[<a href="./joyful.cgi?page:360=v">73</a>]
+[<a href="./joyful.cgi?page:365=v">74</a>]
+[<a href="./joyful.cgi?page:370=v">75</a>]
+[<a href="./joyful.cgi?page:375=v">76</a>]
+[<a href="./joyful.cgi?page:380=v">77</a>]
+[<a href="./joyful.cgi?page:385=v">78</a>]
+[<a href="./joyful.cgi?page:390=v">79</a>]
+[<a href="./joyful.cgi?page:395=v">80</a>]
+[<a href="./joyful.cgi?page:400=v">81</a>]
+[<a href="./joyful.cgi?page:405=v">82</a>]
+[<a href="./joyful.cgi?page:410=v">83</a>]
+[<a href="./joyful.cgi?page:415=v">84</a>]
+[<a href="./joyful.cgi?page:420=v">85</a>]
+[<a href="./joyful.cgi?page:425=v">86</a>]
+[<a href="./joyful.cgi?page:430=v">87</a>]
+[<a href="./joyful.cgi?page:435=v">88</a>]
+[<a href="./joyful.cgi?page:440=v">89</a>]
+[<a href="./joyful.cgi?page:445=v">90</a>]
+[<a href="./joyful.cgi?page:450=v">91</a>]
+[<a href="./joyful.cgi?page:455=v">92</a>]
+[<a href="./joyful.cgi?page:460=v">93</a>]
+[<a href="./joyful.cgi?page:465=v">94</a>]
+[<a href="./joyful.cgi?page:470=v">95</a>]
+[<a href="./joyful.cgi?page:475=v">96</a>]
+</td></tr></table></p>
+</form>
+<form action="./regist.cgi" method="post">
+<input type="hidden" name="page" value="0">
+処理 <select name="mode">
+<option value="user_edit">修正
+<option value="user_dele">削除
+</select>
+記事No <input type="text" name="no" size="3" style="ime-mode:inactive">
+暗証キー <input type="password" name="pwd" size="4" maxlength="8">
+<input type="submit" value="送信"></form>
+<!-- 著作権表示 削除不可 (JoyfulNote v2.73) -->
+<!-- 下部 -->
+<p style="font-size:10px;font-family:Verdana,Helvetica,Arial">
+- <a href="http://www.kent-web.com/" target="_top">Joyful Note</a> -
+</p>
+</div>
+</body>
+</html>

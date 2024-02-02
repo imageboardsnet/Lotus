@@ -1,0 +1,292 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
+<META HTTP-EQUIV="Content-Script-Type" content="text/javascript">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="Mon, 1 Jan 1990 01:01:01 GMT">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<STYLE type="text/css">
+<!--
+body,td,th { font-size:13px; font-family:"MS UI Gothic", "ＭＳ Ｐゴシック", Osaka }
+a:hover { color: #FF0000 }
+-->
+</STYLE>
+<script type="text/javascript">
+<!-- //
+function address(){
+mail=address.arguments[1];
+document.write(mail.link("mailto:" + address.arguments[0] + "&#64;" + address.arguments[2]));
+}
+function paddress(){
+user_name=paddress.arguments[1] ;
+document.write(user_name.link("mailto:" + paddress.arguments[0] + "&#64;" + paddress.arguments[2]));
+}
+function fcheck(){
+document.write(fcheck.arguments[1] + fcheck.arguments[2] + fcheck.arguments[0] + fcheck.arguments[3]);
+}
+// -->
+</script>
+<title>レースシーンBBS</title></head>
+<body bgcolor="#FEF5DA" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+<!--ここから-->
+
+
+<!--ここに掲示板最上部に侮ｦする内容を記述します-->
+
+
+<!--ここまで-->
+<BR>
+<font color="#BB0000" face="verdana,Times New Roman,Arial">837876</font><br>
+<div align='center'>
+<b style="font-size:26px;color:#804040;">レースシーンBBS</b>
+<hr width="90%">
+[<a href="../index.html" target="_top">トップに戻る</a>]
+[<a href="./joyful.cgi?list=new">新着順表示</a>]
+[<a href="./joyful.cgi?mode=howto">留意事項</a>]
+[<a href="./joyful.cgi?mode=find">ワード検索</a>]
+[<a href="./joyful.cgi?mode=past">過去ログ</a>]
+[<a href="./joyful.cgi?mode=old">旧過去ログ</a>]
+[<a href="./joyful.cgi?mode=admin">管理用</a>]
+<hr width="90%"></div>
+<blockquote>
+<form action="./joyful.cgi" method="POST" enctype="multipart/form-data">
+<input type=hidden name=JOYFUL_NOTE value=CJCICBLM>
+<!-- //
+<input type=hidden name=mode value="write">
+// -->
+<input type=hidden name=refmode value="">
+<table border=0 cellspacing=0>
+<tr>
+  <td nowrap><A NAME="FORM"><b>おなまえ</b></a></td>
+  <td><input type=text name=comment size=28 value=""></td>
+</tr>
+<tr>
+  <td nowrap><b>Ｅメール</b></td><td>
+   <input type=hidden name=mail size=28 value=".zf.2GrJ05Y">
+   <input type=text name=url size=28 value="">
+<select name=smail>
+<option value='0' selected>公開または未記入<option value='1' >非公開</select>
+</td>
+</tr>
+<tr>
+  <td nowrap><b>タイトル</b></td>
+  <td nowrap>
+<!-- //
+    <input type=text name=subject size=36 value="">
+// -->
+    <input type=hidden name=title size=36 value="">
+    <input type=hidden name=theme size=36 value="">
+    <input type=text name=sub size=45 value="">
+  </td>
+</tr>
+<tr>
+  <td colspan=2>
+    <b>コメント
+</b><br>
+    <textarea cols=56 rows=7 name=name wrap="soft"></textarea>
+  </td>
+</tr>
+<tr>
+  <td colspan=2>
+  <b>コメント内には下記と同じURLを書き込まないで下さい</b>
+  <input type=hidden name=formcheck value="1130990431"></td>
+</tr>
+<tr>
+  <td nowrap><b>ＵＲＬ</b></td>
+  <td><input type=text size=50 name=email value=""></td>
+</tr>
+<!--//
+<tr>
+  <td><b>URL</b></td>
+  <td><input type=text size=50 name=url2 value=""></td>
+</tr>
+//-->
+<tr><td><b>添付File</b></td>
+<td><input type=file name=upfile size=40>&nbsp;(100kBまで)</td></tr>
+<tr><td nowrap><b>暗証キー</b></td><td><input type=password name=pwd size=8 maxlength=8 value=""> (英数字で8文字以内)</td></tr>
+<tr><td nowrap><b>文字色</b></td><td>
+<input type=radio name=color value="#800000" checked><font color="#800000">■</font>
+<input type=radio name=color value="#DF0000"><font color="#DF0000">■</font>
+<input type=radio name=color value="#008040"><font color="#008040">■</font>
+<input type=radio name=color value="#0000FF"><font color="#0000FF">■</font>
+<input type=radio name=color value="#C100C1"><font color="#C100C1">■</font>
+<input type=radio name=color value="#FF80C0"><font color="#FF80C0">■</font>
+<input type=radio name=color value="#FF8040"><font color="#FF8040">■</font>
+<input type=radio name=color value="#000080"><font color="#000080">■</font>
+</td></tr>
+<tr><td></td><td>
+    <input type=hidden name=mode value="cancel">
+<input type=submit value='投稿する'><input type=reset value='リセット'></td></tr></table></form>
+</blockquote>
+<center><br>
+<TABLE BORDER=0 WIDTH='90%' BGCOLOR="#FFFFFF" CELLSPACING=0 CELLPADDING=2><TR><TD>
+<table border=0 cellpadding=0 width=100% bgcolor="#FFB0A0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3910#3910"><font color="#880000"><b>レーシングコース、お休み</b></font></A>　<A NAME="3910">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3910">
+<input type=hidden name=refnum value="3910">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td valign=top>
+<p><a href="./img/3910.jpg" target='_blank'><img src="./img/3910.jpg" border=0 align=left hspace=18 width=240 height=134></a>
+<font color="#C100C1">皆さん、こんにちは。<br><br>小雪がちらほら、寒いです。<br><br><br>毎年、この時期は2週間ほどレーシングコースは施設整備の為に休業されています。<br><br>普段、当たり前に聞こえてくるエンジン音が無いのはさみしいですね。<br><br>レーシングコースの音をBJMに日々の仕事をできることが、如何に幸せな事かと思います。<br><br>そんなレーシングコースもいろんな人たち、スタッフさんによって整備管理されているのですね。<br><br><br>再開を心待ちにしています。<br><br><br>いつもありがとう！！&#128147;</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/25(Thu) 14:28:22 [ No.3910 ] 
+</span></div>
+<div style="margin-left:22px; margin-top:5px; margin-right:10px;">
+<table border=0 cellpadding=0 width=100% bgcolor="#FFE0D0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3911#3911"><font color="#880000"><b>Re: レーシングコース、お休み</b></font></A>　<A NAME="3911">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3910">
+<input type=hidden name=refnum value="3911">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td rowspan=2 width=40><br></td><td valign=top>
+<p><a href="./img/3911.jpg" target='_blank'><img src="./img/3911.jpg" border=0 align=left hspace=18 width=240 height=160></a>
+<font color="#008040">自分が生まれる4年ほど前の出来たスズカサーキット。<br><br>自然な地形を出来るだけ残して出来たコースレイアウト。<br><br>そんなコースだこそから、走れば走るほど魅力的に感じるのかなと思います。<br><br>恐らくこのまま走り続けても、その魅力は尽きる事はないです。<br><br><br>半世紀ロングラン目指しています。<br><br><br>レーシングコース、最高ですね！</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/25(Thu) 14:40:43 [ No.3911 ] 
+</span></div>
+</div>
+</TD></TR></TABLE><br><br>
+<TABLE BORDER=0 WIDTH='90%' BGCOLOR="#FFFFFF" CELLSPACING=0 CELLPADDING=2><TR><TD>
+<table border=0 cellpadding=0 width=100% bgcolor="#FFB0A0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3909#3909"><font color="#880000"><b>１，１７　29年目、</b></font></A>　<A NAME="3909">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3909">
+<input type=hidden name=refnum value="3909">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td valign=top>
+<p><a href="./img/3909.jpg" target='_blank'><img src="./img/3909.jpg" border=0 align=left hspace=18 width=240 height=180></a>
+<font color="#0000FF">皆さん、こんばんは。<br><br>今日も太陽がいっぱいですね。<br><br><br>1月17日は、29年前、神戸で地震がありました。<br><br>KDC的にも毎年振り返る大切な日です。<br><br>29年前のこの日からしばらくしてから、福井県の小浜から鈴鹿に出て来てこの仕事を始めました。<br><br>同じレース仲間がこの仕事を立ち上げたのですが、自分が引き継ぐことになりました。<br><br>同じ地元のレース仲間も3名ほど、鈴鹿に引っ越してレースを始めました。<br><br>2ヶ月ほどは近くの駐車場に車を置いて、朝7時ころから夜中の1時頃までひたすら仕事をしていました。<br><br>若いので苦しい事もなく、サーキットの隣で仕事をすることがとても充実していたように思います。<br><br>29年、仕事をしながらレースをして走り続けてきました。<br><br>レーシングコースとお仲間、お客さんのお陰です。<br><br><br><br>ありがとうございます。</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/17(Wed) 19:39:52 [ No.3909 ] 
+</span></div>
+</TD></TR></TABLE><br><br>
+<TABLE BORDER=0 WIDTH='90%' BGCOLOR="#FFFFFF" CELLSPACING=0 CELLPADDING=2><TR><TD>
+<table border=0 cellpadding=0 width=100% bgcolor="#FFB0A0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3908#3908"><font color="#880000"><b>ラブレター、ありがとう</b></font></A>　<A NAME="3908">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3908">
+<input type=hidden name=refnum value="3908">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td valign=top>
+<p><a href="./img/3908.jpg" target='_blank'><img src="./img/3908.jpg" border=0 align=left hspace=18 width=240 height=155></a>
+<font color="#FF80C0">皆さん、こんにちは。<br><br>冬らしい寒い日がしばらく続きますね。<br><br>春に向けて我慢の日々です。<br><br><br>長い事走り続けていると、思わぬ素晴らしいプレゼントを頂く時があります。<br><br><br>ダイヤモンドのようなキラキラしたファンレター！！<br><br><br>魂がそのまま字になっています。<br><br>ありがとう&#128147;</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/15(Mon) 14:44:53 [ No.3908 ] 
+</span></div>
+</TD></TR></TABLE><br><br>
+<TABLE BORDER=0 WIDTH='90%' BGCOLOR="#FFFFFF" CELLSPACING=0 CELLPADDING=2><TR><TD>
+<table border=0 cellpadding=0 width=100% bgcolor="#FFB0A0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3905#3905"><font color="#880000"><b>ROC、冬</b></font></A>　<A NAME="3905">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3905">
+<input type=hidden name=refnum value="3905">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td valign=top>
+<p><a href="./img/3905.jpg" target='_blank'><img src="./img/3905.jpg" border=0 align=left hspace=18 width=240 height=179></a>
+<font color="#008040">皆さん、こんばんは。<br><br>今日のROCは冬らしく、路面温度４度でした。<br><br>珍しく一日中、東コースだったので、全枠走りました。<br><br>全枠だとかなりシビアなラインまで、マシンを寄せる事が出来るようになります。<br><br>しかし、楽しくなければ全枠走りきれないと思うので、レーシングコースに感謝です。<br><br><br>ありがとう！！</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/11(Thu) 20:24:47 [ No.3905 ] 
+</span></div>
+<div style="margin-left:22px; margin-top:5px; margin-right:10px;">
+<table border=0 cellpadding=0 width=100% bgcolor="#FFE0D0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3906#3906"><font color="#880000"><b>Re: ROC、冬</b></font></A>　<A NAME="3906">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3905">
+<input type=hidden name=refnum value="3906">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td rowspan=2 width=40><br></td><td valign=top>
+<p><a href="./img/3906.jpg" target='_blank'><img src="./img/3906.jpg" border=0 align=left hspace=18 width=240 height=186></a>
+<font color="#C100C1">御年７３歳、西尾さん。<br><br>自分のように漢字で名前を揃えて下さいました。<br><br><br>人生の先輩ですが、ぼくも７３になったとき西尾さんのように走れていると楽しいですね。<br><br><br>頑張ります！</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/11(Thu) 20:29:21 [ No.3906 ] 
+</span></div>
+</div>
+</TD></TR></TABLE><br><br>
+<TABLE BORDER=0 WIDTH='90%' BGCOLOR="#FFFFFF" CELLSPACING=0 CELLPADDING=2><TR><TD>
+<table border=0 cellpadding=0 width=100% bgcolor="#FFB0A0"><tr>
+<form action="./joyful.cgi#FORM">
+<td valign=top nowrap><A HREF="./joyful.cgi?list=pickup&num=3902#3902"><font color="#880000"><b>2024,よろしくお願いします。</b></font></A>　<A NAME="3902">投稿者：</A><b>KDC</b> 
+ &nbsp;  &nbsp;<input type=hidden name=mode value=res>
+&nbsp;<input type=checkbox name=refmode value=on >引用する&nbsp;
+<input type=hidden name=no value="3902">
+<input type=hidden name=refnum value="3902">
+<input type=submit value='返信'></td></form>
+</tr></table><table border=0 cellpadding=5 width=100%>
+<tr>
+<td valign=top>
+<p><a href="./img/3902.jpg" target='_blank'><img src="./img/3902.jpg" border=0 align=left hspace=18 width=240 height=319></a>
+<font color="#0000FF">皆さん、こんばんは。<br><br>今年も変わらずよろしくお願いします。<br><br><br>本日、無事、今年初の走行が終わりました。<br><br>この時期のウエットのコースだったので、恐らく自分一人の貸し切りかなと思って行ってみたら、数名の常連さんがコースインゲートに既に待機されていました。<br><br><br>だんだんとコースも乾き始めていて、気持ちよく走り切る事ができました。<br><br><br>年々、コースインする事が自分にとって重要なライフワークになっています。<br><br><br>そのライフワークを支えて下さるレーシングコース、スタッフさん、コースさんに感謝です。<br><br><br>ありがとうございます。<br><br>今年も毎ラップ、全集中で走ります！！<br><br><br>スズカ、大好き&#128147;</font>
+</td></tr></table>
+<div align=right>
+<span style="color:">2024/01/04(Thu) 20:36:18 [ No.3902 ] 
+</span></div>
+</TD></TR></TABLE></center>
+<p><blockquote><table cellpadding=0 cellspacing=0><tr>
+<td><form action="./joyful.cgi" method="POST">
+<input type=hidden name=page value="5">
+<input type=submit value="次の5件"></td></form>
+<td width=10></td><td>
+<b>[1]</b>
+[<a href="./joyful.cgi?page=5">2</a>]
+[<a href="./joyful.cgi?page=10">3</a>]
+[<a href="./joyful.cgi?page=15">4</a>]
+[<a href="./joyful.cgi?page=20">5</a>]
+[<a href="./joyful.cgi?page=25">6</a>]
+</td>
+</tr></table></blockquote>
+<div align=center>
+<form action="./joyful.cgi" method="POST">
+<font color="#804040">- 以下のフォームから自分の投稿記事を修正・削除することができます -</font><br>
+処理 <select name=mode>
+<option value=usr_edt>修正
+<option value=usr_del>削除</select>
+記事No <input type=text name=no size=3>
+暗証キー <input type=password name=pwd size=4 maxlength=8>
+<input type=submit value="送信"></form>
+<!-- 下部 --><p><!-- Joyful Note v1.95 Rev2.02 -->
+<span style='font-size:10px;font-family:Verdana,Helvetica,Arial'>
+- <a href='http://www.kent-web.com/' target='_top'>Joyful Note</a> -
+<br>Modified by <a href='http://swanbay-web.hp.infoseek.co.jp/index.html' target='_top'>isso</a>
+</span>
+<br>
+<!--ここから-->
+
+
+<!--ここに掲示板最下部に侮ｦする内容を記述します-->
+
+
+<!--ここまで-->
+</div></body>
+</html>
