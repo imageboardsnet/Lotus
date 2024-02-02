@@ -5,7 +5,6 @@ import json
 import schedule
 import time
 import threading
-import mimetypes
 from urllib.parse import urlparse
 
 

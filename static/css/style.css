@@ -85,6 +85,10 @@ img {
     margin-top: 8px;
 }
 
+.ui.selection.dropdown {
+
+    padding: 0!important;
+}
 
 @media screen and (max-width: 1000px) {
     body {

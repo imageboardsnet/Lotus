@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var selection = this.value;
         if (selection) {
             featureList.filter(function(item) {
-                return (item.values().software === selection);
+                var software = item.values().software;
+                return (software && software.includes(selection));
             });
         } else {
             featureList.filter();
