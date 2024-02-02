@@ -7,10 +7,13 @@ import time
 import threading
 from urllib.parse import urlparse
 
-
 app = Flask(__name__)
 
 boards_json_url = "https://imageboardsnet.github.io/imageboards.json/imageboards.json"
+
+def faveicon_exists(url):
+    favicon_path = os.path.join(app.root_path, 'static', 'favicons', url + '.ico')
+    return os.path.isfile(favicon_path)
 
 def get_imageboards():
     response = requests.get(boards_json_url)
@@ -18,7 +21,10 @@ def get_imageboards():
     for imageboard in imageboards:
         if 'url' in imageboard:
             parsed_url = urlparse(imageboard['url'])
-            imageboard['cleanurl'] = parsed_url.netloc
+            if not faveicon_exists(parsed_url.netloc):
+                imageboard['cleanurl'] = "none"
+            else:
+                imageboard['cleanurl'] = parsed_url.netloc
     return imageboards
 
 def render_boards():
