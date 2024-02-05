@@ -107,11 +107,12 @@ img {
         width: 98%;
     }
     .ui.message {
-        width: 95vw;
+        width: 96vw;
     }
 
     .ui.message.about {
-        width: 95vw;
+        width: 98vw;
+        text-wrap: wrap;
     }
 
     .ui.selection.dropdown {width: 100%;}
