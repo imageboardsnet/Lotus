@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    width: 60%;
+    width: 70%;
     /*background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%); */
     background: #2f3447;
     background-attachment: fixed;
@@ -44,19 +44,28 @@ ul {
 }
 
 img {
-    width: -webkit-fill-available;
+    /* width: -webkit-fill-available!important; */
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    /* max-height: 371px; */
+    /* margin-left: 25%; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .content {
     padding: 15px;
     background: #ffffffe8;
-    width: 560px;
-    height: 200px;
+    /* min-width: 560px; */
+    min-height: 213px;
+    /* width: auto; */
 }
 .content.mirrors {
     width: auto;
     position: absolute;
-    height: auto;
+    min-height: auto!important;
     background: #ffff;
     z-index: 999;
     padding: 5px!important;
@@ -65,10 +74,13 @@ img {
 .ui.message {
     padding: 0;
     margin-top: 0;
+    /* min-width: 528px; */
+    width: 34vw;
 }
 
 .ui.message.about {
     padding: 15px;
+    width: 70vw;
 }
 
 .ui.message .header:not(.ui) {
@@ -90,11 +102,21 @@ img {
     padding: 0!important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1350px) {
     body {
         width: 98%;
     }
-    .content {
-        width: 94vw;
+    .ui.message {
+        width: 95vw;
+    }
+
+    .ui.message.about {
+        width: 95vw;
+    }
+
+    .ui.selection.dropdown {width: 100%;}
+
+    .ui.labeled.input {
+        width: 100%;
     }
 }
