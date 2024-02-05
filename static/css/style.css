@@ -1,7 +1,6 @@
 body {
     margin: auto;
     width: 70%;
-    /*background-image: linear-gradient(to top, #5d569b 0%, #66b187 100%); */
     background: #2f3447;
     background-attachment: fixed;
     height: auto;
@@ -44,12 +43,9 @@ ul {
 }
 
 img {
-    /* width: -webkit-fill-available!important; */
     width: auto;
     height: auto;
     max-width: 50%;
-    /* max-height: 371px; */
-    /* margin-left: 25%; */
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -58,9 +54,7 @@ img {
 .content {
     padding: 15px;
     background: #ffffffe8;
-    /* min-width: 560px; */
     min-height: 213px;
-    /* width: auto; */
 }
 .content.mirrors {
     width: auto;
@@ -74,7 +68,6 @@ img {
 .ui.message {
     padding: 0;
     margin-top: 0;
-    /* min-width: 528px; */
     width: 34vw;
 }
 
@@ -102,6 +95,10 @@ img {
     padding: 0!important;
 }
 
+.code {
+    text-wrap: wrap;
+}
+
 @media screen and (max-width: 1350px) {
     body {
         width: 98%;
@@ -112,7 +109,6 @@ img {
 
     .ui.message.about {
         width: 98vw;
-        text-wrap: wrap;
     }
 
     .ui.selection.dropdown {width: 100%;}
