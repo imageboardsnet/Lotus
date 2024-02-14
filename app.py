@@ -2,9 +2,6 @@ from flask import Flask, render_template, request, send_from_directory
 import os
 import requests
 import json
-import schedule
-import time
-import threading
 from urllib.parse import urlparse
 
 app = Flask(__name__)
@@ -27,12 +24,12 @@ def get_imageboards():
                 imageboard['cleanurl'] = parsed_url.netloc
     return imageboards
 
-def render_boards():
-    with app.app_context():
-        rendered_template = render_template('boards.html', imageboards=imageboards)
-        return rendered_template
+def render_boards(imageboards,page):
+    imageboards = imageboards[page*10:page*10+10]
+    rendered_template = render_template('boards.html', imageboards=imageboards)
+    return rendered_template
     
-def available_languages():
+def available_languages(imageboards):
     languages = []
     for imageboard in imageboards:
         if 'language' in imageboard:
@@ -46,7 +43,7 @@ def available_languages():
                     languages.append(lang)
     return languages
 
-def available_software():
+def available_software(imageboards):
     software = []
     for imageboard in imageboards:
         if 'software' in imageboard:
@@ -60,38 +57,46 @@ def available_software():
                     software.append(soft)
     return software
 
-def render_search():
-    with app.app_context():
-        rendered_template = render_template('search.html', languages=languages, softwares=software)
-        return rendered_template
-
-def update_imageboards():
-    global imageboards
+def render_main(page=0):
     imageboards = get_imageboards()
-    global languages
-    languages = available_languages()
-    global software
-    software = available_software()
-
-def update_rendered():
-    global imageboards_prerendered
-    imageboards_prerendered = render_boards()
-    global search_prerendered
-    search_prerendered = render_search()
-
-
-schedule.every(30).minutes.do(update_imageboards)
-schedule.every(30).minutes.do(update_rendered)
-
-def schedule_run():
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    languages = available_languages(imageboards)
+    software = available_software(imageboards)
+    search_render = render_template('search.html', languages=languages, software=software)
+    ib_render = render_boards(imageboards,page)
+    page = render_template('page.html', page=page)
+    return render_template('index.html', content= search_render + ib_render + page, nav="1")
 
 @app.route('/')
 def home():
-    
-    return render_template('index.html', content= search_prerendered + imageboards_prerendered, nav="1")
+    return render_main()
+
+@app.route('/<int:page>')
+def home_page(page):
+    return render_main(page)
+
+@app.route('/search', methods=['POST'])
+def search():
+    imageboards = get_imageboards()
+    languages = available_languages(imageboards)
+    software = available_software(imageboards)
+    search_prerendered = render_template('search.html', languages=languages, software=software)
+    search = request.form['search']
+    language = request.form['language']
+    software = request.form['software']
+    filtered_boards = []
+    for imageboard in imageboards:
+        if search.lower() in imageboard['name'].lower() or search.lower() in imageboard['description'].lower():
+            if language != "all":
+                if isinstance(imageboard['language'], list):
+                    if language in imageboard['language']:
+                        filtered_boards.append(imageboard)
+                else:
+                    if language == imageboard['language']:
+                        filtered_boards.append(imageboard)
+            else:
+                filtered_boards.append(imageboard)
+    imageboards_prerendered = render_boards(filtered_boards,0)
+    return render_template('index.html', content=search_prerendered + imageboards_prerendered, nav="1")
 
 @app.route('/myboard')
 def myboard():
@@ -109,15 +114,7 @@ def favicon():
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == '__main__':
-    update_imageboards()
-    update_rendered()
-    schedule_thread = threading.Thread(target=schedule_run)
-    schedule_thread.start()
     app.run() 
 
 def create_app():
-    update_imageboards()
-    update_rendered()
-    schedule_thread = threading.Thread(target=schedule_run)
-    schedule_thread.start()
     return app
