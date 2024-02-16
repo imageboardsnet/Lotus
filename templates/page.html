@@ -1,17 +1,7 @@
 <div class="ui basic inverted pagination menu">
-    <a class="active item">
-      1
-    </a>
-    <div class="disabled item">
-      ...
-    </div>
+  {% for i in range(1, length + 1) %}
     <a class="item">
-      10
+      {{ i }}
     </a>
-    <a class="item">
-      11
-    </a>
-    <a class="item">
-      12
-    </a>
-  </div>
+  {% endfor %}
+</div>{{ pagination }}
