@@ -2,7 +2,6 @@ import os
 import requests
 import json
 from urllib.parse import urlparse
-import ibrender
 
 def faveicon_exists(url):
     ROOT_DIR = os.path.abspath(os.curdir)
@@ -21,10 +20,10 @@ def get_imageboards(boards_json_url):
                 imageboard['cleanurl'] = parsed_url.netloc
     return imageboards
 
-def get_ibpages(imageboards):
+def get_ibpage(imageboards, start):
     ib_page = []
-    for i in range(0, len(imageboards), 10):
-        ib_page.append(ibrender.render_boards(imageboards,i))
+    for imageboard in imageboards[start:start+40]:
+        ib_page.append(imageboard)
     return ib_page
 
 def available_languages(imageboards):

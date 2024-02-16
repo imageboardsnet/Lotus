@@ -1,6 +1,6 @@
 <div class="ui basic inverted pagination menu">
   {% for i in range(1, length + 1) %}
-    <a class="item">
+    <a class="item {{ 'active' if page + 1 == i else '' }}" href="/{{ '' if 1 == i else i }}">
       {{ i }}
     </a>
   {% endfor %}
