@@ -16,7 +16,7 @@ def render_ibpage(imageboards,page):
 
 def render_ibpages(imageboards):
     ibpages = []
-    for i in range(0, len(imageboards), 40):
+    for i in range(0, len(imageboards), 80):
         ibpages.append(render_ibpage(imageboards, i))
     return ibpages
 
@@ -29,4 +29,4 @@ def render_main(ibpages, languages, softwares, page=0):
     with app.app_context():
         search_render = render_template('search.html', languages=languages, softwares=softwares)
         pagination = render_template('page.html',page=page, length=len(ibpages))
-        return render_template('index.html', content= search_render + pagination + ibpages[page] + pagination, nav="1")
+        return render_template('index.html', content= search_render + ibpages[page] + pagination, nav="1")

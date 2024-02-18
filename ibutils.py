@@ -22,7 +22,7 @@ def get_imageboards(boards_json_url):
 
 def get_ibpage(imageboards, start):
     ib_page = []
-    for imageboard in imageboards[start:start+40]:
+    for imageboard in imageboards[start:start+80]:
         ib_page.append(imageboard)
     return ib_page
 
@@ -53,3 +53,18 @@ def available_softwares(imageboards):
                 if soft not in softwares:
                     softwares.append(soft)
     return softwares
+
+def search_imageboards(imageboards, language, software):
+    search_result = []
+    for imageboard in imageboards:
+        if 'language' in imageboard and 'software' in imageboard:
+            if language and software:
+                if language in imageboard['language'] and software in imageboard['software']:
+                    search_result.append(imageboard)
+            elif language:
+                if language in imageboard['language']:
+                    search_result.append(imageboard)
+            elif software:
+                if software in imageboard['software']:
+                    search_result.append(imageboard)
+    return search_result

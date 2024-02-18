@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory, redirect
 import os
 import threading
 import schedule
@@ -22,14 +22,12 @@ def update_ib():
     global search_render
     search_render = ibrender.render_search(languages, softwares)
 
-
 def schedule_run():
     while True:
         schedule.run_pending()
         time.sleep(1)
 
 schedule.every(30).minutes.do(update_ib)
-
 
 @app.route('/')
 def home():
@@ -41,30 +39,12 @@ def home_page(page):
 
 @app.route('/search' , methods=['POST'])
 def search():
-    selected_languages = request.form.getlist('language')
-    selected_softwares = request.form.getlist('software')
-    search_result = []
-    for imageboard in imageboards:
-        if 'language' in imageboard and 'software' in imageboard:
-            if isinstance(imageboard['language'], list):
-                for lang in selected_languages:
-                    if lang in imageboard['language']:
-                        search_result.append(imageboard)
-                        break
-            else:
-                if imageboard['language'] in selected_languages:
-                    search_result.append(imageboard)
-            if isinstance(imageboard['software'], list):
-                for soft in selected_softwares:
-                    if soft in imageboard['software']:
-                        search_result.append(imageboard)
-                        break
-            else:
-                if imageboard['software'] in selected_softwares:
-                    search_result.append(imageboard)
-
+    language = request.form.get('language')
+    software = request.form.get('software')
+    if not language and not software : return redirect('/')
+    search_result = ibutils.search_imageboards(imageboards, language, software)
     search_result = ibrender.render_boards(search_result)
-    search_render = render_template('search.html', languages=languages, softwares=softwares)
+    search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software)
     return render_template('index.html', content= search_render + search_result, nav="1")
 
 @app.route('/myboard')
@@ -79,8 +59,7 @@ def about():
 
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == '__main__':
     update_ib()
