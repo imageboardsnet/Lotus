@@ -1,26 +1,23 @@
-<div id="boards">
-    <div class="ui fluid input icon"> <input class="fuzzy-search" type="text"
-            placeholder="Search by using a tag (eg: tinyboard) " /> <i class="inverted circular search link icon""></i>
-            
-    </div>
-    <div class="search-button">
-    <div class="ui labeled input" style="margin-right: 4px;">
-        <div class="ui basic inverted label">Software</div>
-        <select class="ui selection dropdown" id="software">
-            <option value="">All</option>
-            {% for software in softwares %}
-            <option value="{{ software }}">{{ software }}</option>
-            {% endfor %}
-        </select>
-      </div>
+<form action="/search" method="post">
+    <div id="boards">
         <div class="ui labeled input" style="margin-top: 3px;">
             <div class="ui basic inverted label">Language</div>
-            <select class="ui selection dropdown" id="language">
-                <option value="">All</option>
+            <select class="ui selection dropdown" id="language" name="language">
+                <option value=""> all</option>
                 {% for language in languages %}
-                <option value="{{ language }}">{{ language }}</option>
-                
+                <option value="{{ language }}" {% if language == search_language %} selected {% endif %}> {{ language }}</option>
                 {% endfor %}
             </select>
+        </div>
+        <div class="ui labeled input">
+            <div class="ui basic inverted label" style="width: 83px;">Software</div>
+            <select class="ui selection dropdown" id="software" name="software">
+                <option value=""> all</option>
+                {% for software in softwares %}
+                <option value="{{ software }}"  {% if software == search_software %} selected {% endif %}> {{ software }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="ui secondary labeled icon button search" type="submit"style="height: 38px;"> <i class="search icon"></i> Search</button>
     </div>
-    </div>
+</form>
