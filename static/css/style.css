@@ -2,7 +2,7 @@ body {
     margin: auto;
     width: 70%;
     background: #d37b6e;
-    background-image: url('https://imageboards.net/noise.png');
+    background-image: url('https://imageboards.net/static/noise.png');
     height: auto;
     flex-direction: column;
     align-items: center;
