@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    width: 70%;
+    width: 80%;
     background: #d37b6e;
     background-image: url('https://imageboards.net/static/noise.png');
     height: auto;
@@ -14,8 +14,13 @@ body {
 
 li {
     list-style: none;
-    margin-top: 10px;
+    margin-top: 7px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+li:nth-of-type(2n+1){
+    margin-right: 5px;
+    
 }
 
 ul {
@@ -39,7 +44,7 @@ img {
 .content {
     padding: 15px;
     background: #ffffffe8;
-    min-height: 213px;
+    min-height: 222px;
     border-radius: 5px;
 }
 .content.mirrors {
@@ -54,13 +59,16 @@ img {
 .ui.message {
     padding: 0;
     margin-top: 0;
-    width: 34vw;
+    width: calc(40vw - 10px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
 }
 
+
+
+
 .ui.message.about {
     padding: 15px;
-    width: 70vw;
+    width: 100%;
 }
 
 .ui.message .header:not(.ui) {
@@ -85,6 +93,20 @@ code {
     color: rgba(255,255,255,.9);
     cursor:default;
 }
+.header {
+    background: #2d2d2d;
+    background-image: url('https://imageboards.net/static/noise.png');
+    color: rgba(255,255,255,.9);
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.28571429rem;
+    width: fit-content;
+    border-color: #545454;
+    border: solid;
+    border-width: 1px;
+}
+
 
 .pagination {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
@@ -101,14 +123,14 @@ code {
 
 @media screen and (max-width: 1350px) {
     body {
-        width: 98%;
+        width: 96vw;
     }
     .ui.message {
         width: 96vw;
     }
 
     .ui.message.about {
-        width: 98vw;
+        width: 96vw;
     }
 
     .ui.selection.dropdown {
@@ -121,5 +143,10 @@ code {
 
     .search {
         width: 100%;
+    }
+
+    li:nth-of-type(2n+1){
+        margin-right: 0;
+    
     }
 }
