@@ -12,22 +12,6 @@ body {
     text-align: center;
 }
 
-.name,
-.language,
-.software {
-    display: none;
-}
-
-#boards {
-    margin-top: 8px;
-}
-
-iframe {
-    display: block !important;
-    margin: auto !important;
-
-}
-
 li {
     list-style: none;
     margin-top: 10px;
@@ -55,6 +39,7 @@ img {
     padding: 15px;
     background: #ffffffe8;
     min-height: 213px;
+    border-radius: 5px;
 }
 .content.mirrors {
     width: auto;
@@ -111,7 +96,9 @@ code {
         width: 98vw;
     }
 
-    .ui.selection.dropdown {width: 100%;}
+    .ui.selection.dropdown {
+        width: 100%;
+    }
 
     .ui.labeled.input {
         width: 100%;

@@ -15,9 +15,9 @@ def get_imageboards(boards_json_url):
         if 'url' in imageboard:
             parsed_url = urlparse(imageboard['url'])
             if not faveicon_exists(parsed_url.netloc):
-                imageboard['cleanurl'] = "none"
+                imageboard['favicon'] = "none"
             else:
-                imageboard['cleanurl'] = parsed_url.netloc
+                imageboard['favicon'] = parsed_url.netloc
     return imageboards
 
 def get_ibpage(imageboards, start):

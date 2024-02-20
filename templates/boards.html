@@ -1,14 +1,10 @@
 <ul class="list">
     {% for imb in imageboards %}
     <li>
-        <p class='name'>{{ imb.name }}</p>
-        <p class='language'>{{ imb.language|join(', ') }}</p>
-        <p class='software'>{{ imb.software|join(', ') }}</p>
-
-        {% if imb.cleanurl == "none" %}
+        {% if imb.favicon == "none" %}
             <div class="ui message">
         {% else %}
-            <div class="ui message" style="background-image: url('/static/favicons/{{ imb.cleanurl }}.ico');">
+            <div class="ui message" style="background-image: url('/static/favicons/{{ imb.favicon }}.ico');">
         {% endif %}
             <div class="content">
                 <div class="header"> {{ imb.name }}</div>
