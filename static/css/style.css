@@ -1,8 +1,8 @@
 body {
     margin: auto;
     width: 70%;
-    background: #2c303d;
-    background-attachment: fixed;
+    background: #d37b6e;
+    background-image: url('https://imageboards.net/noise.png');
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 li {
     list-style: none;
     margin-top: 10px;
-
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 ul {
@@ -24,6 +24,7 @@ ul {
 
 #nav {
     margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 img {
@@ -54,6 +55,7 @@ img {
     padding: 0;
     margin-top: 0;
     width: 34vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
 }
 
 .ui.message.about {
@@ -82,6 +84,19 @@ code {
 .ui.inverted.basic.label:hover {
     color: rgba(255,255,255,.9);
     cursor:default;
+}
+
+.pagination {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
+}
+
+.footer {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
+    margin-bottom: 5px;
+}
+
+.labeled {
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2)!important;
 }
 
 @media screen and (max-width: 1350px) {
