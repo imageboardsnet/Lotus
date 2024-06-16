@@ -8,7 +8,7 @@ import ibutils
 
 app = Flask(__name__)
 
-boards_json_url = "https://imageboardsnet.github.io/imageboards.json/imageboards.json"
+boards_json_url = "https://blossom.imageboards.net/endpoints/imageboards.json"
 
 def update_ib():
     global imageboards
@@ -47,11 +47,6 @@ def search():
     search_result = ibrender.render_boards(search_result)
     search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software)
     return render_template('index.html', content= search_render + search_result, nav="1")
-
-@app.route('/myboard')
-def myboard():
-    myboard_content = render_template('myboard.html')
-    return render_template('index.html', content=myboard_content, nav="2")
 
 @app.route('/about')
 def about():
