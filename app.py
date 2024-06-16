@@ -8,7 +8,7 @@ import ibutils
 
 app = Flask(__name__)
 
-boards_json_url = "https://blossom.imageboards.net/imageboards.json"
+boards_json_url = "https://blossom.imageboards.net/imageboards_legacy.json"
 
 def update_ib():
     global imageboards
