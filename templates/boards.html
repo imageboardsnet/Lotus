@@ -15,7 +15,7 @@
                     <details  class="ui accordion">  
                         <summary  class="title">
                             <i class="dropdown icon"></i>
-                            Mirror(s)
+                            {{ "Mirror" if imb.mirrors | length == 1 else "Mirrors" }}
                           </summary > 
                           <div class="content mirrors">
                             <p>
