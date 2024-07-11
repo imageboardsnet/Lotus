@@ -23,29 +23,30 @@
 
 <body>
 
-    <div id='nav' class="ui inverted segment">
-        <div class="ui inverted secondary menu">
-        <a class="item {{ 'active' if nav == '1' else '' }}" href='/'>
+    <div class="ui menu navbar inverted">
+        <a class="{{ 'active' if nav == '1' else '' }} item" href='/'>
             <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px; height: 16px; width: 16px;">
             ImageBoards.net
         </a>
-        <a class="item {{ 'active' if nav == '2' else '' }}" href='https://blossom.imageboards.net'>
+        <a class="{{ 'active' if nav == '2' else '' }} item" href='https://blossom.imageboards.net'>
+            <i class="teal plus icon inverted"></i>
             Add My Board
         </a>
         <div class="right menu">
-            <a class="item {{ 'active' if nav == '3' else '' }}" href='/about'>About</a>
+            <a class="{{ 'active' if nav == '3' else '' }} item" href='/about'>
+            <i class="teal info icon inverted"></i>
+            About</a>
         </div>
-    </div>
     </div>
 
 
     {{ content |safe }}
 
-    <div class="ui inverted footer segment center">
+    <div class="ui  footer segment center">
         <div class="ui container">
 
             <div class='centered'>
-                <h4 class="ui inverted">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus 1.5.4</a></h4>
+                <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus 1.5.4</a></h4>
             </div>
         </div>
     </div>
