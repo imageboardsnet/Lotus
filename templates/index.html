@@ -22,38 +22,31 @@
 </head>
 
 <body>
-
+    <div id="page-container">
+        <div id="content-wrap">
     <div class="ui menu navbar inverted">
-        <a class="{{ 'active' if nav == '1' else '' }} item" href='/'>
+        <a class="item" href='/'>
             <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px; height: 16px; width: 16px;">
             ImageBoards.net
         </a>
-        <a class="{{ 'active' if nav == '2' else '' }} item" href='https://blossom.imageboards.net'>
+        <a class="item" href='https://blossom.imageboards.net'>
             <i class="teal plus icon inverted"></i>
             Add My Board
         </a>
         <div class="right menu">
-            <a class="{{ 'active' if nav == '3' else '' }} item" href='/about'>
+            <a class="item" href='/about'>
             <i class="teal info icon inverted"></i>
             About</a>
         </div>
     </div>
-
-
-    {{ content |safe }}
-
-    <div class="ui  footer segment center">
+            {{ content |safe }}
+        </div>
+    <div class="ui footer segment center inverted">
         <div class="ui container">
-
             <div class='centered'>
-                <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus 1.5.4</a></h4>
+                <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus 1.6.0</a></h4>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-
 </body>
-
 </html>

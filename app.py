@@ -46,12 +46,12 @@ def search():
     search_result = ibutils.search_imageboards(imageboards, language, software)
     search_result = ibrender.render_boards(search_result)
     search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software)
-    return render_template('index.html', content= search_render + search_result, nav="1")
+    return render_template('index.html', content= search_render + search_result)
 
 @app.route('/about')
 def about():
     about_content = render_template('about.html')
-    return render_template('index.html', content=about_content, nav="3")
+    return render_template('index.html', content=about_content)
 
 @app.route('/favicon.ico')
 def favicon():

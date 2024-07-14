@@ -29,9 +29,9 @@ def render_main(ibpages, languages, softwares, page=0):
     with app.app_context():
         search_render = render_template('search.html', languages=languages, softwares=softwares)
         pagination = render_template('page.html',page=page, length=len(ibpages))
-        return render_template('index.html', content= search_render + ibpages[page] + pagination, nav="1")
+        return render_template('index.html', content= search_render + ibpages[page] + pagination)
 
 def render_404():
     with app.app_context():
         notfound_render = render_template('404.html')
-        return render_template('index.html', content=notfound_render, nav="0")
+        return render_template('index.html', content=notfound_render)

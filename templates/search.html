@@ -1,7 +1,7 @@
 <form action="/search" method="post">
     <div id="boards">
         <div class="ui labeled input" style="margin-top: 3px;">
-            <div class="ui basic inverted label">Language</div>
+            <div class="ui basic inverted teal label">Language</div>
             <select class="ui selection dropdown" id="language" name="language">
                 <option value=""> all</option>
                 {% for language in languages %}
@@ -10,7 +10,7 @@
             </select>
         </div>
         <div class="ui labeled input">
-            <div class="ui basic inverted label" style="width: 83px;">Software</div>
+            <div class="ui basic inverted teal label" style="width: 83px;">Software</div>
             <select class="ui selection dropdown" id="software" name="software">
                 <option value=""> all</option>
                 {% for software in softwares %}
@@ -18,6 +18,6 @@
                 {% endfor %}
             </select>
         </div>
-        <button class="ui secondary labeled icon button search" type="submit"style="height: 38px;"> <i class="search icon"></i> Search</button>
+        <button class="ui secondary labeled icon teal inverted button search" type="submit"style="height: 38px;"> <i class="search icon"></i> Search</button>
     </div>
 </form>
