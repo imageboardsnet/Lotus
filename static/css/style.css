@@ -60,7 +60,7 @@ code {
 #content-wrap {
     margin: auto;
     width: 80%;
-    padding-bottom: 4.5rem;
+    padding-bottom: 4.3rem;
     padding-top: 4.5rem;
 }
 
@@ -81,7 +81,7 @@ code {
 }
 
 @media screen and (max-width: 1350px) {
-    body {
+    #content-wrap {
         width: 96vw;
     }
 
@@ -97,11 +97,8 @@ code {
         width: 100%;
     }
 
-    .search {
-        width: 100%;
+    #search,.card {
+        width: 100%!important;
     }
 
-    li:nth-of-type(2n+1) {
-        margin-right: 0;
-    }
 }
