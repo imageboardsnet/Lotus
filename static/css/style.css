@@ -1,109 +1,49 @@
 body {
-    margin: auto;
-    width: 80%;
     background: #0c0c0c;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
 }
 
 a {
     color: #6dffff;
 }
 
+.ui.inverted.cards>.card>.extra a:not(.ui) {
+    color: rgb(255 255 255);
+}
+
 .centered {
     text-align: center;
 }
 
-li {
-    list-style: none;
-    margin-top: 7px;
+.favicon {
+    width: 16px;
+    height: 16px;
 }
 
-li:nth-of-type(2n+1) {
-    margin-right: 5px;
-
+.boards{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-ul {
-    padding: unset;
-}
-
-img {
-    width: auto;
-    height: auto;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.content {
-    padding: 15px;
-    background: #ffffffe8;
-    min-height: 222px;
-    border-radius: 5px;
-}
-
-.content.mirrors {
-    width: auto;
-    position: absolute;
-    min-height: auto !important;
-    background: #ffff;
-    z-index: 999;
-    padding: 5px !important;
-}
-
-.ui.message {
-    padding: 0;
-    margin-top: 0;
-    width: calc(40vw - 10px);
-    border: solid;
-    border-color: #6dffff;
-    border-radius: 4px;
-    border-width: 2px;
-
+.card {
+    border: solid!important;
+    border-color: #6dffff!important;
+    border-radius: 4px!important;
+    border-width: 1px!important;
 }
 
 .ui.message.about {
     padding: 15px;
     width: 100%;
-}
-
-.ui.message .header:not(.ui) {
-    font-size: 1.3em !important;
-}
-
-.list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.ui.selection.dropdown {
-
-    padding: 0 !important;
+    border: solid;
+    border-color: #6dffff;
+    border-radius: 4px;
+    border-width: 1px;
 }
 
 code {
     text-wrap: wrap;
 }
-
-.ui.inverted.basic.label:hover {
-    color: rgba(255, 255, 255, .9);
-    cursor: default;
-}
-
-.titlebar {
-    background: #6dffff;
-    color: rgba(0, 0, 0, 0.9);
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 0.28571429rem;
-    width: fit-content;
-}
-
 .about-group {
     margin-top: 2em;
 }
@@ -114,7 +54,10 @@ code {
 }
 
 #content-wrap {
+    margin: auto;
+    width: 80%;
     padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
 }
 
 .footer {
@@ -129,13 +72,12 @@ code {
     border-top-right-radius: 0px !important;
 }
 
+.ui.selection.dropdown {
+    padding: 0 !important;
+}
 
 @media screen and (max-width: 1350px) {
     body {
-        width: 96vw;
-    }
-
-    .ui.message {
         width: 96vw;
     }
 
@@ -157,6 +99,5 @@ code {
 
     li:nth-of-type(2n+1) {
         margin-right: 0;
-
     }
 }

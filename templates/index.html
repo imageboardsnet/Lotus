@@ -24,7 +24,7 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
-    <div class="ui menu navbar inverted">
+    <div class="ui menu navbar fixed inverted">
         <a class="item" href='/'>
             <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px; height: 16px; width: 16px;">
             ImageBoards.net
@@ -33,6 +33,10 @@
             <i class="teal plus icon inverted"></i>
             Add My Board
         </a>
+        <a class="item" href='https://feedback.imageboards.net'>
+            <i class="teal comment alternate icon inverted"></i>
+            Feedback
+        </a>      
         <div class="right menu">
             <a class="item" href='/about'>
             <i class="teal info icon inverted"></i>

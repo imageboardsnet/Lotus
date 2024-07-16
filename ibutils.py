@@ -22,7 +22,7 @@ def get_imageboards(boards_json_url):
 
 def get_ibpage(imageboards, start):
     ib_page = []
-    for imageboard in imageboards[start:start+80]:
+    for imageboard in imageboards[start:start+30]:
         ib_page.append(imageboard)
     return ib_page
 

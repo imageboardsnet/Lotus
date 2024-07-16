@@ -1,67 +1,71 @@
-<ul class="list">
-    {% for imb in imageboards %}
-    <li>
-        {% if imb.favicon == "none" %}
-            <div class="ui message">
-        {% else %}
-            <div class="ui message" style="background-image: url('/static/favicons/{{ imb.favicon }}.ico');">
-        {% endif %}
+<div class="ui inverted container fluid boards">
+    <div class="ui inverted cards">
+        {% for imb in imageboards %}
+        <div class="card">
             <div class="content">
-                <div class="titlebar"> {{ imb.name }}</div>
-                <div class="ui basic labels">
-                    <br>
-                    <a class="ui label" href="{{ imb.url }}">{{ imb.url }}</a>
-                    {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
-                    <details  class="ui accordion">  
-                        <summary  class="title">
-                            <i class="dropdown icon"></i>
-                            {{ "Mirror" if imb.mirrors | length == 1 else "Mirrors" }}
-                          </summary > 
-                          <div class="content mirrors">
-                            <p>
-                    {% for mi in imb.mirrors %}
-                    <a class="ui label" href="{{ mi }}">{{ mi }}</a>
-                    {% endfor %}
-                            </p>
-                        </div>
-                    </details >
+                <div class="header">
+                    {% if imb.favicon == "none" %}
+                    <img src="/static/favicon.ico" class="favicon">
+                    {% else %}
+                    <img src="/static/favicons/{{ imb.favicon }}.ico" class="favicon">
                     {% endif %}
+                    {{ imb.name }}
                 </div>
-                <br>
-                    
+                <div class="meta">
+                    <br>
                     <div class="ui labels">
-                        <div class="ui  black inverted basic label"> <i class="cog icon"></i>Software</div>
                         {% for sw in imb.software %}
-                        <div class="ui  black inverted basic tag label">{{ sw }}</div>
+                        {% if loop.last %}
+                        <div class="ui teal inverted basic label">{{ sw }}</div>
+                        {% endif %}
                         {% endfor %}
-                    </div>
-                    
-                    <div class="ui labels">
-                        <div class="ui black inverted basic label"><i class="globe icon"></i>Language</div>
+
                         {% for lg in imb.language %}
                         {% if lg == 'en' %}
-                            <div class="ui  black inverted basic tag label"><i class="uk flag"> en</i></div>
+                            <div class="ui teal inverted basic label"><i class="uk flag"> en</i></div>
                         {% elif lg == 'ja' %}
-                            <div class="ui black inverted basic tag label"><i class="jp flag"> ja</i></div>
+                            <div class="ui teal inverted basic label"><i class="jp flag"> ja</i></div>
                         {% elif lg == 'zh' %}
-                            <div class="ui black inverted basic tag label"><i class="cn flag"> zh</i></div>
+                            <div class="ui teal inverted basic label"><i class="cn flag"> zh</i></div>
                         {% elif lg == 'ko' %}
-                            <div class="ui black inverted basic tag label"><i class="kr flag"> ko</i></div>
+                            <div class="ui teal inverted basic label"><i class="kr flag"> ko</i></div>
                         {% elif lg == 'uk' %}
-                            <div class="ui black inverted basic tag label"><i class="ua flag"> uk</i></div>
+                            <div class="ui teal inverted basic label"><i class="ua flag"> uk</i></div>
                         {% elif lg == 'be' %}
-                            <div class="ui black inverted basic tag label"><i class="by flag"> be</i></div>
+                            <div class="ui teal inverted basic label"><i class="by flag"> be</i></div>
                         {% elif lg == 'ar' %}
-                            <div class="ui black inverted basic tag label"><i class="eg flag"> ar</i></div>
+                            <div class="ui teal inverted basic label"><i class="eg flag"> ar</i></div>
                         {% elif lg == 'hi' %}
-                            <div class="ui black inverted basic tag label"><i class="in flag"> hi</i></div>
+                            <div class="ui teal inverted basic label"><i class="in flag"> hi</i></div>
                         {% else %}
-                            <div class="ui black inverted basic tag label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
+                            <div class="ui teal inverted basic label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
                         {% endif %}
                         {% endfor %}
                     </div>
+                </div>
+                <div class="description">
+                    <p>{{ imb.description }}</p>
+                </div>
+            </div>
+            <div class="extra content">
+                <a href="{{ imb.url }}">{{ imb.url }}</a>
+                {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
+                <details  class="ui accordion">  
+                    <summary  class="title">
+                        <i class="dropdown icon"></i>
+                        {{ "Mirror" if imb.mirrors | length == 1 else "Mirrors" }}
+                      </summary > 
+                      <div class="content mirrors">
+                        <p>
+                {% for mi in imb.mirrors %}
+                <a class="ui label" href="{{ mi }}">{{ mi }}</a>
+                {% endfor %}
+                        </p>
+                    </div>
+                </details >
+                {% endif %}
             </div>
         </div>
-    </li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </div>
+</div>

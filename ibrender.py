@@ -16,7 +16,7 @@ def render_ibpage(imageboards,page):
 
 def render_ibpages(imageboards):
     ibpages = []
-    for i in range(0, len(imageboards), 80):
+    for i in range(0, len(imageboards), 30):
         ibpages.append(render_ibpage(imageboards, i))
     return ibpages
 
