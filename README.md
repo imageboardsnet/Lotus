@@ -12,7 +12,7 @@ Run it with Docker
 
     docker compose build
     docker compose up -d
-*Default port 8000*
+*Default port 8080*
 
 Run it locally
 
