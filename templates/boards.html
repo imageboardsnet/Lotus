@@ -4,11 +4,7 @@
         <div class="card">
             <div class="content">
                 <div class="header">
-                    {% if imb.favicon == "none" %}
-                    <img src="/static/favicon.ico" class="favicon">
-                    {% else %}
-                    <img src="/static/favicons/{{ imb.favicon }}.ico" class="favicon">
-                    {% endif %}
+                    <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}" class="favicon">
                     {{ imb.name }}
                 </div>
                 <div class="meta">
