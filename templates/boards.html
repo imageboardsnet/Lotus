@@ -64,12 +64,12 @@
                 {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
                 <details class="ui accordion">
                     <summary class="title">
-                        <a href="{{ imb.url }}">{{ imb.url }}</a> <i class="inverted linkify icon"></i>
+                        <a href="{{ imb.url }}" target="_blank">{{ imb.url }}</a> <i class="inverted linkify icon"></i>
                     </summary>
                     <div class="content mirrors">
                         <p>
                             {% for mi in imb.mirrors %}
-                            <a href="{{ mi }}">{{ mi }}</a>
+                            <a href="{{ mi }}" target="_blank">{{ mi }}</a>
                             {% endfor %}
                         </p>
                     </div>
