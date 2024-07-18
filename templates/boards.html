@@ -12,51 +12,68 @@
                     <div class="ui labels">
                         {% for sw in imb.software %}
                         {% if loop.last %}
-                        <div class="ui teal inverted basic label">{{ sw }}</div>
+                        <div class="ui teal inverted basic label"><i class="cog icon"></i> {{ sw }}</div>
                         {% endif %}
                         {% endfor %}
 
                         {% for lg in imb.language %}
                         {% if lg == 'en' %}
-                            <div class="ui teal inverted basic label"><i class="uk flag"> en</i></div>
+                        <div class="ui teal inverted basic label"><i class="uk flag"> en</i></div>
                         {% elif lg == 'ja' %}
-                            <div class="ui teal inverted basic label"><i class="jp flag"> ja</i></div>
+                        <div class="ui teal inverted basic label"><i class="jp flag"> ja</i></div>
                         {% elif lg == 'zh' %}
-                            <div class="ui teal inverted basic label"><i class="cn flag"> zh</i></div>
+                        <div class="ui teal inverted basic label"><i class="cn flag"> zh</i></div>
                         {% elif lg == 'ko' %}
-                            <div class="ui teal inverted basic label"><i class="kr flag"> ko</i></div>
+                        <div class="ui teal inverted basic label"><i class="kr flag"> ko</i></div>
                         {% elif lg == 'uk' %}
-                            <div class="ui teal inverted basic label"><i class="ua flag"> uk</i></div>
+                        <div class="ui teal inverted basic label"><i class="ua flag"> uk</i></div>
                         {% elif lg == 'be' %}
-                            <div class="ui teal inverted basic label"><i class="by flag"> be</i></div>
+                        <div class="ui teal inverted basic label"><i class="by flag"> be</i></div>
                         {% elif lg == 'ar' %}
-                            <div class="ui teal inverted basic label"><i class="eg flag"> ar</i></div>
+                        <div class="ui teal inverted basic label"><i class="eg flag"> ar</i></div>
                         {% elif lg == 'hi' %}
-                            <div class="ui teal inverted basic label"><i class="in flag"> hi</i></div>
+                        <div class="ui teal inverted basic label"><i class="in flag"> hi</i></div>
                         {% else %}
-                            <div class="ui teal inverted basic label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
+                        <div class="ui teal inverted basic label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
                         {% endif %}
                         {% endfor %}
                     </div>
                 </div>
                 <div class="description">
                     <p>{{ imb.description }}</p>
+                    {% if imb.boards is defined and imb.boards | length > 0 %}
+                    <details class="ui accordion">
+                        <summary class="title">
+                            <a>Boards list <i class="inverted comments icon"></i></a>
+                        </summary>
+                        <div class="content mirrors">
+                            <p>
+                            <div class="ui list">
+                                {% for board in imb.boards %}
+                                <div class="item">{{ board }}</div>
+                                {% endfor %}
+                            </div>
+                            </p>
+                        </div>
+                    </details>
+                    {% endif %}
+
                 </div>
             </div>
             <div class="extra content">
                 {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
-                <details  class="ui accordion">  
-                    <summary  class="title">
+                <details class="ui accordion">
+                    <summary class="title">
                         <a href="{{ imb.url }}">{{ imb.url }}</a> <i class="inverted linkify icon"></i>
-                      </summary > 
-                      <div class="content mirrors">
+                    </summary>
+                    <div class="content mirrors">
                         <p>
-                {% for mi in imb.mirrors %}
-                <a href="{{ mi }}">{{ mi }}</a>
-                {% endfor %}
+                            {% for mi in imb.mirrors %}
+                            <a href="{{ mi }}">{{ mi }}</a>
+                            {% endfor %}
                         </p>
                     </div>
-                </details >
+                </details>
                 {% else %}
                 <a href="{{ imb.url }}">{{ imb.url }}</a>
                 {% endif %}

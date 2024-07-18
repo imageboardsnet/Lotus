@@ -5,7 +5,8 @@
             <select class="ui selection dropdown" id="language" name="language">
                 <option value=""> all</option>
                 {% for language in languages %}
-                <option value="{{ language }}" {% if language == search_language %} selected {% endif %}> {{ language }}</option>
+                <option value="{{ language }}" {% if language==search_language %} selected {% endif %}> {{ language }}
+                </option>
                 {% endfor %}
             </select>
         </div>
@@ -14,11 +15,13 @@
             <select class="ui selection dropdown" id="software" name="software">
                 <option value=""> all</option>
                 {% for software in softwares %}
-                <option value="{{ software }}"  {% if software == search_software %} selected {% endif %}> {{ software }}</option>
+                <option value="{{ software }}" {% if software==search_software %} selected {% endif %}> {{ software }}
+                </option>
                 {% endfor %}
             </select>
         </div>
-        <button class="ui secondary labeled icon teal inverted button search" id="search" type="submit" style="height: 38px;"> <i class="search icon"></i> Search</button>
+        <button class="ui secondary labeled icon teal inverted button search" id="search" type="submit"
+            style="height: 38px;"> <i class="search icon"></i> Search</button>
         <!-- <div class="ui menu inverted pagination right">
             <div class="header item inverted teal">Sort by</div>
             <button class="ui button inverted teal"><i class="sort icon"></i></button>

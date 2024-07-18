@@ -68,3 +68,17 @@ def search_imageboards(imageboards, language, software):
                 if software in imageboard['software']:
                     search_result.append(imageboard)
     return search_result
+
+def categorize(item):
+    if item['boards'] and item['description']:
+        return (1, item['name'].lower())
+    elif item['description']:
+        return (2, item['name'].lower())
+    elif item['boards']:
+        return (3, item['name'].lower())
+    else:
+        return (4, item['name'].lower())
+
+def sort_imageboards(imageboards):
+    imageboards = sorted(imageboards, key=categorize)
+    return imageboards

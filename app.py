@@ -13,6 +13,7 @@ boards_json_url = "https://blossom.imageboards.net/imageboards.json"
 def update_ib():
     global imageboards
     imageboards = ibutils.get_imageboards(boards_json_url)
+    imageboards = ibutils.sort_imageboards(imageboards)
     global languages
     languages = ibutils.available_languages(imageboards)
     global softwares

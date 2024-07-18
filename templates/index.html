@@ -5,48 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="UTF-8">
     <title>The ImageBoard Database</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <meta name="description" content="{{ 'The BEST way to find a new imageboard, Explore Over 300 Curated Boards!' if nav == '1' else '' }}" />
+    <meta name="description"
+        content="{{ 'The BEST way to find a new imageboard, Explore Over 300 Curated Boards!' if nav == '1' else '' }}" />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZSH8K0VZR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZSH8K0VZR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-HZSH8K0VZR');
-</script>
+        gtag('config', 'G-HZSH8K0VZR');
+    </script>
 </head>
 
 <body>
     <div id="page-container">
         <div id="content-wrap">
-    <div class="ui menu navbar fixed inverted">
-        <a class="item" href='/'>
-            <img src="{{ url_for('static', filename='favicon.ico') }}" style="margin-right: 13px; height: 16px; width: 16px;">
-            Home
-        </a>
-        <a class="item" href='https://blossom.imageboards.net'>
-            <i class="teal plus icon inverted"></i>
-            Add Board
-        </a>
-        <div class="right menu">
-            <a class="item" href='/about'>
-            <i class="teal info icon inverted"></i>
-            About</a>
-        </div>
-    </div>
+            <div class="ui menu navbar fixed inverted">
+                <a class="item" href='/'>
+                    <img src="{{ url_for('static', filename='favicon.ico') }}"
+                        style="margin-right: 13px; height: 16px; width: 16px;">
+                    Home
+                </a>
+                <a class="item" href='https://blossom.imageboards.net'>
+                    <i class="teal plus icon inverted"></i>
+                    Add Board
+                </a>
+                <div class="right menu">
+                    <a class="item" href='/about'>
+                        <i class="teal info icon inverted"></i>
+                        About</a>
+                </div>
+            </div>
             {{ content |safe }}
         </div>
-    <div class="ui footer segment center inverted">
-        <div class="ui container">
-            <div class='centered'>
-                <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus 1.6.0</a></h4>
+        <div class="ui footer segment center inverted">
+            <div class="ui container">
+                <div class='centered'>
+                    <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus
+                            1.7.0</a></h4>
+                </div>
             </div>
         </div>
-    </div>
 </body>
+
 </html>
