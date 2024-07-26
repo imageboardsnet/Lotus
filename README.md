@@ -1,4 +1,4 @@
-# Lotus
+# 🌸 Lotus
 imageboards.net website built with Flask and Fomantic UI.
 Built JS free and with client speed in mind.
 
