@@ -12,30 +12,32 @@
                     <div class="ui labels">
                         {% for sw in imb.software %}
                         {% if loop.last %}
-                        <div class="ui teal inverted basic label"><i class="cog icon"></i> {{ sw }}</div>
+                        <div title="{% for sw in imb.software %} {{ sw }} {% endfor %}" class="ui teal inverted basic label"><i class="cog icon"></i> {{ sw }}</div>
                         {% endif %}
                         {% endfor %}
 
                         {% for lg in imb.language %}
+                        <div class="ui teal inverted basic label">
                         {% if lg == 'en' %}
-                        <div class="ui teal inverted basic label"><i class="uk flag"> en</i></div>
+                        <i class="uk flag"> en</i>
                         {% elif lg == 'ja' %}
-                        <div class="ui teal inverted basic label"><i class="jp flag"> ja</i></div>
+                        <i class="jp flag"> ja</i>
                         {% elif lg == 'zh' %}
-                        <div class="ui teal inverted basic label"><i class="cn flag"> zh</i></div>
+                        <i class="cn flag"> zh</i>
                         {% elif lg == 'ko' %}
-                        <div class="ui teal inverted basic label"><i class="kr flag"> ko</i></div>
+                        <i class="kr flag"> ko</i>
                         {% elif lg == 'uk' %}
-                        <div class="ui teal inverted basic label"><i class="ua flag"> uk</i></div>
+                        <i class="ua flag"> uk</i>
                         {% elif lg == 'be' %}
-                        <div class="ui teal inverted basic label"><i class="by flag"> be</i></div>
+                        <i class="by flag"> be</i>
                         {% elif lg == 'ar' %}
-                        <div class="ui teal inverted basic label"><i class="eg flag"> ar</i></div>
+                        <i class="eg flag"> ar</i>
                         {% elif lg == 'hi' %}
-                        <div class="ui teal inverted basic label"><i class="in flag"> hi</i></div>
+                        <i class="in flag"> hi</i>
                         {% else %}
-                        <div class="ui teal inverted basic label"><i class="{{ lg }} flag"> {{ lg }}</i></div>
+                        <i class="{{ lg }} flag"> {{ lg }}</i>
                         {% endif %}
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
