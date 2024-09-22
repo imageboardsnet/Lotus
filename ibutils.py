@@ -54,8 +54,9 @@ def available_softwares(imageboards):
                     softwares.append(soft)
     return softwares
 
-def search_imageboards(imageboards, language, software):
+def search_imageboards(imageboards, language, software, keyword):
     search_result = []
+    ksearch_result = []
     for imageboard in imageboards:
         if 'language' in imageboard and 'software' in imageboard:
             if language and software:
@@ -67,6 +68,13 @@ def search_imageboards(imageboards, language, software):
             elif software:
                 if software in imageboard['software']:
                     search_result.append(imageboard)
+            elif not language and not software:
+                search_result.append(imageboard)
+    if keyword:
+        for imageboard in search_result:
+            if keyword.lower() in imageboard['name'].lower() or keyword.lower() in imageboard['description'].lower() or any(keyword.lower() in board.lower() for board in imageboard['boards']):
+                ksearch_result.append(imageboard)
+        return ksearch_result
     return search_result
 
 def categorize(item):

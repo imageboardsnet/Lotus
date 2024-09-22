@@ -43,11 +43,15 @@ def home_page(page):
 def search():
     language = request.form.get('language')
     software = request.form.get('software')
-    if not language and not software : return redirect('/')
-    search_result = ibutils.search_imageboards(imageboards, language, software)
-    search_result = ibrender.render_boards(search_result)
-    search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software)
-    return render_template('index.html', content= search_render + search_result)
+    keyword = request.form.get('keyword')
+    if not language and not software and not keyword: return redirect('/')
+    search_result = ibutils.search_imageboards(imageboards, language, software, keyword)
+    search_resultr = ibrender.render_boards(search_result)
+    search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software, search_keyword=keyword)
+    if not search_result :
+        nothing_render = render_template('nothing.html')
+        return render_template('index.html', content= search_render + nothing_render)
+    return render_template('index.html', content= search_render + search_resultr)
 
 @app.route('/about')
 def about():
