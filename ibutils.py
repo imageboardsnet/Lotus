@@ -47,11 +47,13 @@ def available_softwares(imageboards):
             if isinstance(imageboard['software'], list):
                 for soft in imageboard['software']:
                     if soft not in softwares:
-                        softwares.append(soft)
+                        if soft != "":
+                            softwares.append(soft)
             else:
                 soft = imageboard['software']
                 if soft not in softwares:
-                    softwares.append(soft)
+                    if soft != "":
+                        softwares.append(soft)
     return softwares
 
 def search_imageboards(imageboards, language, software, keyword):

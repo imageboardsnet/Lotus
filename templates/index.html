@@ -22,21 +22,21 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <div class="ui menu navbar fixed inverted">
+            <div class="ui equal width centered menu borderless fixed inverted">
+
+                <a class="item" href='https://blossom.imageboards.net'>
+                    <i class="teal plus icon inverted"></i>
+                    Add a Board
+                </a>
                 <a class="item" href='/'>
                     <img src="{{ url_for('static', filename='favicon.ico') }}"
                         style="margin-right: 13px; height: 16px; width: 16px;">
-                    Home
+                    ImageBoards.net
                 </a>
-                <a class="item" href='https://blossom.imageboards.net'>
-                    <i class="teal plus icon inverted"></i>
-                    Add Board
-                </a>
-                <div class="right menu">
                     <a class="item" href='/about'>
                         <i class="teal info icon inverted"></i>
-                        About</a>
-                </div>
+                        About
+                    </a>
             </div>
             {{ content |safe }}
         </div>
@@ -44,7 +44,7 @@
             <div class="ui container">
                 <div class='centered'>
                     <h4 class="ui ">ImageBoards.net | 2024 | <a href="https://github.com/imageboardsnet/Lotus">Lotus
-                            1.8</a></h4>
+                            1.9</a></h4>
                 </div>
             </div>
         </div>

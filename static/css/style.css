@@ -7,9 +7,25 @@ a {
     color: #2bbfd6;
 }
 
+a:hover {
+    color: #2397a8;
+}
+
+.ui.inverted.cards>.card>.extra a:not(.ui):hover {
+    color: rgb(207, 207, 207);
+}
+
+p {
+    color: #fff;
+}   
+
 .ui.inverted.cards>.card>.extra a:not(.ui) {
     color: rgb(255 255 255);
 }
+.ui.message p {
+    opacity: 1!important;
+}
+
 
 .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
     box-shadow: 0 0 0 1px #2bbfd6 inset;
@@ -17,6 +33,10 @@ a {
 
 .centered {
     text-align: center;
+}
+
+.titlebar {
+    font-size: medium;
 }
 
 .favicon {
@@ -49,7 +69,8 @@ code {
     text-wrap: wrap;
 }
 .about-group {
-    margin-top: 2em;
+    max-width: 1000px;
+    margin: auto;
 }
 
 #page-container {
