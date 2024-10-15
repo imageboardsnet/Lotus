@@ -1,6 +1,8 @@
+<div class="buttons-container">
 <div class="ui icon buttons">
     {% for i in range(1, length + 1) %}
     <a class="ui inverted teal button {{ 'active' if page + 1 == i else '' }}"
         href="/{{ '' if 1 == i else i }}">{{i}}</a>
     {% endfor %}
+</div>
 </div>

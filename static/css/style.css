@@ -31,6 +31,20 @@ p {
     box-shadow: 0 0 0 1px #2bbfd6 inset;
 }
 
+.navbar {
+    border-bottom: solid !important;
+    border-bottom-width: 1px !important;
+    border-bottom-color: #2bbfd6 !important;
+}
+
+.search-input {
+   width: 24.55%;
+}
+
+.ui.selection.dropdown {
+    width: 100%;
+}
+
 .centered {
     text-align: center;
 }
@@ -99,19 +113,46 @@ code {
 
 .ui.selection.dropdown {
     padding: 0 !important;
+    padding-left: 5px !important;
 }
 
-@media screen and (max-width: 1350px) {
+@media only screen and (min-width: 1920px) and (max-width: 3800px) {
+    #content-wrap {
+        width: 1820px;
+    }
+    .search-input {
+        width: 24.75%;
+    }
+     
+}
+
+@media only screen and (min-width: 1533px) and (max-width: 1920px) {
+    #content-wrap {
+        width: 1509px;
+    }
+    .search-input {
+        width: 24.75%;
+    }
+     
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1533px) {
+    #content-wrap {
+        width: 1214px;
+    }
+    .search-input {
+        width: 24.55%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1350px){
     #content-wrap {
         width: 96vw;
+        min-width: 0;
     }
 
     .ui.message.about {
         width: 96vw;
-    }
-
-    .ui.selection.dropdown {
-        width: 100%;
     }
 
     .ui.labeled.input {
@@ -120,6 +161,11 @@ code {
 
     #search,.card {
         width: 100%!important;
+    }
+    
+    .buttons-container {
+        display: flex;
+        justify-content: center;
     }
 
 }

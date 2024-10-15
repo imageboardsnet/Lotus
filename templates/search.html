@@ -1,6 +1,6 @@
 <form action="/search" method="post">
-    <div id="boards">
-        <div class="ui labeled input" style="margin-top: 3px;">
+    <div id="search">
+        <div class="ui labeled input search-input" style="margin-top: 3px;">
             <div class="ui basic inverted teal label" style="width: 83px;">Language</div>
             <select class="ui selection dropdown" id="language" name="language">
                 <option value=""> all</option>
@@ -10,7 +10,7 @@
                 {% endfor %}
             </select>
         </div>
-        <div class="ui labeled input" style="margin-top: 3px">
+        <div class="ui labeled input search-input" style="margin-top: 3px">
             <div class="ui basic inverted teal label" style="width: 83px;">Software</div>
             <select class="ui selection dropdown" id="software" name="software">
                 <option value=""> all</option>
@@ -20,11 +20,11 @@
                 {% endfor %}
             </select>
         </div>
-        <div class="ui labeled input" style="margin-top: 3px;margin-bottom: 3px;">
+        <div class="ui labeled input search-input" style="margin-top: 3px;margin-bottom: 3px;">
             <div class="ui basic inverted teal label" style="width: 83px;">Keyword</div>
             <input type="text" id="keyword" name="keyword" placeholder="Enter a keyword" value="{{ search_keyword }}">
         </div>
-        <button class="ui secondary labeled icon teal inverted button search" id="search" type="submit"
+        <button class="ui secondary teal inverted button search search-input" id="search" type="submit"
             style="height: 38px;"> <i class="search icon"></i> Search</button>
     </div>
 </form>
