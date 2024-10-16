@@ -35,6 +35,8 @@ p {
     border-bottom: solid !important;
     border-bottom-width: 1px !important;
     border-bottom-color: #2bbfd6 !important;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px!important;
+    font-size: 1.1em !important;
 }
 
 .search-input {
@@ -79,6 +81,12 @@ p {
     border-width: 1px;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+
 code {
     text-wrap: wrap;
 }
@@ -115,6 +123,7 @@ code {
     padding: 0 !important;
     padding-left: 5px !important;
 }
+
 
 @media only screen and (min-width: 1920px) and (max-width: 3800px) {
     #content-wrap {
@@ -162,10 +171,4 @@ code {
     #search,.card {
         width: 100%!important;
     }
-    
-    .buttons-container {
-        display: flex;
-        justify-content: center;
-    }
-
 }
