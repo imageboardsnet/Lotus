@@ -33,7 +33,7 @@ def render_main(ibpages, languages, softwares, page=0):
         if page == 0:
             return render_template('index.html', content= search_render + ibpages[page] + pagination, title=main_title, description=main_description)
         else:
-            return render_template('index.html', content= search_render + ibpages[page] + pagination, title=main_title + " Page " + str(page), description=main_description)
+            return render_template('index.html', content= search_render + ibpages[page] + pagination, title=main_title + " page " + str(page+1), description=main_description)
 
 def render_404():
     with app.app_context():
