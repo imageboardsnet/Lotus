@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, send_from_directory, redirect
+from ibstrings import search_title, about_title, search_description, about_description
 import os
 import threading
 import schedule
@@ -50,13 +51,13 @@ def search():
     search_render = render_template('search.html', languages=languages, softwares=softwares, search_language=language, search_software=software, search_keyword=keyword)
     if not search_result :
         nothing_render = render_template('nothing.html')
-        return render_template('index.html', content= search_render + nothing_render)
-    return render_template('index.html', content= search_render + search_resultr)
+        return render_template('index.html', content= search_render + nothing_render, title=search_title,description=search_description)
+    return render_template('index.html', content= search_render + search_resultr, title=search_title, description=search_description)
 
 @app.route('/about')
 def about():
     about_content = render_template('about.html')
-    return render_template('index.html', content=about_content)
+    return render_template('index.html', content=about_content, title=about_title,description=about_description)
 
 @app.route('/favicon.ico')
 def favicon():

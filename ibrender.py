@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from ibstrings import main_title, nothing_title, main_description, nothing_description
 import ibutils
 
 app = Flask(__name__)
@@ -29,14 +30,14 @@ def render_main(ibpages, languages, softwares, page=0):
     with app.app_context():
         search_render = render_template('search.html', languages=languages, softwares=softwares)
         pagination = render_template('page.html',page=page, length=len(ibpages))
-        return render_template('index.html', content= search_render + ibpages[page] + pagination)
+        return render_template('index.html', content= search_render + ibpages[page] + pagination, title=main_title, description=main_description)
 
 def render_404():
     with app.app_context():
         notfound_render = render_template('404.html')
-        return render_template('index.html', content=notfound_render)
+        return render_template('index.html', content=notfound_render, title=nothing_title, description=nothing_description)
     
 def render_nothing():
     with app.app_context():
         nothing_render = render_template('nothing.html')
-        return render_template('index.html', content=nothing_render)
+        return render_template('index.html', content=nothing_render, title=nothing_title, description=nothing_description)
