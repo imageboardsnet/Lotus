@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, send_from_directory, redirect
+from flask_sitemapper import Sitemapper
 from ibstrings import search_title, about_title, search_description, about_description
 import os
 import threading
@@ -7,7 +8,10 @@ import time
 import ibrender
 import ibutils
 
+sitemapper = Sitemapper()
+
 app = Flask(__name__)
+sitemapper.init_app(app)
 
 boards_json_url = "https://blossom.imageboards.net/imageboards.json"
 
@@ -31,13 +35,16 @@ def schedule_run():
 
 schedule.every(30).minutes.do(update_ib)
 
+@sitemapper.include()
 @app.route('/')
 def home():
     return ibrender.render_main( ibpages, languages, softwares, 0)
 
-@app.route('/<int:page>')
+@sitemapper.include(url_variables={"page": [2, 3, 4, 5, 6, 7, 8]},)
+@app.route('/page/<int:page>')
 def home_page(page):
     if len(ibpages) < page: return redirect('/')
+    if page == 1 : return redirect('/')
     return ibrender.render_main(ibpages, languages, softwares, page - 1)
 
 @app.route('/search' , methods=['POST'])
@@ -54,6 +61,7 @@ def search():
         return render_template('index.html', content= search_render + nothing_render, title=search_title,description=search_description)
     return render_template('index.html', content= search_render + search_resultr, title=search_title, description=search_description)
 
+@sitemapper.include()
 @app.route('/about')
 def about():
     about_content = render_template('about.html')
@@ -66,6 +74,10 @@ def favicon():
 @app.route('/robots.txt')
 def robots():
     return send_from_directory(os.path.join(app.root_path, 'static'),'robots.txt', mimetype='text/plain')
+
+@app.route("/sitemap.xml")
+def sitemap():
+  return sitemapper.generate()
 
 @app.errorhandler(404)
 def page_not_found(e):

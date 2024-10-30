@@ -1,7 +1,7 @@
-main_title = "A list of Imageboards"
+main_title = "ImageBoards.net - The largest list of Imageboards"
 nothing_title = "No Results Found"
 search_title = "Search Imageboards"
-about_title = "About Us"
+about_title = "About ImageBoards.net"
 
 main_description = "The most complete and updated list of imageboards. Explore Over 200 Curated Boards"
 nothing_description = "Oops! It seems we couldn't find what you were looking for. Please try searching again or explore our curated list."
