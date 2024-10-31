@@ -29,6 +29,7 @@ p {
 
 .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
     box-shadow: 0 0 0 1px #2bbfd6 inset;
+    background: #1b1c1d;
 }
 
 .navbar {
