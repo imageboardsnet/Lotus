@@ -155,7 +155,17 @@ code {
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1350px){
+@media only screen and (min-width: 900px) and (max-width: 1350px) {
+    #content-wrap {
+        width: 902px;
+    }
+    .search-input {
+        width: 24.55%;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 900px){
     #content-wrap {
         width: 96vw;
         min-width: 0;
