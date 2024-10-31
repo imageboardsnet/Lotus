@@ -179,7 +179,7 @@ code {
         width: 100%;
     }
 
-    #search,.card {
+    .search.search-input,.card {
         width: 100%!important;
     }
 }
