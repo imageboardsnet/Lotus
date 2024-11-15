@@ -8,7 +8,6 @@
                     {{ imb.name }}
                 </div>
                 <div class="meta">
-                    <br>
                     <div class="ui labels">
                         {% for sw in imb.software %}
                         {% if loop.last %}
@@ -19,23 +18,23 @@
                         {% for lg in imb.language %}
                         <div class="ui teal inverted basic label">
                         {% if lg == 'en' %}
-                        <i class="uk flag"> en</i>
+                        <i class="uk flag"></i>en
                         {% elif lg == 'ja' %}
-                        <i class="jp flag"> ja</i>
+                        <i class="jp flag"></i>ja
                         {% elif lg == 'zh' %}
-                        <i class="cn flag"> zh</i>
+                        <i class="cn flag"></i>zh
                         {% elif lg == 'ko' %}
-                        <i class="kr flag"> ko</i>
+                        <i class="kr flag"></i>ko
                         {% elif lg == 'uk' %}
-                        <i class="ua flag"> uk</i>
+                        <i class="ua flag"></i>uk
                         {% elif lg == 'be' %}
-                        <i class="by flag"> be</i>
+                        <i class="by flag"></i>be
                         {% elif lg == 'ar' %}
-                        <i class="eg flag"> ar</i>
+                        <i class="eg flag"></i>ar
                         {% elif lg == 'hi' %}
-                        <i class="in flag"> hi</i>
+                        <i class="in flag"></i>hi
                         {% else %}
-                        <i class="{{ lg }} flag"> {{ lg }}</i>
+                        <i class="{{ lg }} flag"></i>{{ lg }}
                         {% endif %}
                         </div>
                         {% endfor %}

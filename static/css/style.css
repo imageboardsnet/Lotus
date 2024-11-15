@@ -26,6 +26,9 @@ p {
     opacity: 1!important;
 }
 
+.meta{
+    padding-top: 10px;
+}
 
 .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
     box-shadow: 0 0 0 1px #2bbfd6 inset;
@@ -131,7 +134,7 @@ code {
         width: 1820px;
     }
     .search-input {
-        width: 24.75%;
+        width: 24.74%;
     }
      
 }
@@ -141,7 +144,7 @@ code {
         width: 1509px;
     }
     .search-input {
-        width: 24.75%;
+        width: 24.74%;
     }
      
 }
