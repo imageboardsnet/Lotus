@@ -19,31 +19,35 @@
     <div id="page-container">
         <div id="content-wrap">
             <div class="ui equal width centered menu borderless fixed inverted navbar">
-
-                <a class="item" href='https://blossom.imageboards.net'>
-                    <i class="teal plus icon inverted"></i>
-                    Add a Board
-                </a>
                 <a class="item" href='/'>
                     <img src="{{ url_for('static', filename='favicon.ico') }}"
                         style="margin-right: 13px; height: 16px; width: 16px;" alt="website logo">
                     ImageBoards.net
                 </a>
-                    <a class="item" href='/about'>
-                        <i class="teal info icon inverted"></i>
-                        About
-                    </a>
+                <a class="item" href='/lucky'>
+                    <i class="teal dice icon inverted"></i>
+                    Feel Lucky
+                </a>
+                <a class="item" href='https://blossom.imageboards.net'>
+                    <i class="teal plus icon inverted"></i>
+                    Add a Board
+                </a>
+                <a class="item" href='/about'>
+                    <i class="teal info icon inverted"></i>
+                    About
+                </a>
             </div>
             {{ content |safe }}
         </div>
         <div class="ui footer segment center inverted">
             <div class="ui container">
                 <div class='centered'>
-                    <h4 class="ui ">ImageBoards.net | 2025 | <a href="https://github.com/imageboardsnet/Lotus">Lotus
-                            1.11.2</a></h4>
+                    <h4 class="ui "><a href="https://github.com/imageboardsnet/Lotus">Lotus 1.12</a> | ImageBoards.net |
+                        2020 - 2025</h4>
                 </div>
             </div>
         </div>
-     </div>   
+    </div>
 </body>
+
 </html>

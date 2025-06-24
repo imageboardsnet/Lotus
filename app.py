@@ -62,6 +62,17 @@ def search():
     return render_template('index.html', content= search_render + search_resultr, title=search_title, description=search_description)
 
 @sitemapper.include()
+@app.route('/lucky', methods=['GET', 'POST'])
+def lucky():
+    import random
+    if request.method == 'POST':
+        chosen = random.sample(imageboards, 3)
+        lootbox = render_template('lucky.html', opened=True, imageboards=chosen)
+        return render_template('index.html', content=lootbox, title='The Lucky Box™', description='You got a lucky imageboard!')
+    lootbox = render_template('lucky.html', opened=False, imb=None)
+    return render_template('index.html', content=lootbox, title='The Lucky Box™', description='Click to get a random imageboard!')
+
+@sitemapper.include()
 @app.route('/about')
 def about():
     about_content = render_template('about.html')

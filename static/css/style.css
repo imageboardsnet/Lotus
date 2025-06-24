@@ -128,6 +128,61 @@ code {
     padding-left: 5px !important;
 }
 
+.lootbox-gift {
+    font-size: 6em;
+    margin: 1.5em 0 1.5em 0;
+    text-align: center;
+    filter: drop-shadow(0 0 16px #f39c12);
+}
+
+.lootbox-btn {
+    display: block!important;
+    margin: 1em auto 0 auto!important;
+}
+
+.lucky-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom : 1.5em;
+}
+
+.ui.message.lucky {
+    padding: 15px;
+    width: 100%;
+    border: solid;
+    border-color: #2bbfd6;
+    border-radius: 4px;
+    border-width: 1px;
+    background-color: #151515b8;
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+.feeling-lucky {
+    font-size: 2.6em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1.2em auto 1.2em auto;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 12px #128ef3, 0 0 32px #126cf3, 0 0 8px #fff;
+    animation: lucky-glow 2s infinite alternate;
+    background: linear-gradient(90deg, #1299f3 10%, #2bbfd6 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    background-clip: text;
+    line-height: 1.3;
+    padding: 0.4em 0 0.4em 0;
+    box-sizing: border-box;
+}
+
+@keyframes lucky-glow {
+    0% { text-shadow: 0 0 12px #12a1f3, 0 0 32px #126cf3, 0 0 8px #fff; }
+    100% { text-shadow: 0 0 32px #8f82ff, 0 0 64px #2bbfd6, 0 0 16px #fff; }
+}
 
 @media only screen and (min-width: 1920px) and (max-width: 3800px) {
     #content-wrap {
