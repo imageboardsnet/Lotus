@@ -40,7 +40,7 @@ schedule.every(30).minutes.do(update_ib)
 def home():
     return ibrender.render_main( ibpages, languages, softwares, 0)
 
-@sitemapper.include(url_variables={"page": [2, 3, 4, 5, 6, 7, 8, 9]},)
+@sitemapper.include(url_variables={"page": [2, 3, 4, 5, 6, 7, 8, 9,10]},)
 @app.route('/page/<int:page>')
 def home_page(page):
     if len(ibpages) < page: return redirect('/')
