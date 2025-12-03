@@ -89,6 +89,21 @@ summary::-webkit-details-marker {
     display: none;!important;
 }
 
+summary:hover {
+    color: rgba(255,255,255);
+}
+summary::-webkit-details-marker:hover {
+    color: rgba(255,255,255);
+}
+
+.item a{
+    color: rgba(255,255,255,.7);
+}
+
+.item a:hover{
+    color: rgba(255,255,255);
+}
+
 .ui.message.about {
     padding: 15px;
     width: 100%;
