@@ -76,6 +76,19 @@ p {
     border-width: 1px!important;
 }
 
+.card-actions details {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.card-actions summary {
+    list-style: none;
+    cursor: pointer;
+}
+.card-actions summary::-webkit-details-marker {
+    display: none;
+}
+
 .ui.message.about {
     padding: 15px;
     width: 100%;
