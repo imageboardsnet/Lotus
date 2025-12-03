@@ -82,11 +82,11 @@ p {
 }
 
 summary {
-    list-style: none;
-    cursor: pointer;
+    list-style: none;!important;
+    cursor: pointer;!important;
 }
 summary::-webkit-details-marker {
-    display: none;
+    display: none;!important;
 }
 
 .ui.message.about {
