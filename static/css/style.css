@@ -26,8 +26,35 @@ p {
     opacity: 1!important;
 }
 
-.meta{
+.meta {
     padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "link toggle"
+        "mirrors mirrors";
+    align-items: start;
+}
+
+.meta > a {
+    grid-area: link;
+}
+
+.meta > details {
+    display: contents;
+}
+
+.meta > details > summary {
+    grid-area: toggle;
+    cursor: pointer;
+}
+
+.meta > details > .content.mirrors {
+    grid-area: mirrors;
+}
+
+.item a {
+    overflow-wrap: anywhere!important;
 }
 
 .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
