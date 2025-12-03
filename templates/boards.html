@@ -21,7 +21,9 @@
 
                     {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
                     <details class="ui accordion">
+                        <summary>
                             [...]
+                        </summary>
                         <div class="content mirrors">
                             <div class="ui list">
                                 {% for mi in imb.mirrors %}
