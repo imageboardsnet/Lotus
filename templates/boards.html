@@ -3,7 +3,7 @@
         {% for imb in imageboards %}
         <div class="card">
             <div class="content">
-                <!-- Header -->
+
                 <div class="header">
                     <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}"
                          class="favicon"
@@ -12,7 +12,7 @@
                     {{ imb.name }}
                 </div>
         
-                <!-- Primary URL -->
+
                 <div class="meta">
                     <a href="{{ imb.url }}" target="_blank">
                         {{ imb.url }}
@@ -36,7 +36,7 @@
                     {% endif %}
                 </div>
         
-                <!-- Meta labels: software + languages -->
+
                 <div class="meta">
                     <div class="ui labels">
                         {% if imb.software %}
@@ -75,14 +75,13 @@
                     </div>
                 </div>
         
-                <!-- Description -->
+
                 <div class="description">
                     <p>{{ imb.description }}</p>
                 </div>
             </div>
         
-            <!-- Actions: Boards + Mirrors -->
-            
+
             {% if imb.boards is defined and imb.boards | length > 0 %}
             <div class="extra content card-actions">
                 <details class="ui accordion">
