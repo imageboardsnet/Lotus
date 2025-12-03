@@ -82,8 +82,9 @@
             </div>
         
             <!-- Actions: Boards + Mirrors -->
+            
+            {% if imb.boards is defined and imb.boards | length > 0 %}
             <div class="extra content card-actions">
-                {% if imb.boards is defined and imb.boards | length > 0 %}
                 <details class="ui accordion">
                     <summary>
                             <i class="comments icon"></i>
@@ -97,8 +98,8 @@
                         </div>
                     </div>
                 </details>
+                </div>
                 {% endif %}
-            </div>
         </div>
         {% endfor %}
     </div>
