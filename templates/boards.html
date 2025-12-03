@@ -1,111 +1,108 @@
 <div class="ui inverted container fluid boards">
     <div class="ui inverted cards">
         {% for imb in imageboards %}
-<div class="card">
-    <div class="content">
-        <!-- Header -->
-        <div class="header">
-            <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}"
-                 class="favicon"
-                 alt="{{ imb.name }} favicon"
-                 loading="lazy">
-            {{ imb.name }}
-        </div>
-
-        <!-- Primary URL -->
-        <div class="meta">
-            <a href="{{ imb.url }}" target="_blank">
-                {{ imb.url }}
-                <i class="external alternate icon"></i>
-            </a>
-        </div>
-
-        <!-- Meta labels: software + languages -->
-        <div class="meta">
-            <div class="ui labels">
-                {% if imb.software %}
-                <div title="{{ imb.software | join(', ') }}"
-                     class="ui teal inverted basic label">
-                    <i class="cog icon"></i>
-                    {{ imb.software[-1] }}
+        <div class="card">
+            <div class="content">
+                <!-- Header -->
+                <div class="header">
+                    <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}"
+                         class="favicon"
+                         alt="{{ imb.name }} favicon"
+                         loading="lazy">
+                    {{ imb.name }}
                 </div>
-                {% endif %}
+        
+                <!-- Primary URL -->
+                <div class="meta">
+                    <a href="{{ imb.url }}" target="_blank">
+                        {{ imb.url }}
+                        <i class="external alternate icon"></i>
+                    </a>
 
-                {% for lg in imb.language %}
-                <div class="ui teal inverted basic label">
-                    {% if lg == 'en' %}
-                        <i class="uk flag"></i>en
-                    {% elif lg == 'ja' %}
-                        <i class="jp flag"></i>ja
-                    {% elif lg == 'zh' %}
-                        <i class="cn flag"></i>zh
-                    {% elif lg == 'ko' %}
-                        <i class="kr flag"></i>ko
-                    {% elif lg == 'uk' %}
-                        <i class="ua flag"></i>uk
-                    {% elif lg == 'be' %}
-                        <i class="by flag"></i>be
-                    {% elif lg == 'ar' %}
-                        <i class="eg flag"></i>ar
-                    {% elif lg == 'sv' %}
-                        <i class="se flag"></i>sv
-                    {% elif lg == 'hi' %}
-                        <i class="in flag"></i>hi
-                    {% else %}
-                        <i class="{{ lg }} flag"></i>{{ lg }}
+                    {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
+                    <details class="ui accordion">
+                        <summary>
+                            [...]
+                        </summary>
+                        <div class="content mirrors">
+                            <div class="ui list">
+                                {% for mi in imb.mirrors %}
+                                <div class="item">
+                                    <a href="{{ mi }}" target="_blank">{{ mi }}</a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </details>
                     {% endif %}
                 </div>
-                {% endfor %}
-            </div>
-        </div>
-
-        <!-- Description -->
-        <div class="description">
-            <p>{{ imb.description }}</p>
-        </div>
-    </div>
-
-    <!-- Actions: Boards + Mirrors -->
-    <div class="extra content card-actions">
-        {% if imb.boards is defined and imb.boards | length > 0 %}
-        <details class="ui accordion">
-            <summary>
-                <span class="ui tiny inverted basic button">
-                    <i class="comments icon"></i>
-                    Boards
-                </span>
-            </summary>
-            <div class="content mirrors">
-                <div class="ui list">
-                    {% for board in imb.boards %}
-                    <div class="item">{{ board }}</div>
-                    {% endfor %}
-                </div>
-            </div>
-        </details>
-        {% endif %}
-
-        {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
-        <details class="ui accordion">
-            <summary>
-                <span class="ui tiny inverted basic button">
-                    <i class="clone icon"></i>
-                    Mirrors
-                </span>
-            </summary>
-            <div class="content mirrors">
-                <div class="ui list">
-                    {% for mi in imb.mirrors %}
-                    <div class="item">
-                        <a href="{{ mi }}" target="_blank">{{ mi }}</a>
+        
+                <!-- Meta labels: software + languages -->
+                <div class="meta">
+                    <div class="ui labels">
+                        {% if imb.software %}
+                        <div title="{{ imb.software | join(', ') }}"
+                             class="ui teal inverted basic label">
+                            <i class="cog icon"></i>
+                            {{ imb.software[-1] }}
+                        </div>
+                        {% endif %}
+        
+                        {% for lg in imb.language %}
+                        <div class="ui teal inverted basic label">
+                            {% if lg == 'en' %}
+                                <i class="uk flag"></i>en
+                            {% elif lg == 'ja' %}
+                                <i class="jp flag"></i>ja
+                            {% elif lg == 'zh' %}
+                                <i class="cn flag"></i>zh
+                            {% elif lg == 'ko' %}
+                                <i class="kr flag"></i>ko
+                            {% elif lg == 'uk' %}
+                                <i class="ua flag"></i>uk
+                            {% elif lg == 'be' %}
+                                <i class="by flag"></i>be
+                            {% elif lg == 'ar' %}
+                                <i class="eg flag"></i>ar
+                            {% elif lg == 'sv' %}
+                                <i class="se flag"></i>sv
+                            {% elif lg == 'hi' %}
+                                <i class="in flag"></i>hi
+                            {% else %}
+                                <i class="{{ lg }} flag"></i>{{ lg }}
+                            {% endif %}
+                        </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
+                </div>
+        
+                <!-- Description -->
+                <div class="description">
+                    <p>{{ imb.description }}</p>
                 </div>
             </div>
-        </details>
-        {% endif %}
-    </div>
-</div>
+        
+            <!-- Actions: Boards + Mirrors -->
+            <div class="extra content card-actions">
+                {% if imb.boards is defined and imb.boards | length > 0 %}
+                <details class="ui accordion">
+                    <summary>
+                        <span class="ui tiny inverted basic button">
+                            <i class="comments icon"></i>
+                            Boards
+                        </span>
+                    </summary>
+                    <div class="content mirrors">
+                        <div class="ui list">
+                            {% for board in imb.boards %}
+                            <div class="item">{{ board }}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </details>
+                {% endif %}
+            </div>
+        </div>
         {% endfor %}
     </div>
 </div>
