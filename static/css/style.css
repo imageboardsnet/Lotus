@@ -81,11 +81,11 @@ p {
     margin-right: 0.5rem;
 }
 
-.card-actions summary {
+summary {
     list-style: none;
     cursor: pointer;
 }
-.card-actions summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
 }
 
