@@ -70,6 +70,17 @@ p {
     font-size: 1.1em !important;
 }
 
+details.ui.accordion summary .chevron{
+  display: inline-block;
+  transition: transform 160ms ease;
+  transform-origin: 50% 50%;
+}
+
+details.ui.accordion[open] summary .chevron{
+  transform: rotate(90deg);
+}
+
+
 .search-input {
    width: 24.55%;
 }
