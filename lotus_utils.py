@@ -1,4 +1,5 @@
 import os
+import random
 import requests
 from urllib.parse import urlparse
 
@@ -174,6 +175,8 @@ def search_imageboards(imageboards, language, software, keyword, has_boards=Fals
         return sorted(filtered, key=lambda item: item.get('name', '').lower())
     if sort_by == "board_count":
         return sorted(filtered, key=lambda item: (-len(item.get('boards', []) or []), item.get('name', '').lower()))
+    if sort_by == "random":
+        return random.sample(filtered, len(filtered)) if filtered else []
 
     return sort_imageboards(filtered)
 

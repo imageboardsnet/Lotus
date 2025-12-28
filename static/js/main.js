@@ -16,16 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const shakeBtn = document.getElementById('shake-btn');
-    const lootboxGift = document.getElementById('lootbox-gift');
-    if (shakeBtn && lootboxGift) {
-        shakeBtn.addEventListener('click', () => {
-            lootboxGift.classList.remove('shake');
-            void lootboxGift.offsetWidth;
-            lootboxGift.classList.add('shake');
-        });
-    }
-
     const copyButtons = document.querySelectorAll('.copy-link');
     copyButtons.forEach(btn => {
         btn.addEventListener('click', async () => {

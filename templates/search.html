@@ -39,6 +39,9 @@
 
                     <input type="radio" class="btn-check" name="sort_by" id="sort_alpha" value="alphabetical" {% if search_sort=="alphabetical" %}checked{% endif %}>
                     <label class="btn btn-outline-info btn-xs no-outline" for="sort_alpha" title="Alphabetical"><i class="bi bi-sort-alpha-down"></i></label>
+
+                    <input type="radio" class="btn-check" name="sort_by" id="sort_random" value="random" {% if search_sort=="random" %}checked{% endif %}>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="sort_random" title="Random order"><i class="bi bi-shuffle"></i></label>
                 </div>
 
                 <div class="btn-group filter-toggle" role="group" aria-label="Filters">

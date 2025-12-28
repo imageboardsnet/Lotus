@@ -81,6 +81,20 @@ class AppRouteTests(unittest.TestCase):
         self.assertIn(b"rendered-search", response.data)
         self.assertTrue(self.mock_render_boards.called)
 
+    @patch("lotus_utils.random.sample", return_value=[{"id": 1, "name": "Alpha"}])
+    def test_search_random_returns_selection(self, mock_sample):
+        self._set_state(
+            imageboards=[
+                {"id": 1, "name": "Alpha", "boards": [], "description": ""},
+                {"id": 2, "name": "Beta", "boards": ["b"], "description": "desc"},
+            ]
+        )
+        response = self.client.post("/search", data={"sort_by": "random"})
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(mock_sample.called)
+        self.assertIn(b"rendered-search", response.data)
+        self.assertIn(b"rendered-boards", response.data)
+
     def test_viewer_uses_requested_board(self):
         boards = [
             {"id": 1, "name": "Alpha"},
@@ -90,20 +104,6 @@ class AppRouteTests(unittest.TestCase):
         response = self.client.get("/viewer?id=2")
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"viewer.html", response.data)
-
-    def test_lucky_get_renders_closed_box(self):
-        self._set_state(imageboards=[{"id": 1}, {"id": 2}])
-        response = self.client.get("/lucky")
-        self.assertEqual(response.status_code, 200)
-        self.assertIn(b"lucky.html", response.data)
-
-    @patch("random.sample", return_value=[{"id": 1}, {"id": 2}, {"id": 3}])
-    def test_lucky_post_returns_sample(self, mock_sample):
-        self._set_state(imageboards=[{"id": 1}, {"id": 2}, {"id": 3}, {"id": 4}])
-        response = self.client.post("/lucky")
-        self.assertEqual(response.status_code, 200)
-        self.assertTrue(mock_sample.called)
-        self.assertIn(b"lucky.html", response.data)
 
     def test_sitemap_route(self):
         with patch("app.sitemapper.generate", return_value="sitemap-xml") as mock_generate:

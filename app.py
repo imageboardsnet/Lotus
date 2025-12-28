@@ -108,7 +108,14 @@ def search():
     has_boards = request.form.get('has_boards') == 'on'
     has_description = request.form.get('has_description') == 'on'
     sort_by = request.form.get('sort_by', 'recommended')
-    if not language and not software and not keyword and not has_boards and not has_description and sort_by == 'recommended':
+    if (
+        not language
+        and not software
+        and not keyword
+        and not has_boards
+        and not has_description
+        and sort_by == 'recommended'
+    ):
         return redirect('/')
     search_result = lotus_utils.search_imageboards(
         imageboards,
@@ -155,17 +162,6 @@ def search():
         description=search_description,
         robots_directive="noindex, follow"
     )
-
-@sitemapper.include()
-@app.route('/lucky', methods=['GET', 'POST'])
-def lucky():
-    import random
-    if request.method == 'POST':
-        chosen = random.sample(imageboards, 3)
-        lootbox = render_template('lucky.html', opened=True, imageboards=chosen)
-        return render_template('index.html', content=lootbox, title='The Lucky Box™', description='You got a lucky imageboard!')
-    lootbox = render_template('lucky.html', opened=False, imb=None)
-    return render_template('index.html', content=lootbox, title='The Lucky Box™', description='Click to get a random imageboard!')
 
 @sitemapper.include()
 @app.route('/about')
