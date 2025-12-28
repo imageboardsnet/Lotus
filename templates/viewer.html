@@ -1,0 +1,50 @@
+<div class="card viewer-card text-light border-0">
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <div>
+                <div class="eyebrow">Inline Browser</div>
+                <h4 class="mb-0">Browse without leaving the page</h4>
+            </div>
+            {% if selected_board %}
+            <a class="btn btn-outline-info btn-sm d-flex align-items-center gap-1" id="open-new" href="{{ selected_board.url }}" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-box-arrow-up-right"></i> Open in new tab
+            </a>
+            {% endif %}
+        </div>
+        <div class="row g-3">
+            <div class="col-12 col-xl-9">
+                <div class="viewer-iframe-wrapper">
+                    {% if selected_board %}
+                    <iframe id="viewer-frame" src="{{ selected_board.url }}" title="Inline board viewer"></iframe>
+                    {% else %}
+                    <div class="p-4 text-center text-muted">No boards available.</div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-xl-3">
+                <div class="viewer-list card text-light border-0 h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0">Boards</h6>
+                            <span class="badge text-bg-dark border border-info text-info">{{ imageboards|length }}</span>
+                        </div>
+                        <div class="viewer-scroll">
+                            {% for imb in imageboards %}
+                            <button class="viewer-item btn w-100 text-start mb-2 d-flex align-items-center gap-2 {% if selected_board and selected_board.id == imb.id %}active{% endif %}"
+                                    type="button"
+                                    data-url="{{ imb.url }}"
+                                    data-id="{{ imb.id }}">
+                                <div class="viewer-dot"></div>
+                                <div class="d-flex flex-column flex-grow-1">
+                                    <span class="fw-semibold">{{ imb.name }}</span>
+                                    <small class="viewer-url text-truncate">{{ imb.url }}</small>
+                                </div>
+                            </button>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

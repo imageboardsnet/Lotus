@@ -1,30 +1,82 @@
-<form action="/search" method="post">
-    <div id="search">
-        <div class="ui labeled input search-input" style="margin-top: 3px;">
-            <div class="ui basic inverted teal label" style="width: 90px;">Language</div>
-            <select class="ui selection dropdown" id="language" name="language">
-                <option value=""> all</option>
-                {% for language in languages %}
-                <option value="{{ language }}" {% if language==search_language %} selected {% endif %}> {{ language }}
-                </option>
-                {% endfor %}
-            </select>
+<div class="card search-card text-light border-0">
+    <div class="card-body">
+        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2">
+            <div>
+                <div class="eyebrow">Find your next board</div>
+                <h3 class="mb-0">Search the directory</h3>
+            </div>
         </div>
-        <div class="ui labeled input search-input" style="margin-top: 3px">
-            <div class="ui basic inverted teal label" style="width: 90px;">Software</div>
-            <select class="ui selection dropdown" id="software" name="software">
-                <option value=""> all</option>
-                {% for software in softwares %}
-                <option value="{{ software }}" {% if software==search_software %} selected {% endif %}> {{ software }}
-                </option>
-                {% endfor %}
-            </select>
+        <form action="/search" method="post" id="search-form" class="mt-3">
+            <div class="search-inline">
+                <div class="input-group search-field">
+                    <span class="input-group-text bg-dark text-info border-info"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control bg-dark text-light border-info" id="keyword" name="keyword" placeholder="Title, topic, or board" value="{{ search_keyword or '' }}">
+                </div>
+
+                <div class="input-group search-select">
+                    <span class="input-group-text bg-dark text-info border-info"><i class="bi bi-translate"></i></span>
+                    <select class="form-select bg-dark text-light border-info" id="language" name="language">
+                        <option value="" {% if not search_language %}selected{% endif %}>Any language</option>
+                        {% for language in languages %}
+                        <option value="{{ language }}" {% if language==search_language %} selected {% endif %}> {{ language }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="input-group search-select">
+                    <span class="input-group-text bg-dark text-info border-info"><i class="bi bi-cpu"></i></span>
+                    <select class="form-select bg-dark text-light border-info" id="software" name="software">
+                        <option value="" {% if not search_software %}selected{% endif %}>Any software</option>
+                        {% for software in softwares %}
+                        <option value="{{ software }}" {% if software==search_software %} selected {% endif %}> {{ software }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="btn-group sort-toggle" role="group" aria-label="Sort by">
+                    <input type="radio" class="btn-check" name="sort_by" id="sort_recommended" value="recommended" {% if search_sort=="recommended" or not search_sort %}checked{% endif %}>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="sort_recommended" title="Best"><i class="bi bi-magic"></i></label>
+
+                    <input type="radio" class="btn-check" name="sort_by" id="sort_alpha" value="alphabetical" {% if search_sort=="alphabetical" %}checked{% endif %}>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="sort_alpha" title="Alphabetical"><i class="bi bi-sort-alpha-down"></i></label>
+                </div>
+
+                <div class="btn-group filter-toggle" role="group" aria-label="Filters">
+                    <input type="checkbox" class="btn-check" id="has_boards" name="has_boards" {% if search_has_boards %}checked{% endif %}>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="has_boards" title="Has board list"><i class="bi bi-list-ul"></i></label>
+
+                    <input type="checkbox" class="btn-check" id="has_description" name="has_description" {% if search_has_description %}checked{% endif %}>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="has_description" title="Has description"><i class="bi bi-paragraph"></i></label>
+                </div>
+
+                <button class="btn btn-info text-dark fw-semibold d-flex align-items-center gap-2" type="submit">
+                    <i class="bi bi-search"></i> Search
+                </button>
+                {% if search_language or search_software or search_keyword or search_has_boards or search_has_description %}
+                <a class="btn btn-outline-light btn-xs d-flex align-items-center gap-2" href="/" title="Clear search">
+                    <i class="bi bi-x-circle"></i> Clear
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-2 small text-muted">
+                {% if search_language %}<span class="badge text-bg-dark border border-info text-info d-flex align-items-center gap-1"><i class="bi bi-translate"></i> {{ search_language }}</span>{% endif %}
+                {% if search_software %}<span class="badge text-bg-dark border border-info text-info d-flex align-items-center gap-1"><i class="bi bi-cpu"></i> {{ search_software }}</span>{% endif %}
+            </div>
+        </form>
+        {% if results_count is not none %}
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2 mt-4 pt-3 border-top border-secondary">
+            <div class="fw-semibold">{{ results_count }} result{% if results_count != 1 %}s{% endif %}</div>
+            <div class="d-flex flex-wrap gap-2">
+                {% if active_filters %}
+                    {% for filter in active_filters %}
+                    <span class="badge text-bg-info">{{ filter }}</span>
+                    {% endfor %}
+                {% else %}
+                    <span class="badge text-bg-secondary">Showing recommended order</span>
+                {% endif %}
+            </div>
         </div>
-        <div class="ui labeled input search-input" style="margin-top: 3px;margin-bottom: 3px;">
-            <div class="ui basic inverted teal label" style="width: 90px;">Keyword</div>
-            <input type="text" id="keyword" name="keyword" placeholder="Enter a Keyword" value="{{ search_keyword }}">
-        </div>
-        <button class="ui secondary teal inverted button search search-input" type="submit"
-            style="height: 38px;"> <i class="search icon"></i> Search</button>
+        {% endif %}
     </div>
-</form>
+</div>

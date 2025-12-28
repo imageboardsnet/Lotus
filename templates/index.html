@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta charset="UTF-8">
     <title>{{ title }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/semantic.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <meta name="twitter:title" content="{{ title }}">
@@ -18,35 +19,55 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
-            <div class="ui equal width centered menu borderless fixed inverted navbar">
-                <a class="item" href="/">
-                    <img src="{{ url_for('static', filename='favicon.ico') }}"
-                         style="margin-right: 5px; height: 16px; width: 16px;" alt="website logo">
-                    ImageBoards.net
-                </a>
-                <a class="item" href="/lucky">
-                    <i class="teal dice icon inverted"></i>
-                    Random
-                </a>
-                <a class="item" href="https://blossom.imageboards.net">
-                    <i class="teal plus icon inverted"></i>
-                    Submit Board
-                </a>
-                <a class="item" href="/about">
-                    <i class="teal info icon inverted"></i>
-                    About
-                </a>
-            </div>
+            <nav class="navbar navbar-expand-md navbar-dark navbar-glass">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
+                        <img src="{{ url_for('static', filename='favicon.ico') }}"
+                             class="nav-logo"
+                             alt="website logo">
+                        ImageBoards.net
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-1" href="/lucky">
+                                    <i class="bi bi-dice-5"></i> <span>Random</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-1" href="/viewer">
+                                    <i class="bi bi-window-fullscreen"></i> <span>Inline browse</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-1" href="https://blossom.imageboards.net">
+                                    <i class="bi bi-plus-circle"></i> <span>Submit Board</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center gap-1" href="/about">
+                                    <i class="bi bi-info-circle"></i> <span>About</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             {{ content |safe }}
         </div>
-        <div class="ui footer segment center inverted">
-            <div class="ui container">
-                <div class='centered'>
-                    <h4 class="ui "><a href="https://github.com/imageboardsnet/Lotus">Lotus 1.12.1</a> | ImageBoards.net |
-                        2020 - 2025</h4>
-                </div>
+        <footer class="footer-glass text-center text-light py-3">
+            <div class="container">
+                <small><a href="https://github.com/imageboardsnet/Lotus" class="link-light">Lotus 2.0.0</a> | ImageBoards.net | 2020 - 2026</small>
             </div>
-        </div>
+        </footer>
+        <button class="btn btn-info text-dark fw-semibold back-to-top" type="button" id="back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </div>
 </body>
 

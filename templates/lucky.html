@@ -1,124 +1,96 @@
-<div class="ui message inverted lucky">
-<div class="feeling-lucky" >Are you Feeling Lucky ? </div>
-</div>
-<div class="ui message inverted lucky">
-    <div class="titlebar"><i class="teal gift icon inverted"></i>The Lucky Box™</div>
-    <hr>
-    <div class="lucky-container">
-        {% if not opened %}
-        <div class="lootbox-closed">
-            <div class="lootbox-gift">🎁</div>
+<div class="card lucky-panel text-light border-0 fade-in">
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start">
+            <div>
+                <div class="eyebrow mb-1">Playful discovery</div>
+                <h3 class="mb-2">Feeling lucky? Pull three random boards</h3>
+                <p class="mb-3 text-soft">Click the box to reveal a fresh trio. No two rolls are the same.</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            {% if not opened %}
+            <div class="lootbox-gift" id="lootbox-gift" aria-hidden="true">🎁</div>
+            <form method="post" class="d-inline-block">
+                <button class="btn btn-info text-dark fw-semibold px-4 d-flex align-items-center gap-2 justify-content-center" type="submit">
+                    <i class="bi bi-stars"></i> <span>Reveal three boards</span>
+                </button>
+            </form>
+            {% endif %}
+        </div>
+
+        {% if opened %}
+        <hr class="border-secondary my-4">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+            <h4 class="mb-0 d-flex align-items-center gap-2"><i class="bi bi-stars"></i> Your trio</h4>
             <form method="post">
-                <button class="lootbox-btn ui button teal inverted" type="submit">Open the Box!</button>
+                <button class="btn btn-outline-info btn-sm" type="submit"><i class="bi bi-arrow-clockwise"></i> Roll again</button>
             </form>
         </div>
-        {% else %}
-        <div class="lootbox-opened">
-            <div class="lucky-card">
-                <div class="ui inverted cards lucky">
-                           {% for imb in imageboards %}
-                            <div class="card">
-                                <div class="content">
-                    
-                                    <div class="header">
-                                        <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}"
-                                             class="favicon"
-                                             alt="{{ imb.name }} favicon"
-                                             loading="lazy">
-                                        {{ imb.name }}
-                                    </div>
-                            
-                                    <div class="meta">
-                                        <a href="{{ imb.url }}" target="_blank">
-                                            {{ imb.url }}
-                                        </a>
-                    
-                                        {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
-                                        <details class="ui accordion">
-                                            <summary>
-                                                [+{{imb.mirrors|length}}]
-                                            </summary>
-                                            <div class="content mirrors">
-                                                <div class="ui list">
-                                                    {% for mi in imb.mirrors %}
-                                                    <div class="item">
-                                                        <a href="{{ mi }}" target="_blank">{{ mi }}</a>
-                                                    </div>
-                                                    {% endfor %}
-                                                </div>
-                                            </div>
-                                        </details>
-                                        {% endif %}
-                                    </div>
-                            
-                                    <div class="meta">
-                                        <div class="ui labels">
-                                            {% if imb.software %}
-                                            <div title="{{ imb.software | join(', ') }}"
-                                                 class="ui teal inverted basic label">
-                                                <i class="cog icon"></i>
-                                                {{ imb.software[-1] }}
-                                            </div>
-                                            {% endif %}
-                            
-                                            {% for lg in imb.language %}
-                                            <div class="ui teal inverted basic label">
-                                                {% if lg == 'en' %}
-                                                    <i class="uk flag"></i>en
-                                                {% elif lg == 'ja' %}
-                                                    <i class="jp flag"></i>ja
-                                                {% elif lg == 'zh' %}
-                                                    <i class="cn flag"></i>zh
-                                                {% elif lg == 'ko' %}
-                                                    <i class="kr flag"></i>ko
-                                                {% elif lg == 'uk' %}
-                                                    <i class="ua flag"></i>uk
-                                                {% elif lg == 'be' %}
-                                                    <i class="by flag"></i>be
-                                                {% elif lg == 'ar' %}
-                                                    <i class="eg flag"></i>ar
-                                                {% elif lg == 'sv' %}
-                                                    <i class="se flag"></i>sv
-                                                {% elif lg == 'hi' %}
-                                                    <i class="in flag"></i>hi
-                                                {% else %}
-                                                    <i class="{{ lg }} flag"></i>{{ lg }}
-                                                {% endif %}
-                                            </div>
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                    
-                                    <div class="description">
-                                        <p>{{ imb.description }}</p>
-                                    </div>
+        <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
+            {% for imb in imageboards %}
+            <div class="col">
+                <div class="card board-card h-100 text-light">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex align-items-center mb-2">
+                            <img src="https://blossom.imageboards.net/favicons/{{ imb.id }}"
+                                 class="favicon me-2"
+                                 alt="{{ imb.name }} favicon"
+                                 loading="lazy">
+                            <h5 class="card-title mb-0">{{ imb.name }}</h5>
+                        </div>
+
+                        <div class="mb-2 small text-truncate d-flex align-items-center gap-2">
+                            <a href="{{ imb.url }}" target="_blank" class="link-light d-flex align-items-center gap-1">
+                                <i class="bi bi-box-arrow-up-right"></i> {{ imb.url }}
+                            </a>
+                        </div>
+                        {% if imb.mirrors is defined and imb.mirrors | length > 0 %}
+                        <div class="mb-2 small">
+                            <details class="mt-1">
+                                <summary class="text-info">+{{imb.mirrors|length}} mirrors</summary>
+                                <div class="mt-1">
+                                    <ul class="list-unstyled mb-0">
+                                        {% for mi in imb.mirrors %}
+                                        <li class="text-break"><a class="link-light" href="{{ mi }}" target="_blank">{{ mi }}</a></li>
+                                        {% endfor %}
+                                    </ul>
                                 </div>
-                                
-                                {% if imb.boards is defined and imb.boards | length > 0 %}
-                                <div class="extra content card-actions">
-                                    <details class="ui accordion">
-                                        <summary>
-                                                <i class="comments icon"></i>
-                                                Boards
-                                        </summary>
-                                        <div class="content mirrors">
-                                            <div class="ui list">
-                                                {% for board in imb.boards %}
-                                                <div class="item">{{ board }}</div>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                    </details>
-                                    </div>
-                                    {% endif %}
-                            </div>
+                            </details>
+                        </div>
+                        {% endif %}
+
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                            {% if imb.software %}
+                            <span class="badge rounded-pill text-bg-dark border border-info text-info d-flex align-items-center gap-1">
+                                <i class="bi bi-cpu"></i> {{ imb.software | join(', ') }}
+                            </span>
+                            {% endif %}
+                            {% for lg in imb.language %}
+                            <span class="badge rounded-pill text-bg-dark border border-info text-info d-flex align-items-center gap-1">
+                                {{ lg | lang_flag }} {{ lg }}
+                            </span>
                             {% endfor %}
+                        </div>
+
+                        <p class="card-text flex-grow-1 mb-2">{{ imb.description }}</p>
+
+                        {% if imb.boards is defined and imb.boards | length > 0 %}
+                        {% set collapse_id = "lucky-boards-" ~ imb.id %}
+                        <button class="btn btn-outline-info btn-sm d-flex align-items-center gap-1 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#{{ collapse_id }}">
+                            <i class="bi bi-layout-three-columns"></i> Boards ({{ imb.boards|length }})
+                        </button>
+                        <div class="collapse mt-2" id="{{ collapse_id }}">
+                            <ul class="list-unstyled ms-1 mt-1 row row-cols-2 gy-1 gx-2">
+                                {% for board in imb.boards %}
+                                <li class="col text-light small">{{ board }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+                    </div>
                 </div>
-                
             </div>
-            <form method="post">
-                <button class="lootbox-btn ui button teal inverted" type="submit">Try Again</button>
-            </form>
+            {% endfor %}
         </div>
         {% endif %}
     </div>

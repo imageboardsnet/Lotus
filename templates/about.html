@@ -1,47 +1,56 @@
 <div class="about-group">
-    <div class="ui message inverted about">
-        <div class="titlebar"><i class="teal info icon inverted"></i>About ImageBoards.net</div>
-        <p>Thank you for visiting ImageBoards.net!</p>
-        <p>
-            This is a project I created to help people discover imageboards. It originally started as a
-            frontend for the ccd0 <code>imageboards.json</code> project. After that project was abandoned
-            in 2022, I began maintaining my own list.
-        </p>
-        <p>
-            You can easily add your own imageboard or one that is not yet listed. To do this, visit
-            <a href="https://blossom.imageboards.net/" target="_blank" rel="noopener noreferrer">https://blossom.imageboards.net/</a>.
-            You can register with one click and will receive a randomly generated login and password.
-            After that, you’ll be able to freely add an imageboard to the list or claim an existing one.
-            Please note that every new imageboard is manually verified; this usually takes place every 1–2 days.
-        </p>
-        <p>Feel free to contact me at: me[@]imageboards.net</p>
-    </div>
-
-    <div class="ui message inverted about">
-        <div class="titlebar"><i class="teal hand holding usd icon inverted"></i>Donations</div>
-        <p>
-            I develop and host this website for free, and the source code is released under the GPLv3 license.
-            I don’t want to add ads, as they would make the site worse while generating almost no revenue.
-            If you’d like to support the project, you can donate with cryptocurrency.
-        </p>
-        <div class="ui action fluid input">
-            <input type="text" value="BTC: 1AVbUs8BZfpWW222UdddUHqWF7yHDXMsp1" readonly>
-        </div>
-        <br>
-        <div class="ui action fluid input">
-            <input type="text" value="Monero: 44S8MSPtpjgWmBtXHMW7bueSJroHEKuhFTxp4kyBmN6gWGcjzJ7zpNiM2ckpGYtY6PCRerB2Kbn1Md7fc2zHjakE9sr4J8A" readonly>
+    <div class="card text-light border-0 about">
+        <div class="card-body">
+            <div class="titlebar d-flex align-items-center gap-1"><i class="bi bi-info-circle"></i><span>About ImageBoards.net</span></div>
+            <p>Thank you for visiting ImageBoards.net!</p>
+            <p>
+                This is a project I created to help people discover imageboards. It originally started as a
+                frontend for the ccd0 <code>imageboards.json</code> project. After that project was abandoned
+                in 2022, I began maintaining my own list.
+            </p>
+            <p>
+                You can easily add your own imageboard or one that is not yet listed. To do this, visit
+                <a href="https://blossom.imageboards.net/" target="_blank" rel="noopener noreferrer">https://blossom.imageboards.net/</a>.
+                You can register with one click and will receive a randomly generated login and password.
+                After that, you’ll be able to freely add an imageboard to the list or claim an existing one.
+                Please note that every new imageboard is manually verified; this usually takes place every 1–2 days.
+            </p>
+            <p>Feel free to contact me at: me[@]imageboards.net</p>
         </div>
     </div>
 
-    <div class="ui message inverted about">
-        <div class="titlebar"><i class="teal share icon inverted"></i>JSON Endpoints</div>
-        <p>Primary <code>imageboards.json</code> endpoint:</p>
-        <div class="ui action fluid input">
-            <input type="text" value="https://blossom.imageboards.net/imageboards.json" readonly>
+    <div class="card text-light border-0 about">
+        <div class="card-body">
+            <div class="titlebar d-flex align-items-center gap-1"><i class="bi bi-gift"></i><span>Donations</span></div>
+            <p>
+                I develop and host this website for free, and the source code is released under the GPLv3 license.
+                I don’t want to add ads, as they would make the site worse while generating almost no revenue.
+                If you’d like to support the project, you can donate with cryptocurrency.
+            </p>
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-dark text-info border-info">BTC</span>
+                <input type="text" class="form-control bg-dark text-light border-info" value="1AVbUs8BZfpWW222UdddUHqWF7yHDXMsp1" readonly>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text bg-dark text-info border-info">XMR</span>
+                <input type="text" class="form-control bg-dark text-light border-info" value="44S8MSPtpjgWmBtXHMW7bueSJroHEKuhFTxp4kyBmN6gWGcjzJ7zpNiM2ckpGYtY6PCRerB2Kbn1Md7fc2zHjakE9sr4J8A" readonly>
+            </div>
         </div>
-        <p>Legacy-compatible <code>imageboards.json</code> endpoint (ccd0-style):</p>
-        <div class="ui action fluid input">
-            <input type="text" value="https://blossom.imageboards.net/imageboards_legacy.json" readonly>
+    </div>
+
+    <div class="card text-light border-0 about">
+        <div class="card-body">
+            <div class="titlebar d-flex align-items-center gap-1"><i class="bi bi-diagram-3"></i><span>JSON Endpoints</span></div>
+            <p>Primary <code>imageboards.json</code> endpoint:</p>
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-dark text-info border-info">Primary</span>
+                <input type="text" class="form-control bg-dark text-light border-info" value="https://blossom.imageboards.net/imageboards.json" readonly>
+            </div>
+            <p>Legacy-compatible <code>imageboards.json</code> endpoint (ccd0-style):</p>
+            <div class="input-group">
+                <span class="input-group-text bg-dark text-info border-info">Legacy</span>
+                <input type="text" class="form-control bg-dark text-light border-info" value="https://blossom.imageboards.net/imageboards_legacy.json" readonly>
+            </div>
         </div>
     </div>
 </div>

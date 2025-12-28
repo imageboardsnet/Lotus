@@ -1,0 +1,29 @@
+<div class="hero card text-light border-0 position-relative">
+    <button class="btn btn-outline-light hero-close" type="button" id="hero-close" aria-label="Hide hero">
+        <i class="bi bi-x-lg"></i>
+    </button>
+    <div class="card-body">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <div class="eyebrow">ImageBoards.net</div>
+                <h1>Discover boards built for every niche</h1>
+                <p>Use the directory to find the communities, engines, and languages you care about.</p>
+                {% if last_updated %}
+                <div class="hero-updated">
+                    ⏱️ Updated {{ last_updated }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">{{ total_boards }}</div>
+                    <div class="stat-label">Imageboards</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">{{ total_languages }}</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
