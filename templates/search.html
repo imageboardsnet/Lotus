@@ -35,7 +35,7 @@
 
                 <div class="btn-group sort-toggle" role="group" aria-label="Sort by">
                     <input type="radio" class="btn-check" name="sort_by" id="sort_recommended" value="recommended" {% if search_sort=="recommended" or not search_sort %}checked{% endif %}>
-                    <label class="btn btn-outline-info btn-xs no-outline" for="sort_recommended" title="Best"><i class="bi bi-magic"></i></label>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="sort_recommended" title="Best"><i class="bi bi-stars"></i></label>
 
                     <input type="radio" class="btn-check" name="sort_by" id="sort_alpha" value="alphabetical" {% if search_sort=="alphabetical" %}checked{% endif %}>
                     <label class="btn btn-outline-info btn-xs no-outline" for="sort_alpha" title="Alphabetical"><i class="bi bi-sort-alpha-down"></i></label>
@@ -43,10 +43,10 @@
 
                 <div class="btn-group filter-toggle" role="group" aria-label="Filters">
                     <input type="checkbox" class="btn-check" id="has_boards" name="has_boards" {% if search_has_boards %}checked{% endif %}>
-                    <label class="btn btn-outline-info btn-xs no-outline" for="has_boards" title="Has board list"><i class="bi bi-list-ul"></i></label>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="has_boards" title="Has board list"><i class="bi bi-megaphone-fill"></i></label>
 
                     <input type="checkbox" class="btn-check" id="has_description" name="has_description" {% if search_has_description %}checked{% endif %}>
-                    <label class="btn btn-outline-info btn-xs no-outline" for="has_description" title="Has description"><i class="bi bi-paragraph"></i></label>
+                    <label class="btn btn-outline-info btn-xs no-outline" for="has_description" title="Has description"><i class="bi bi-chat-left-text-fill"></i></label>
                 </div>
 
                 <button class="btn btn-info text-dark fw-semibold d-flex align-items-center gap-2" type="submit">

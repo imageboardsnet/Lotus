@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, send_from_directory, redirect
+from flask import Flask, render_template, request, send_from_directory, redirect, url_for, has_request_context
 from flask_sitemapper import Sitemapper
 from lotus_strings import search_title, about_title, search_description, about_description
 import os
@@ -34,6 +34,26 @@ def should_run_scheduler(default=False):
 @app.template_filter('lang_flag')
 def lang_flag(code):
     return lotus_utils.flag_from_code(code)
+
+@app.context_processor
+def inject_seo_defaults():
+    """Provide canonical URLs and social defaults to all templates."""
+    if has_request_context():
+        base_url = request.url_root.rstrip("/")
+        canonical_url = request.base_url
+        social_image = url_for('static', filename='img/social-card.png', _external=True)
+    else:
+        base_url = "https://imageboards.net"
+        canonical_url = base_url
+        social_image = "/static/img/social-card.png"
+    return {
+        "canonical_url": canonical_url,
+        "site_name": "ImageBoards.net",
+        "social_image": social_image,
+        "og_type": "website",
+        "base_url": base_url,
+        "robots_directive": "index, follow",
+    }
 
 def update_ib():
     global imageboards, languages, softwares, ibpages, search_render, last_updated
@@ -121,8 +141,20 @@ def search():
     )
     if not search_result :
         nothing_render = render_template('nothing.html')
-        return render_template('index.html', content= search_render + nothing_render, title=search_title,description=search_description)
-    return render_template('index.html', content= search_render + search_resultr, title=search_title, description=search_description)
+        return render_template(
+            'index.html',
+            content= search_render + nothing_render,
+            title=search_title,
+            description=search_description,
+            robots_directive="noindex, follow"
+        )
+    return render_template(
+        'index.html',
+        content= search_render + search_resultr,
+        title=search_title,
+        description=search_description,
+        robots_directive="noindex, follow"
+    )
 
 @sitemapper.include()
 @app.route('/lucky', methods=['GET', 'POST'])

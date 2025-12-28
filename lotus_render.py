@@ -116,9 +116,21 @@ def render_main(ibpages, languages, softwares, total_boards, last_updated, page=
 def render_404():
     with app.app_context():
         notfound_render = render_template('404.html')
-        return render_template('index.html', content=notfound_render, title=nothing_title, description=nothing_description)
+        return render_template(
+            'index.html',
+            content=notfound_render,
+            title=nothing_title,
+            description=nothing_description,
+            robots_directive="noindex, follow"
+        )
     
 def render_nothing():
     with app.app_context():
         nothing_render = render_template('nothing.html')
-        return render_template('index.html', content=nothing_render, title=nothing_title, description=nothing_description)
+        return render_template(
+            'index.html',
+            content=nothing_render,
+            title=nothing_title,
+            description=nothing_description,
+            robots_directive="noindex, follow"
+        )
